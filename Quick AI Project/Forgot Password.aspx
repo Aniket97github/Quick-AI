@@ -5,6 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="Fonstawesome/css/all.css" rel="stylesheet" />
     <style type="text/css">
         .auto-style2 {
             text-align: center;
@@ -18,67 +22,150 @@
         </style>
 </head>
 <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <img src="Images/hype%20logo.png" />
+            <p>
+                &nbsp;</p>
+</nav>
+    </div>
     <form id="form1" runat="server">
         <div class="auto-style2">
+            <div class="sticky-top">
             <br />
             <br />
-            <asp:Panel ID="Panel1" runat="server" GroupingText="Forgot Password Page" Height="309px">
                 <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" BackColor="Black" CausesValidation="False" ForeColor="White" OnClick="Button2_Click" Text="Back" />
-                <br />
-                <br />
-                <br />
-                <br />
-                <span class="auto-style4">Enter Password</span> :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+               <div class="container" style="padding-top:160px;padding-bottom:100px">
+    <div class="col-md-6 mx-auto">
+        <div class="card" >
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col">
+                  <center><h4>Forgot Password?</h4>
+                      <span>Go to Home Page!<a href="http://localhost:64582/Login.aspx">Home Page</a></span>
+                          </center>
+                          </div>
+                      </div>
+<%--for inserting line--%>
+                  <div class="row">
+                      <div class="col">
+                          <hr />
+                          </div>
+                      </div>
+                  <div class="row">
+                      <div class="col">
+                      <label class="align-content-left">Password</label>
+                      <div class="input-group">
+    <span class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
+   <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                 <br />
                 <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox2" ControlToValidate="TextBox3" ErrorMessage="Password and confirm password must be same" ForeColor="#CC0000"></asp:CompareValidator>
                 <br />
-                <br />
-                <span class="auto-style5">Enter Confirm Password</span> :&nbsp;
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+  </div>
+                          </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <label class="align-left">Confirm Password</label>
+                          <div class="input-group">
+    <span class="input-group-text  align-content-left"><i class="fa-solid fa-lock"></i></span>
+   <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox2" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-                <br />
-                <br />
-                <span class="auto-style5">&nbsp;&nbsp; Enter Forgot Question</span> :&nbsp;
-                <asp:TextBox ID="TextBox4" runat="server" style="margin-left: 0px"></asp:TextBox>
+  </div>                     
+                    <div class="row">
+                      <div class="col">
+                          <label class="align-left">Forgot Question</label>
+                          <div class="input-group">
+    <span class="input-group-text align-content-left"><i class="fa-solid fa-lock"></i></span>
+     <asp:TextBox ID="TextBox4" runat="server" style="margin-left: 0px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox4" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-                <br />
-                <br />
-                <asp:Button ID="Button1" runat="server" BackColor="#CC0099" BorderColor="#666666" ForeColor="White" OnClick="Button1_Click" Text="Save" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <div class="form-group">
+                              <br>
+                               <asp:Button  class="btn btn-primary" ID="Button1" runat="server" BackColor="#CC0099" BorderColor="#666666" ForeColor="White"       OnClick="Button1_Click" Text="Save" />
                 <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            </asp:Panel>
+                          </div>
+                         <br />
+                          </div>
+                          </div>
+                        </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                 </div>
+              </div>  
+             </div>
+             </div>
             <br />
-            <br />
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;<br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        </div>
-    </form>
+            <footer>
+           <div class="foot" style="background-color: #303030;color:silver";>
+                <div  style="padding-top: 45px;padding-bottom: 45px">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <img src="Images/hype%20logo.png" align="left" />
+                                </div><br />
+                                <br />
+                                <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                <h6 style="padding-bottom:5px">My Account</h6>
+                                    <u1>
+ <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="https://localhost:44368/loginpage.aspx" > Login</a></li>
+                                   
+<li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Register</a></li>
+                                    </u1>
+                                      </div>
+                                    </div>
+                            <div class="col-md-4" >
+                                <div>
+                                <h6 style="padding-bottom:5px">Helpful Links</h6>
+                                    <u1>
+                         <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
+                         <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                                    </u1>
+                                      </div>
+                                    </div>
+                            <div class="col-md-4">
+                                <div>
+                                <h6 style="padding-bottom:5px">Information</h6>
+                                    <u1>
+ <li style="list-style:none;padding-bottom:8px"><a href="https://localhost:44368/loginpage.aspx">FAQ</a></li>
+                                   
+<li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Testimonals</a></li>
+                                    </u1>
+                                      </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" />
+        
+                <div class="foot" style="padding-top:15px;padding-bottom:15px">
+                     <div class="foot" style="padding-top:15px;padding-bottom:15px">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12" >
+                            
+                                <div>
+                               <p>2023 Socius IGB Pvt Ltd, All right reserved</p>
+                                    </div>
+                                      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+		                              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+		                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+		                              <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+		                              <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+		                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+   </form>                      
 </body>
 </html>

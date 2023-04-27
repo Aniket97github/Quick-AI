@@ -22,7 +22,7 @@ namespace Quick_AI_Project
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
             con.Open();
-            string q = "insert into QuickAi values('" + TextBox2.Text + "','" + TextBox5.Text + "','" + TextBox4.Text + "')";
+            string q = "insert into QuickAi values('" + TextBox6.Text + "','" + TextBox5.Text + "','" + TextBox4.Text + "')";
             SqlCommand cmd = new SqlCommand(q, con);
             int i = cmd.ExecuteNonQuery();
             con.Close();

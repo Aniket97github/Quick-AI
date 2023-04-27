@@ -46,5 +46,10 @@ namespace Quick_AI_Project
         {
             Response.Redirect("Forgot Password.aspx");
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace Quick_AI_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
       
@@ -23,6 +23,13 @@ namespace Quick_AI_Project
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        protected void Button3_Click3(object sender, EventArgs e)
+        {
+            ScriptManager.RegisterStartupScript(Page, Page.GetType(), "myModal", "$('form1').modal;", true);
+            Response.Redirect("Register.aspx");
 
         }
     }
