@@ -115,11 +115,11 @@ p.ex1{
 #footer{
     background-color:#f9f9f9;
     display:inline-block;
-    position: absolute;
+    position: unset;
     left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: Red;
     text-align: center;
 }
 .fun-fact{
@@ -144,5 +144,15 @@ p.ex1{
 #Speechtotext {
     height:150px;
     width:200px;
+    box-shadow:2px 2px 5px grey;
+}
+.class{
+    height:30px;
+    width:30px;
+
+}
+.chart {
+    height:413px;
+    width:997px;
     box-shadow:2px 2px 5px grey;
 }

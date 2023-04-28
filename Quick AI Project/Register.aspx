@@ -39,37 +39,36 @@
             padding-right: 15px;
         }
     </style>
-</head>
-<body>
+    </head>
+    <body>
          <div class="container">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
             <img src="Images/hype%20logo.png" />
-         </nav>
-    </div>
+        </nav>
+       </div>
     <form id="form1" runat="server">
  <span class="auto-style1"><br class="auto-style3" />
              <asp:Button ID="Button4"  class="btn btn-primary" runat="server" BackColor="Black" CausesValidation="False" ForeColor="White" OnClick="Button4_Click" Text="Back" />
             <br class="auto-style4" />
  </span>
             <br />
-                <div class="container" style="padding-top:160px;padding-bottom:100px">
-    <div class="col-md-6 mx-auto">
-
-        <div class="card" >
-              <div class="card-body">
+           <div class="container" style="padding-top:160px;padding-bottom:100px">
+           <div class="col-md-6 mx-auto">
+           <div class="card" >
+           <div class="card-body">
                   <div class="row">
                       <div class="col">
                   <center><h1>Welcome Back!</h1>
                           <span>Don't Have an Account?<a href="http://localhost:64582/Register2.aspx">Sign up Now!</a></span>
-                          </center>
-                          </div>
+                  </center>
                       </div>
+                   </div>
 <%--for inserting line--%>
                   <div class="row">
                       <div class="col">
                           <hr />
                           </div>
-                      </div>
+                  </div>
                   <div class="row">
                       <div class="col">
                           <label>E-Mail Address</label>
@@ -77,10 +76,10 @@
     <span class="input-group-text "><i class="fa-solid fa-user"></i></span>
     <asp:TextBox ID="TextBox3" runat="server" Height="26px"></asp:TextBox>
             
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Please Enter Username" ForeColor="Red" OnLoad="Page_Load"></asp:RequiredFieldValidator>
+   <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Please Enter Username" ForeColor="Red" OnLoad="Page_Load"></asp:RequiredFieldValidator>
 
-<asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox3" ErrorMessage="Enter Valid Email Address" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-  </div>
+   <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox3" ErrorMessage="Enter Valid Email Address" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                          </div>
                           </div>
                   </div>
                   <div class="row">
@@ -89,8 +88,8 @@
                           <div class="input-group">
                     <span class="input-group-text "><i class="fa-solid fa-lock"></i></span>
                     <asp:TextBox ID="TextBox2" runat="server" Height="26px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please Enter Password" ForeColor="Red"></asp:RequiredFieldValidator>
-  </div>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please Enter Password" ForeColor="Red"></asp:RequiredFieldValidator>
+                          </div>
                           <br />
                             <a href="http://localhost:64582/Forgot%20Password.aspx">Forgot Password?</a>
                           <br />
@@ -98,14 +97,14 @@
                                <asp:Button ID="Button1"  class="btn btn-dark" runat="server" BackColor="Blue" ForeColor="White" OnClick="Button1_Click" Text="Enter" />
                           </div>
                          <br /> 
-                          </div>
+                      </div>
                   </div>
-               </div>
-               </div>  
-                 </div>
-                 </div>
-        </form>
-              <footer>
+             </div>
+           </div>  
+         </div>
+       </div>
+   </form>
+      <footer>
            <div class="foot" style="background-color: #303030;color:silver";>
                 <div  style="padding-top: 45px;padding-bottom: 45px">
                     <div class="container-fluid">
@@ -120,33 +119,33 @@
                             <div class="col-md-4">
                                 <div>
                                 <h6 style="padding-bottom:5px">My Account</h6>
-                                    <u1>
- <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="https://localhost:44368/loginpage.aspx" > Login</a></li>
+                                <u1>
+                            <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="https://localhost:44368/loginpage.aspx" > Login</a></li>
                                    
-<li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Register</a></li>
-                                    </u1>
-                                      </div>
-                                    </div>
+                            <li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Register</a></li>
+                                </u1>
+                               </div>
+                           </div>
                             <div class="col-md-4" >
                                 <div>
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
-                                    <u1>
-                         <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
-                                    </u1>
-                                      </div>
-                                    </div>
+                                <u1>
+                                <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
+                                <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
+                                <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                               </u1>
+                                </div>
+                            </div>
                             <div class="col-md-4">
                                 <div>
                                 <h6 style="padding-bottom:5px">Information</h6>
                                     <u1>
- <li style="list-style:none;padding-bottom:8px"><a href="https://localhost:44368/loginpage.aspx">FAQ</a></li>
+                                    <li style="list-style:none;padding-bottom:8px"><a href="https://localhost:44368/loginpage.aspx">FAQ</a></li>
                                    
-<li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Testimonals</a></li>
+                                    <li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Testimonals</a></li>
                                     </u1>
-                                      </div>
-                                    </div>
+                                </div>
+                             </div>
                             </div>
                         </div>
                     </div>
@@ -155,9 +154,9 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-12" >
-                                <div>
+                               <div>
                                <p>2023 Socius IGB Pvt Ltd, All right reserved</p>
-                                    </div>  
+                               </div>  
                                       <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
 		                              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
 		                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
@@ -167,11 +166,9 @@
                             </div>      
                         </div>
                     </div>
-
                 </div>
             </div>
-        </footer>
-</body>
-      
-</html>
+      </footer>
+    </body> 
+    </html>
 

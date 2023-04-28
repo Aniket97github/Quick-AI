@@ -13,11 +13,9 @@
             font-size: xx-large;
         }
         </style>
-</head>
-<body>
-    
+        </head>
+         <body>
     <form id="form1" runat="server">
-    
             <div class="container" >
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
             <img src="Images/hype%20logo.png" />
@@ -31,7 +29,7 @@
                         <asp:ListItem>Marathi</asp:ListItem>
                     </asp:DropDownList>
             </div>
-          </nav>
+        </nav>
              </div>
         <br />
         <br />
@@ -44,8 +42,8 @@
             <asp:Button ID="Button1"  runat="server" BackColor="Blue" ForeColor="White" OnClick="Button1_Click1" Text="Get Started for Free" Width="285px"  Height="50px" class="btn btn-primary"/>
             <br />
             <span style="color: rgb(102, 102, 102); font-family: nunito, helveticaneue, &quot;helvetica neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster &amp; save hours of work.</span></span>
-          </div>  
-                  <footer>
+       </div>  
+           <footer>
            <div class="foot" style="background-color: #303030;color:silver";>
                 <div  style="padding-top: 45px;padding-bottom: 45px">
                     <div class="container-fluid">
@@ -60,32 +58,32 @@
                             <div class="col-md-4">
                                 <div>
                                 <h6 style="padding-bottom:5px">My Account</h6>
-                                    <u1>
- <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="http://localhost:64582/Register.aspx">Login</a></li>                       
-<li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Register2.aspx">Register</a></li>
-                                    </u1>
-                                      </div>
-                                    </div>
+                           <u1>
+                           <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="http://localhost:64582/Register.aspx">Login</a></li>                       
+                           <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Register2.aspx">Register</a></li>
+                          </u1>
+                                </div>
+                           </div>
                             <div class="col-md-4" >
                                 <div>
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
-                                    <u1>
+                         <u1>
                          <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
                          <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
                          <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
-                                    </u1>
-                                      </div>
-                                    </div>
+                        </u1>
+                                </div>
+                           </div>
                             <div class="col-md-4">
                                 <div>
                                 <h6 style="padding-bottom:5px">Information</h6>
-                                    <u1>
- <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Register.aspx">FAQ</a></li>
+                              <u1>
+                              <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Register.aspx">FAQ</a></li>
                                    
-<li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Register2.aspx">Testimonals</a></li>
-                                    </u1>
-                                      </div>
-                                    </div>
+                              <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Register2.aspx">Testimonals</a></li>
+                              </u1>
+                              </div>
+                           </div>
                             </div>
                         </div>
                     </div>
@@ -96,7 +94,7 @@
                             <div class="col-xl-12" >
                                 <div>
                                <p>2023 Socius IGB Pvt Ltd, All right reserved</p>
-                                    </div>   
+                               </div>   
                                       <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
 		                              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
 		                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
