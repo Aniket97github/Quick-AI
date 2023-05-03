@@ -2136,9 +2136,12 @@
     <Content Include="Fonstawesome\svgs\solid\z.svg" />
     <Content Include="Forgot Password.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\dashicon.svg" />
     <Content Include="Images\graph-up-arrow %281%29.svg" />
     <Content Include="Images\home-hero-icon.png" />
     <Content Include="Images\hype logo.png" />
+    <Content Include="Images\ui-checks-grid.svg" />
+    <Content Include="JavaScript.js" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Register2.aspx" />

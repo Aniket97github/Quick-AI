@@ -15,21 +15,6 @@
     padding: 3px 0;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
 
 .active {
   background-color: #04AA6D;
@@ -130,7 +115,7 @@ p.ex1{
     width: 200px;
     box-shadow: 2px 2px 5px grey;
 }
-.style {
+.dotline {
     border-style: none;
     background-color: white;
     height: 190px;
@@ -152,7 +137,77 @@ p.ex1{
 
 }
 .chart {
-    height:413px;
-    width:997px;
+    height:580px;
+    width:1077px;
     box-shadow:2px 2px 5px grey;
+}
+.dropdown{
+    position:relative;
+    left:auto;
+    right:1px;
+}
+
+.sidebar{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    padding-top: 80px;
+    box-shadow: 0 0 6px grey;
+   
+}
+
+
+.dash{
+    margin: 120px;
+}
+.chart{
+    margin:120px;
+}
+.rownew{
+   text-align:center;
+
+}
+.img{
+    
+  place-content:right;
+}
+
+.sidebar .menu li{
+    margin-top:6px;
+    padding: 6px 10px;
+    color:grey;
+    list-style:none;
+    
+}
+
+.sidebar .menu i {
+    color:grey;
+    font-size:17px;
+    padding-right:5px;
+}
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding:3px;
+    font-size: 5px;
+    border: none;
+    cursor: pointer;
+    display:none;
+}
+.logo{
+    padding:4px;
+}
+
+.sidebar .menu a{
+    color:grey;
+}
+
+.sidebar .menu li:hover{
+    border-left: 1px solid thick;
+    box-shadow: 2px 2px 6px grey;
 }
