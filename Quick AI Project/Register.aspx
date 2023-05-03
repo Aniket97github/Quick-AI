@@ -41,16 +41,39 @@
     </style>
     </head>
     <body>
-         <div class="container">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <img src="Images/hype%20logo.png" />
-        </nav>
-       </div>
+        
     <form id="form1" runat="server">
- <span class="auto-style1"><br class="auto-style3" />
+        <div class="container" >
+     <div class="headerAccoutSetting">
+         <div class="row navbar navbar-expand-sm bg-dark fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
+             <div class="col-md-2"> 
+                 <img src="Images/hype%20logo.png" />
+             </div>
+             <div class="col-md-6"></div>
+             <div class="col-md-2">
+                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="Blue" CausesValidation="False" OnClick="Button2_Click1" /></div>
+             <div class="col-md-2">
+                 <div class="dropdown">
+                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
+                         <asp:ListItem>en</asp:ListItem>
+                         <asp:ListItem>English</asp:ListItem>
+                         <asp:ListItem>Hindi</asp:ListItem>
+                         <asp:ListItem>Kannada</asp:ListItem>
+                         <asp:ListItem></asp:ListItem>
+                     </asp:DropDownList>
+                 </div>
+             </div>
+         </div>
+     </div>
+       <%-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
+           
+               
+        </nav>--%>
+    </div>
+    <span class="auto-style1"><br class="auto-style3" />
              <asp:Button ID="Button4"  class="btn btn-primary" runat="server" BackColor="Black" CausesValidation="False" ForeColor="White" OnClick="Button4_Click" Text="Back" />
             <br class="auto-style4" />
- </span>
+    </span>
             <br />
            <div class="container" style="padding-top:160px;padding-bottom:100px">
            <div class="col-md-6 mx-auto">
@@ -73,15 +96,15 @@
                       <div class="col">
                           <label>E-Mail Address</label>
                           <div class="input-group">
-    <span class="input-group-text "><i class="fa-solid fa-user"></i></span>
-    <asp:TextBox ID="TextBox3" runat="server" Height="26px"></asp:TextBox>
+                          <span class="input-group-text "><i class="fa-solid fa-user"></i></span>
+                          <asp:TextBox ID="TextBox3" runat="server" Height="26px"></asp:TextBox>
             
-   <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Please Enter Username" ForeColor="Red" OnLoad="Page_Load"></asp:RequiredFieldValidator>
+                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Please Enter Username" ForeColor="Red" OnLoad="Page_Load"></asp:RequiredFieldValidator>
 
-   <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox3" ErrorMessage="Enter Valid Email Address" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox3" ErrorMessage="Enter Valid Email Address" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                           </div>
                           </div>
-                  </div>
+                          </div>
                   <div class="row">
                       <div class="col">
                           <label>Password</label>

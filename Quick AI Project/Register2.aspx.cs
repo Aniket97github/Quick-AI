@@ -40,5 +40,10 @@ namespace Quick_AI_Project
         {
             Response.Redirect("Register.aspx");
         }
+
+        protected void Button2_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("Register.aspx");
+        }
     }
 }

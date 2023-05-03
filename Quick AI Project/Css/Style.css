@@ -182,7 +182,6 @@ p.ex1{
     padding: 6px 10px;
     color:grey;
     list-style:none;
-    
 }
 
 .sidebar .menu i {
@@ -190,15 +189,7 @@ p.ex1{
     font-size:17px;
     padding-right:5px;
 }
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding:3px;
-    font-size: 5px;
-    border: none;
-    cursor: pointer;
-    display:none;
-}
+
 .logo{
     padding:4px;
 }
@@ -211,3 +202,4 @@ p.ex1{
     border-left: 1px solid thick;
     box-shadow: 2px 2px 6px grey;
 }
+

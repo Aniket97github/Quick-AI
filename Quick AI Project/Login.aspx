@@ -16,29 +16,41 @@
         </head>
          <body>
     <form id="form1" runat="server">
-            <div class="container" >
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
-            <img src="Images/hype%20logo.png" />
-            <asp:Button ID="Button3" runat="server" BackColor="Blue" ForeColor="White" OnClick="Button3_Click3" Text="Join Now" Width="165px" Height="40px" class="btn btn-primary " />
-      
-            <div class="header-widget" >
-                <asp:DropDownList ID="DropDownList1" class="btn btn-primary "  runat="server" BackColor="Blue" ForeColor="White" Width="165px" Height="40px" align="right">
-                        <asp:ListItem>Select Language</asp:ListItem>
-                        <asp:ListItem>English</asp:ListItem>
-                        <asp:ListItem>Hindi</asp:ListItem>
-                        <asp:ListItem>Marathi</asp:ListItem>
-                    </asp:DropDownList>
-            </div>
-        </nav>
+           <div class="container" >
+     <div class="headerAccoutSetting">
+         <div class="row navbar navbar-expand-sm bg-dark fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
+             <div class="col-md-2"> 
+                 <img src="Images/hype%20logo.png" />
              </div>
+             <div class="col-md-6"></div>
+             <div class="col-md-2">
+                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="Blue" CausesValidation="False" ForeColor="White" OnClick="Button2_Click" /></div>
+             <div class="col-md-2">
+                 <div class="dropdown">
+                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
+                         <asp:ListItem>en</asp:ListItem>
+                         <asp:ListItem>English</asp:ListItem>
+                         <asp:ListItem>Hindi</asp:ListItem>
+                         <asp:ListItem>Kannada</asp:ListItem>
+                         <asp:ListItem></asp:ListItem>
+                     </asp:DropDownList>
+                 </div>
+             </div>
+         </div>
+     </div>
+       <%-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
+           
+               
+        </nav>--%>
+    </div>
         <br />
         <br />
         <br />
         <div class="text-center hero-content">
-<img src="Images/home-hero-icon.png" width="180px" align="center"/>
+        <img src="Images/home-hero-icon.png" width="180px" align="center"/>
             <br />
             <br />
- <span class="auto-style1"><strong> Best AI Content Writer</strong><br/>
+        <span class="auto-style1"><strong> Best AI Content Writer</strong><br/>
             <asp:Button ID="Button1"  runat="server" BackColor="Blue" ForeColor="White" OnClick="Button1_Click1" Text="Get Started for Free" Width="285px"  Height="50px" class="btn btn-primary"/>
             <br />
             <span style="color: rgb(102, 102, 102); font-family: nunito, helveticaneue, &quot;helvetica neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster &amp; save hours of work.</span></span>

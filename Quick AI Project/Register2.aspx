@@ -22,15 +22,36 @@
     </style>
     </head>
     <body>
-         <div class="container">
-         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="left: 0; right: 0; top: 0; height: 60px">
-            <img src="Images/hype%20logo.png" />
-         </nav>
-        </div>
-        <div>
-        <br />
-        <br />
     <form id="form1" runat="server">
+        <div class="container" >
+     <div class="headerAccoutSetting">
+         <div class="row navbar navbar-expand-sm bg-dark fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
+             <div class="col-md-2"> 
+                 <img src="Images/hype%20logo.png" />
+             </div>
+             <div class="col-md-6"></div>
+             <div class="col-md-2">
+                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="Blue" CausesValidation="False" OnClick="Button2_Click1" /></div>
+             <div class="col-md-2">
+                 <div class="dropdown">
+                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
+                         <asp:ListItem>en</asp:ListItem>
+                         <asp:ListItem>English</asp:ListItem>
+                         <asp:ListItem>Hindi</asp:ListItem>
+                         <asp:ListItem>Kannada</asp:ListItem>
+                         <asp:ListItem></asp:ListItem>
+                     </asp:DropDownList>
+                 </div>
+             </div>
+         </div>
+     </div>
+       <%-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
+           
+               
+        </nav>--%>
+    </div>
+        <br />
+        <br />
     <div class="container" style="padding-top:160px;padding-bottom:100px">
     <div class="col-md-6 mx-auto">
         <div class="card" >

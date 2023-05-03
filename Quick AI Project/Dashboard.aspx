@@ -7,15 +7,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-      <link href="Fonstawesome/css/all.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="Fonstawesome/css/all.css" rel="stylesheet" />
     <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.0.0.min.js"></script>
-     <link href="Content/bootstrap.min.css" rel="stylesheet" /> 
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Css/Style.css" rel="stylesheet" />
-    <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     
     <style type="text/css">
         .auto-style2 {
@@ -41,25 +41,35 @@
 
     </head>
     <body>   
- <div class="container" >
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
-            <img src="Images/hype%20logo.png" />
-        </nav>
-    </div>              
     <form id="form1" runat="server">
-        <div class="auto-style2">
-            <br />
-            <div class="header-widget" >
-                <asp:DropDownList ID="DropDownList1" class="btn btn-primary "  runat="server" BackColor="Blue" ForeColor="White" Width="165px" Height="40px" align="right">
-                        <asp:ListItem>Select Language</asp:ListItem>
-                        <asp:ListItem>English</asp:ListItem>
-                        <asp:ListItem>Hindi</asp:ListItem>
-                        <asp:ListItem>Marathi</asp:ListItem>
-                    </asp:DropDownList>
-            </div>
-            <br />
+ <div class="container" >
+     <div class="headerAccoutSetting">
+         <div class="row navbar navbar-expand-sm bg-dark fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
+             <div class="col-md-2"> 
+                 <img src="Images/hype%20logo.png" />
+             </div>
+             <div class="col-md-8"></div>
+             <div class="col-md-2">
+                 <div class="dropdown">
+                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
+                         <asp:ListItem>en</asp:ListItem>
+                         <asp:ListItem>English</asp:ListItem>
+                         <asp:ListItem>Hindi</asp:ListItem>
+                         <asp:ListItem>Kannada</asp:ListItem>
+                         <asp:ListItem></asp:ListItem>
+                     </asp:DropDownList>
+                 </div>
+             </div>
+         </div>
+     </div>
+       <%-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
+           
+               
+        </nav>--%>
+    </div>              
+       
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        </div>
+      
         <div class="main_box">
         <div class="sidebar">
             <div class="logo">
@@ -83,12 +93,12 @@
                 <li><a href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
             </ul>
 
-        </div>
             </div>
             </div>
-    <div class="container background-color:lightgrey" >
-        <div class="dash"><h3>Dashboard</h3>
-        <div class="row">
+            </div>
+            <div class="container background-color:lightgrey" >
+            <div class="dash"><h3>Dashboard</h3>
+            <div class="row">
             <div class="col-md-2">
                 <div id="WordsUsed">
                     <span>Words Used</span>
@@ -99,7 +109,7 @@
                      <i class="fa fa-line-chart" style="font-size:60px;color:lightpink" aria-hidden="true"></i>
                 </div>               
             </div>
-            <div class="col-md-2"></div>
+          <div class="col-md-2"></div>
                  <div id="ImagesUsed">
                     <span>ImagesUsed</span>
                       <h4>
@@ -108,8 +118,8 @@
                     </h4>
                      <i class="fa-solid fa-chart-simple" style="font-size:60px;color:lightgreen"></i>
                   </div>
-                <div class="col-md-2"></div>
-              <div class="col-md-3">
+               <div class="col-md-2"></div>
+              <div class="col-md-2">
                  <div id="Speechtotext">
                     <span>Speech To Text</span>
                       <h4>
@@ -131,7 +141,7 @@
                  </div>
               </div>
             <%-- Footer Part Code Here --%>
-            <hr dotline="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
+            <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
         <footer>               
             <div class="container-fluid">
                 <div id="footnew" >      
