@@ -8,6 +8,7 @@
        <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="Fonstawesome/css/all.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <style type="text/css">
         .auto-style1 {
             margin-top: 0px;
@@ -40,8 +41,7 @@
         }
     </style>
     </head>
-    <body>
-        
+    <body>  
     <form id="form1" runat="server">
         <div class="container" >
      <div class="headerAccoutSetting">
@@ -65,10 +65,6 @@
              </div>
          </div>
      </div>
-       <%-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
-           
-               
-        </nav>--%>
     </div>
     <span class="auto-style1"><br class="auto-style3" />
              <asp:Button ID="Button4"  class="btn btn-primary" runat="server" BackColor="Black" CausesValidation="False" ForeColor="White" OnClick="Button4_Click" Text="Back" />

@@ -8,6 +8,7 @@
     <link href="Fonstawesome/css/all.css" rel="stylesheet" />
     <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
      <link href="Content/bootstrap.min.css" rel="stylesheet" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
         .auto-style1 {
             font-size: xx-large;

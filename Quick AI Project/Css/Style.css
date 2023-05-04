@@ -112,8 +112,10 @@ p.ex1{
 }
 #WordsUsed {
     height: 150px;
-    width: 200px;
+    width: 289px;
     box-shadow: 2px 2px 5px grey;
+    margin-right:10px;
+   
 }
 .dotline {
     border-style: none;
@@ -123,12 +125,13 @@ p.ex1{
 }
 #ImagesUsed {
     height:150px;
-    width:200px;
+    width:289px;
     box-shadow:2px 2px 5px grey;
+    margin-right:10px;
 }
 #Speechtotext {
     height:150px;
-    width:200px;
+    width:289px;
     box-shadow:2px 2px 5px grey;
 }
 .class{
@@ -138,8 +141,9 @@ p.ex1{
 }
 .chart {
     height:580px;
-    width:1077px;
+    width:880px;
     box-shadow:2px 2px 5px grey;
+    margin-top:-50px;
 }
 .dropdown{
     position:relative;
@@ -160,13 +164,18 @@ p.ex1{
     box-shadow: 0 0 6px grey;
    
 }
+.sidebar ul li{
+    margin-left:-10px;
+}
 
 
 .dash{
     margin: 120px;
 }
 .chart{
-    margin:120px;
+    margin:130px;
+    margin-right:10px;
+    padding-right:30px;
 }
 .rownew{
    text-align:center;
@@ -201,5 +210,13 @@ p.ex1{
 .sidebar .menu li:hover{
     border-left: 1px solid thick;
     box-shadow: 2px 2px 6px grey;
+}
+
+.col-lg-2 {
+    padding-bottom:30px;
+}
+
+.sidebar .menu .li{
+    margin-right:30px;
 }
 

@@ -8,18 +8,7 @@
      <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Fonstawesome/css/all.css" rel="stylesheet" />
     <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
-    <style type="text/css">
-        .auto-style10 {
-            width: 100%;
-            max-width: 1140px;
-            min-width: 992px;
-            height: 343px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </head>
     <body>
     <form id="form1" runat="server">
@@ -31,7 +20,7 @@
              </div>
              <div class="col-md-6"></div>
              <div class="col-md-2">
-                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="Blue" CausesValidation="False" OnClick="Button2_Click1" /></div>
+                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="Blue" CausesValidation="False" /></div>
              <div class="col-md-2">
                  <div class="dropdown">
                      <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
@@ -45,10 +34,6 @@
              </div>
          </div>
      </div>
-       <%-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
-           
-               
-        </nav>--%>
     </div>
         <br />
         <br />
@@ -122,7 +107,6 @@
            </div>
          </div>
        </form>
-     </div>
     <br />
     <br />
     <footer>

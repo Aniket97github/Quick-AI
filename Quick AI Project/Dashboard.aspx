@@ -15,12 +15,13 @@
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Css/Style.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.0.0.slim.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     
     <style type="text/css">
-        .auto-style2 {
-            text-align: center;
-        }
         .auto-style4 {
             height: 0px;
         }
@@ -36,40 +37,106 @@
                     font-size: 18px;
                 }
         }
+        .auto-style5 {
+            position: relative;
+            width: 77%;
+            -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+            max-width: 16.666667%;
+            min-height: 1px;
+            -webkit-box-flex: 0;
+            left: 200px;
+            top: 150px;
+            height: 0px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .auto-style6 {
+            position: relative;
+            width: 100%;
+            -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+            max-width: 16.666667%;
+            min-height: 1px;
+            -webkit-box-flex: 0;
+            left: 0px;
+            top: -9px;
+            height: 4px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .auto-style7 {
+            height: 72px;
+        }
+        .auto-style8 {
+            font-size: 22px;
+            color: grey;
+            position: relative;
+            top: -1%;
+            transform: translate3d(0,-50%,0);
+            left: 0px;
+            height: 358px;
+        }
+        .auto-style9 {
+            position: relative;
+            width: 100%;
+            -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+            max-width: 16.666667%;
+            min-height: 1px;
+            -webkit-box-flex: 0;
+            left: 0px;
+            top: 0px;
+            height: 69px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     </head>
     <body>   
     <form id="form1" runat="server">
- <div class="container" >
+   <div class="container" >
      <div class="headerAccoutSetting">
          <div class="row navbar navbar-expand-sm bg-dark fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
              <div class="col-md-2"> 
                  <img src="Images/hype%20logo.png" />
              </div>
-             <div class="col-md-8"></div>
+             <div class="col-md-6"></div>
              <div class="col-md-2">
-                 <div class="dropdown">
-                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
-                         <asp:ListItem>en</asp:ListItem>
-                         <asp:ListItem>English</asp:ListItem>
-                         <asp:ListItem>Hindi</asp:ListItem>
-                         <asp:ListItem>Kannada</asp:ListItem>
-                         <asp:ListItem></asp:ListItem>
-                     </asp:DropDownList>
-                 </div>
+               <div class="dropdown">
+               <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <img style="height:50px;width:50px;" src="Images/Profile%20UI%20Icon.png" />
+               </a>
+              <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#"><i  class="fas fa-qrcode"></i>Dashboard</a></li>
+             <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
+             <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-image"></i>AI Images</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-message"></i>AI Chat</a></li>
+             <li><a class="dropdown-item" href="#">  <i class="fas fa-headphones"></i>Speech to Text</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-link"></i>Affiliate Program</a></li>
+             <li><a class="dropdown-item" href="#">  <i class="fas fa-gift"></i>Membership</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-note-sticky"></i>Transactions</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-door-open"></i>Account Settings</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
+            </ul>
              </div>
+                 </div>
+             <div class="col-md-2">
+                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary">
+                     <asp:ListItem>en</asp:ListItem>
+                     <asp:ListItem>English</asp:ListItem>
+                     <asp:ListItem>Hindi</asp:ListItem>
+                     <asp:ListItem>Marathi</asp:ListItem>
+                 </asp:DropDownList>                               
+             </div>
+             </div>
+        
          </div>
-     </div>
-       <%-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
-           
-               
-        </nav>--%>
-    </div>              
-       
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-      
+       </div>
+           <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <div class="main_box">
         <div class="sidebar">
             <div class="logo">
@@ -80,7 +147,7 @@
                <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                 <li><a href="#"><i class="fas fa-file"></i>My Documents</a></li>
                 <header style="color:blue">Organize and Manage</header>
-                <li><a href="#"><i class="fas fa-stack-overflow"></i>Templates</a></li>
+                <li><a href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
                 <li><a href="#"><i class="fas fa-image"></i>AI Images</a></li>
                 <li><a href="#"><i class="fas fa-message"></i>AI Chat</a></li>
                 <li><a href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
@@ -92,14 +159,14 @@
                 <li><a href="#"><i class="fas fa-door-open"></i>Account Setting</a></li>
                 <li><a href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
             </ul>
-
             </div>
             </div>
             </div>
+        
             <div class="container background-color:lightgrey" >
             <div class="dash"><h3>Dashboard</h3>
-            <div class="row">
-            <div class="col-md-2">
+            <div style="padding-left:12px;" class="row">
+          <div class="col-sm-4">
                 <div id="WordsUsed">
                     <span>Words Used</span>
                       <h4>
@@ -107,9 +174,10 @@
                     <small>10,000</small>
                     </h4>
                      <i class="fa fa-line-chart" style="font-size:60px;color:lightpink" aria-hidden="true"></i>
-                </div>               
-            </div>
-          <div class="col-md-2"></div>
+                </div>  
+              </div>
+            
+          <div class="col-sm-4">
                  <div id="ImagesUsed">
                     <span>ImagesUsed</span>
                       <h4>
@@ -118,8 +186,8 @@
                     </h4>
                      <i class="fa-solid fa-chart-simple" style="font-size:60px;color:lightgreen"></i>
                   </div>
-               <div class="col-md-2"></div>
-              <div class="col-md-2">
+               </div>
+              <div class="col-sm-4">
                  <div id="Speechtotext">
                     <span>Speech To Text</span>
                       <h4>
@@ -130,10 +198,11 @@
                 </div>
             </div> 
          </div>
+                </div>
       </div>
-     </div>
+    
         <div class="container">
-            <div class="chart">
+            <div style="   margin-top:-90px;" class="chart">
                 <p>Words Used in this Month</p>
                   <div>
                    <canvas id="myChart"></canvas>

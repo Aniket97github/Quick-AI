@@ -13,12 +13,6 @@
         .auto-style2 {
             text-align: center;
         }
-        .auto-style5 {
-            color: #3366FF;
-        }
-        .auto-style4 {
-            color: #0066FF;
-        }
         </style>
        </head>
        <body>
@@ -71,8 +65,8 @@
                   </div>
                   <div class="row">
                       <div class="col">
-                      <label class="align-content-left">Password</label>
-                      <div class="input-group">
+                      &nbsp;<div class="input-group">
+                      <label class="align-content-left">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
                       <span class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
                       <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                       <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
@@ -84,18 +78,16 @@
                   </div>
                   <div class="row">
                       <div class="col">
-                          <label class="align-left">Confirm Password</label>
-                          <div class="input-group">
+                          &nbsp;<div class="input-group">
+                          <label style:"align-left">Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
                          <span class="input-group-text  align-content-left"><i class="fa-solid fa-lock"></i></span>
                          <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                          <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox2" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                          </div>                     
                     <div class="row">
                       <div class="col">
-                          <label class="align-left">Forgot Question</label>
-                          <div class="input-group">
-                          <span class="input-group-text align-content-left"><i class="fa-solid fa-lock"></i></span>
-                          <asp:TextBox ID="TextBox4" runat="server" style="margin-left: 0px"></asp:TextBox>
+                          &nbsp;<div class="input-group">
+                          <label class="align-left">Forgot Question</label><span class="input-group-text align-content-left"><i class="fa-solid fa-lock"></i></span><asp:TextBox ID="TextBox4" runat="server" style="margin-left: 0px"></asp:TextBox>
                           <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox4" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           <div class="form-group">
                               <br>
