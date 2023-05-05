@@ -19,7 +19,7 @@
     <form id="form1" runat="server">
            <div class="container" >
      <div class="headerAccoutSetting">
-         <div class="row navbar navbar-expand-sm bg-dark fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
+         <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
              <div class="col-md-2"> 
                  <img src="Images/hype%20logo.png" />
              </div>

@@ -19,7 +19,7 @@
       <form id="form1" runat="server">
           <div class="container" >
        <div class="headerAccoutSetting">
-         <div class="row navbar navbar-expand-sm bg-dark fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
+         <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
              <div class="col-md-2"> 
                  <img src="Images/hype%20logo.png" />
              </div>
@@ -66,7 +66,7 @@
                   <div class="row">
                       <div class="col">
                       &nbsp;<div class="input-group">
-                      <label class="align-content-left">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                      <label class="align-content-left">Password </label>
                       <span class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
                       <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                       <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
@@ -79,7 +79,7 @@
                   <div class="row">
                       <div class="col">
                           &nbsp;<div class="input-group">
-                          <label style:"align-left">Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                          <label style:"align-left">Confirm Password </label>
                          <span class="input-group-text  align-content-left"><i class="fa-solid fa-lock"></i></span>
                          <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                          <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox2" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>

@@ -188,7 +188,7 @@ p.ex1{
 
 .sidebar .menu li{
     margin-top:6px;
-    padding: 6px 10px;
+    padding: 7px 10px;
     color:grey;
     list-style:none;
 }
@@ -217,6 +217,46 @@ p.ex1{
 }
 
 .sidebar .menu .li{
-    margin-right:30px;
+    margin-left:30px;
+}
+.sidebar header {
+    margin-left: -19px;
+}
+.logo header{
+    margin-left:14px;
+}
+.mainbox .sidebar .menu .ul #header {
+    position: absolute;
+    left: 0;
+    margin-left: -10px;
 }
 
+.AccountBox{
+    margin-top:200px;
+    height:400px;
+    width:1000px;
+    box-shadow:2px 2px 5px grey;
+    position:relative;
+    margin-left:152px;
+    padding-bottom:35px;
+}
+.AccountBox2 {
+    height: 700px;
+    width:1000px;
+    box-shadow: 2px 2px 5px grey;
+    position:relative;
+    margin-left:150px;
+    margin-top:30px;
+    padding-top:5px;
+}
+
+.submitdata {
+    /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+}

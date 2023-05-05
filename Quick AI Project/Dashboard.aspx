@@ -98,7 +98,7 @@
     <form id="form1" runat="server">
    <div class="container" >
      <div class="headerAccoutSetting">
-         <div class="row navbar navbar-expand-sm bg-dark fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
+         <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
              <div class="col-md-2"> 
                  <img src="Images/hype%20logo.png" />
              </div>
@@ -156,7 +156,7 @@
                 <li><a href="#"><i class="fas fa-link"></i>Affilate Program</a></li>
                 <li><a href="#"><i class="fas fa-gift"></i>Membership</a></li>
                 <li><a href="#"><i class="fas fa-note-sticky"></i>Transactions</a></li>
-                <li><a href="#"><i class="fas fa-door-open"></i>Account Setting</a></li>
+                <li><a href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Setting</a></li>
                 <li><a href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
             </ul>
             </div>
