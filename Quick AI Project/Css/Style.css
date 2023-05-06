@@ -241,7 +241,7 @@ p.ex1{
     padding-bottom:35px;
 }
 .AccountBox2 {
-    height: 700px;
+    height: 800px;
     width:1000px;
     box-shadow: 2px 2px 5px grey;
     position:relative;
@@ -260,3 +260,38 @@ p.ex1{
     display: inline-block;
     font-size: 8px;
 }
+
+.newbtn {
+    /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+}
+
+.Transactionbox {
+    height:100px;
+    width:1000px;
+    box-shadow:2px 2px 5px grey;
+    position:relative;
+   margin-top:250px;
+   margin-left:50px;
+   margin-bottom:40px;
+
+}
+
+.container .col-md-12  .breadcrumbs {
+    padding:30px;
+    height:20px;
+    width:30px;
+    color:black;
+    box-shadow:2px 2px 3px;
+}
+.textof{
+    text-align:center;
+    padding:10px;
+}
+
