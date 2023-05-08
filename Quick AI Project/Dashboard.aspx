@@ -96,139 +96,164 @@
     </head>
     <body>   
     <form id="form1" runat="server">
-   <div class="container" >
-     <div class="headerAccoutSetting">
-         <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
-             <div class="col-md-2"> 
-                 <img src="Images/hype%20logo.png" />
-             </div>
-             <div class="col-md-6"></div>
-             <div class="col-md-2">
-               <div class="dropdown">
-               <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               <img style="height:50px;width:50px;" src="Images/Profile%20UI%20Icon.png" />
-               </a>
-              <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#"><i  class="fas fa-qrcode"></i>Dashboard</a></li>
-             <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
-             <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-image"></i>AI Images</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-message"></i>AI Chat</a></li>
-             <li><a class="dropdown-item" href="#">  <i class="fas fa-headphones"></i>Speech to Text</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-link"></i>Affiliate Program</a></li>
-             <li><a class="dropdown-item" href="#">  <i class="fas fa-gift"></i>Membership</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-note-sticky"></i>Transactions</a></li>
-             <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"> <i class="fas fa-door-open"></i>Account Settings</a></li>
-             <li><a class="dropdown-item" href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
-            </ul>
-             </div>
-                 </div>
-             <div class="col-md-2">
-                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary">
-                     <asp:ListItem>en</asp:ListItem>
-                     <asp:ListItem>English</asp:ListItem>
-                     <asp:ListItem>Hindi</asp:ListItem>
-                     <asp:ListItem>Marathi</asp:ListItem>
-                 </asp:DropDownList>                               
-             </div>
-             </div>
-        
-         </div>
-       </div>
-           <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        <div class="main_box">
-        <div class="sidebar">
-            <div class="logo">
-            <header style="color:blue"> My Account</header>
-            </div>
-            <div class="menu">
-            <ul>
-               <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
-                <li><a href="#"><i class="fas fa-file"></i>My Documents</a></li>
-                <header style="color:blue">Organize and Manage</header>
-                <li><a href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-                <li><a href="#"><i class="fas fa-image"></i>AI Images</a></li>
-                <li><a href="#"><i class="fas fa-message"></i>AI Chat</a></li>
-                <li><a href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
-                <li><a href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
-                <header style="color:blue">Account</header>
-                <li><a href="#"><i class="fas fa-link"></i>Affilate Program</a></li>
-                <li><a href="#"><i class="fas fa-gift"></i>Membership</a></li>
-                <li><a href="#"><i class="fas fa-note-sticky"></i>Transactions</a></li>
-                <li><a href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Setting</a></li>
-                <li><a href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
-            </ul>
-            </div>
-            </div>
-            </div>
-        
-            <div class="container background-color:lightgrey" >
-            <div class="dash"><h3>Dashboard</h3>
-            <div style="padding-left:12px;" class="row">
-          <div class="col-sm-4">
-                <div id="WordsUsed">
-                    <span>Words Used</span>
-                      <h4>
-                      0/
+        <div>
+            <header>
+                <div class="container">
+                    <div class="headerAccoutSetting">
+                        <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex; box-shadow: 2px 2px 5px grey;">
+                            <div class="col-md-2">
+                                <img src="Images/hype%20logo.png" />
+                            </div>
+
+                            <div class="col-md-2">
+                                <a href="javascript:void(0);" class="header-icon">
+                                    <i class="fa fa-bars" id="icon"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-2">
+                                <div class="dropdown">
+                                    <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-image"></i>AI Images</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-message"></i>AI Chat</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-link"></i>Affiliate Program</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-gift"></i>Membership</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Settings</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary">
+                                    <asp:ListItem>en</asp:ListItem>
+                                    <asp:ListItem>English</asp:ListItem>
+                                    <asp:ListItem>Hindi</asp:ListItem>
+                                    <asp:ListItem>Marathi</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                
+            <div class="main_box">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <div class="logo">
+                            <h6 style="color: blue">My Account</h6>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                                <li><a href="#"><i class="fas fa-file"></i>My Documents</a></li>
+                                <h6 style="color: blue">Organize and Manage</h6>
+                                <li><a href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
+                                <li><a href="#"><i class="fas fa-image"></i>AI Images</a></li>
+                                <li><a href="#"><i class="fas fa-message"></i>AI Chat</a></li>
+                                <li><a href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
+                                <li><a href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+                                <h6 style="color: blue">Account</h6>
+                                <li><a href="#"><i class="fas fa-link"></i>Affilate Program</a></li>
+                                <li><a href="#"><i class="fas fa-gift"></i>Membership</a></li>
+                                <li><a href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
+                                <li><a href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Setting</a></li>
+                                <li><a href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-lg-9">
+                        
+            <div class="container background-color:lightgrey">
+                <div class="dash">
+                    <h3>Dashboard</h3>
+                    <div style="padding-left: 12px;margin-left: -150px;" class="row">
+                        <div class="col-sm-4">
+                            <div id="WordsUsed">
+                                <span>Words Used</span>
+                                <h4>0/
                     <small>10,000</small>
-                    </h4>
-                     <i class="fa fa-line-chart" style="font-size:60px;color:lightpink" aria-hidden="true"></i>
-                </div>  
-              </div>
-            
-          <div class="col-sm-4">
-                 <div id="ImagesUsed">
-                    <span>ImagesUsed</span>
-                      <h4>
-                      0/
+                                </h4>
+                                <i class="fa fa-line-chart" style="font-size: 60px; color: lightpink" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div id="ImagesUsed">
+                                <span>ImagesUsed</span>
+                                <h4>0/
                     <small>100</small>
-                    </h4>
-                     <i class="fa-solid fa-chart-simple" style="font-size:60px;color:lightgreen"></i>
-                  </div>
-               </div>
-              <div class="col-sm-4">
-                 <div id="Speechtotext">
-                    <span>Speech To Text</span>
-                      <h4>
-                      0/
+                                </h4>
+                                <i class="fa-solid fa-chart-simple" style="font-size: 60px; color: lightgreen"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div id="Speechtotext">
+                                <span>Speech To Text</span>
+                                <h4>0/
                     <small>0</small>
-                    </h4>
-                     <i class="fa-solid fa-headset" style="font-size:60px;color:orange"></i>
+                                </h4>
+                                <i class="fa-solid fa-headset" style="font-size: 60px; color: orange"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div> 
-         </div>
+            </div>
+
+            <div class="container">
+                <div style="margin-top: -90px; margin-left:1px;  " class="chart">
+                    <p>Words Used in this Month</p>
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
+            </div>
+                   
+                </div>
+            </div>
       </div>
-    
-        <div class="container">
-            <div style="   margin-top:-90px;" class="chart">
-                <p>Words Used in this Month</p>
-                  <div>
-                   <canvas id="myChart"></canvas>
-                   </div>
-                 </div>
-              </div>
+                
+                </main>
             <%-- Footer Part Code Here --%>
             <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
-        <footer>               
-            <div class="container-fluid">
-                <div id="footnew" >      
-                      <div class="rownew"><br />
-                            <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>   
-                        <div class="col-mg-3"></div>
-                        <div class="img">
-                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>  
-		                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
+            <footer>
+                <div class="container-fluid">
+                    <div id="footnew">
+                        <div class="rownew">
+                            <br />
+                            <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>
+                            <div class="col-mg-3"></div>
+                            <div class="img">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
 		                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-		                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-		                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-		                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                         </div>
-                       </div>
+                                <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
                     </div>
-               </div>            
-         </footer>
+
+                </div>
+
+            </footer>
+
+        </div>
+                
       </form>
          <script>
                const ctx = document.getElementById('myChart');
@@ -261,5 +286,6 @@
                }
                });
         </script>
+        <script type="text/javascript">            $("#icon").on("click", function () {                $(".sidebar").toggle();                $(".col-lg-9").toggleClass('col-lg-12 full-width');            });    </script>
     </body>
 </html>

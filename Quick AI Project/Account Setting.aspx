@@ -17,6 +17,7 @@
     <script src="Scripts/jquery-3.0.0.slim.min.js"></script>
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript%20Account%20Setting.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -44,7 +45,7 @@
              <li><a class="dropdown-item" href="#"> <i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
              <li><a class="dropdown-item" href="#"> <i class="fas fa-link"></i>Affiliate Program</a></li>
              <li><a class="dropdown-item" href="#">  <i class="fas fa-gift"></i>Membership</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-note-sticky"></i>Transactions</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"> <i class="fas fa-note-sticky"></i>Transactions</a></li>
              <li><a class="dropdown-item" href="#"> <i class="fas fa-door-open"></i>Account Settings</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
             </ul>
@@ -79,7 +80,7 @@
                 <header style="color:blue">Account</header>
                 <li><a href="#"><i class="fas fa-link"></i>Affilate Program</a></li>
                 <li><a href="#"><i class="fas fa-gift"></i>Membership</a></li>
-                <li><a href="#"><i class="fas fa-note-sticky"></i>Transactions</a></li>
+                <li><a href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
                 <li><a href="#"><i class="fas fa-door-open"></i>Account Setting</a></li>
                 <li><a href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
             </ul>
@@ -155,24 +156,19 @@
                   </div><br />
                    <div class="col-md-12">
                        <div class="row">
-                            <div class="submit-field"><br />
-                          <h5>Type</h5><br />
-                          <div class="input-group dropdown">
-                              <asp:DropDownList ID="DropDownList2" runat="server"  CssClass="btn btn-primary bt-lg">
-                                  <asp:ListItem Value="Personal">Personal</asp:ListItem>
-                                  <asp:ListItem Value="Buisness">Buisness</asp:ListItem>
-                              </asp:DropDownList>
-                           </div>
-                         </div>
+                           <select id="mySelect" onchange="myFunction()" cssclass="btn btn-primary">
+                           <option value="Personal">Personal</option>
+                           <option value="Business">Business</option>
+                           </select>
                        </div>
                    </div>  
                    <div class="col-md-12">
-                      <div style="display:none" class="submit-field"><br />
-                          <h5>Txt Id</h5><br />
-                          <div  class="input-group">
-                          <asp:TextBox ID="TextBox10" runat="server" CssClass="form-control" Height="26px"></asp:TextBox>
+                     
+                       <div id="textbox" style="display:none" cssclass="form-control" height="26px" ><br />
+                           <h5>Text ID</h5><br />
+                       <input type="text" style="width:950px"/>
                       </div>
-                    </div>
+
                   </div>
                     <div class="col-md-12">
                       <div class="submit-field"><br />
@@ -462,7 +458,7 @@
                         <option value="YE">Yemen</option>
                         <option value="ZM">Zambia</option>
                         <option value="ZW">Zimbabwe</option>
-                                  </select>
+                    </select>
                     </div>
                     <div class="newbtn"><br />
                            <asp:Button ID="Button2" runat="server" CssClass="form-control btn btn-primary btn-lg" Text="Save Changes"/>
@@ -489,5 +485,17 @@
                </div>            
          </footer>
        </form>
+    
+        <script>
+            function myFunction() {
+  var x = document.getElementById("mySelect").value;
+            if (x == "Business") {
+                document.getElementById("textbox").style.display = "block";
+  } else {
+                document.getElementById("textbox").style.display = "none";
+  }
+}
+    </script>
+   
      </body>
     </html>
