@@ -21,7 +21,7 @@ namespace Quick_AI_Project
         {
             SqlConnection con = new SqlConnection("Data Source = DESKTOP - HHOK8FO\\SQLEXPRESS; Initial Catalog = project1; Integrated Security = True");
             con.Open();
-            
+           
         }
     }
 }

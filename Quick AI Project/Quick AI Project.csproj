@@ -2156,6 +2156,8 @@
     <Content Include="JavaScript Account Setting.js" />
     <Content Include="JavaScript.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Membership page.aspx" />
+    <Content Include="Membership Plan Page.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Register2.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -2296,6 +2298,20 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Membership page.aspx.cs">
+      <DependentUpon>Membership page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Membership page.aspx.designer.cs">
+      <DependentUpon>Membership page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Membership Plan Page.aspx.cs">
+      <DependentUpon>Membership Plan Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Membership Plan Page.aspx.designer.cs">
+      <DependentUpon>Membership Plan Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">

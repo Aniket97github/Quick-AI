@@ -235,7 +235,7 @@ p.ex1{
 .AccountBox{
     margin-top:200px;
     height:400px;
-    width:1000px;
+    width:1400px;
     box-shadow:2px 2px 5px grey;
     position:relative;
     margin-left:152px;
@@ -243,7 +243,7 @@ p.ex1{
 }
 .AccountBox2 {
     height: 800px;
-    width:1000px;
+    width:1400px;
     box-shadow: 2px 2px 5px grey;
     position:relative;
     margin-left:150px;
@@ -278,9 +278,9 @@ p.ex1{
     width:1000px;
     box-shadow:2px 2px 5px grey;
     position:relative;
-   margin-top:250px;
-   margin-left:50px;
-   margin-bottom:40px;
+   margin-top:450px;
+   margin-left:220px;
+
 
 }
 
@@ -296,3 +296,50 @@ p.ex1{
     padding:10px;
 }
 
+.memcontainer{
+    margin-top:200px;
+    margin-left:300px;
+   
+
+}
+.memberchart{
+    height:150px;
+    box-shadow:2px 2px 5px grey;
+    width:900px;
+    margin-top:50px;
+}
+
+.menumember{
+ 
+    background-color:grey;
+    height:60px;
+    border-block:ridge;
+}
+.newbox{
+    box-shadow:2px 2px 5px ;
+    background-color:lightgrey;
+    height:40px;
+}
+.changeplan{
+    
+}
+.breadcrumb{
+    margin-left:750px;
+    
+}
+.membershipplan{
+    margin-top:100px;
+    margin-left:90px;
+}
+
+.membershipchart{
+    box-shadow:2px 2px 5px grey;
+    height:550px;
+    width:1000px;
+    margin-left:130px;
+    margin-bottom:50px;
+}
+.flex-column{
+    display: flex;
+    justify-content: space-between;
+}
