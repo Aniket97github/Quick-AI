@@ -75,24 +75,22 @@
             </nav>
             </div>
             <div  style="margin-left:40px"" class="row">
-                <div class="col-sm-1">
-                <input type="radio"  id="monthly" name="favlanguage" onclick="updateText(this.value);" value="monthly" />
-                <label for="monthly">Monthly</label>
-                    </div>
-                <div class="col-sm-1">
-                    <input type="radio"  id="yearly" name="favlanguage" onclick="updateText(this.value);" value="yearly" />
-                    <label for="yearly">Yearly</label>
+               <div class="section">
+              <div class="section1">
+                <div class="radio">
+               <input type="radio"  name="radio-buttons" value="monthly" onchange="enableInputField(5)"/> Monthly&nbsp; &nbsp; &nbsp;
+               <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)"/> Yearly&nbsp; &nbsp; &nbsp;
+               <input type="radio" name="radio-buttons" value="Lifetime" onchange="enableInputField(550)"/> Life Time&nbsp; &nbsp; &nbsp;
                 </div>
-                <div class="col-sm-1">
-                    <input type="radio" id="Lifetime" name="favlanguage" onclick="updateText(this.value);" value="Lifetime" />
-                    <label for="Lifetime">Lifetime</label>
+              </div>
+        </div>
                 </div>
             </div>
-            </div>
+            
             <div class="membershipchart">
  
                 <div class="row">
-                    <div style="margin-left:25px;margin-top:30px;"" class="col-md-3">
+                    <div style="margin-left:25px;margin-top:20px;"" class="col-md-3">
                         <h5>Free Plan</h5>
                         <div class="freecard " style="width:250px;height:10px">
                             <div class="alert alert-secondary" role="alert">
@@ -100,7 +98,7 @@
                                </div>
                         </div><br /><br /><br />
                             <strong>Features of Free plan</strong>
-                            <ul style="list-style:none" >
+                            <ul style="list-style:none; line-height:170%" >
                                 <li >
                                     <strong>32</strong>&nbsp AI Document Templates
                                 </li>
@@ -124,7 +122,7 @@
                                 <asp:Button ID="Button1" runat="server" Text="Current Plan" CssClass="btn btn-primary btn-lg" />
                             </ul>
                     </div>
-                    <div  style="margin-left:55px;margin-top:30px;"" class="col-lg-3">
+                    <div  style="margin-left:60px;margin-top:20px;"" class="col-lg-3">
                         <h5>Trail Plan</h5>
                         <div class="freecard " style="width:250px;height:10px">
                             <div class="alert alert-secondary" role="alert">
@@ -132,7 +130,7 @@
                                </div>
                         </div><br /><br /><br />
                             <strong>Features of Trail plan</strong>
-                            <ul style="list-style:none">
+                            <ul style="list-style:none;line-height:170%">
                                 <li >
                                     <strong>61</strong>&nbsp AI Document Templates
                                 </li>
@@ -156,15 +154,15 @@
                                 <asp:Button ID="Button2" runat="server" Text="Upgrade" CssClass="btn btn-primary btn-lg" />
                             </ul>
                      </div>
-                    <div  style="margin-left:115px;margin-top:30px;"" class="col-lg-3">
+                    <div  style="margin-left:115px;margin-top:20px;"" class="col-lg-3">
                         <h5>Extended Plan</h5>
                         <div class="freecard "  style="width:250px;height:10px">
-                            <div class="alert alert-secondary" role="alert">
-                               <h3 id="box" style="text-align:center">5Rs/Month</h3> 
+                            <div class="alert alert-primary" role="alert">
+                               <input field="text"; id="changeplan" style="text-align:center" />
                                </div>
                         </div><br /><br /><br />
                             <strong>Features of Extended plan</strong>
-                            <ul style="list-style:none">
+                            <ul style="list-style:none;line-height:170%">
                                 <li >
                                     <strong>61</strong>&nbsp AI Document Templates
                                 </li>
@@ -256,16 +254,31 @@
             </div>
       </footer>
         <script>
-            function updateText(val) {
-                if (val == monthly) {
-                    document.getElementById("box").innerHTML = "5 Rs ";
+            function enableInputField(value) {
+                const radioButtons = document.getElementsByName('radio-buttons');
+                const inputField = document.getElementById('changeplan');
+                for (let i = 0; i < radioButtons.length; i++) {
+                    if (radioButtons[i].checked) {
+                        inputField.disabled = false;
+                        switch (value) {
+                            case 5:
+                                inputField.value = "₹" + value + " per month";
+                                break;
+                            case 50:
+                                inputField.value = "₹" + value + " per year";
+                                break;
+                            case 550:
+                                inputField.value = "₹" + value + " lifetime";
+                                break;
+                            default:
+                                inputField.value = "";
+                                break;
+                        }
+                        return;
+                    }
                 }
-                else if (val == yearly) {
-                    document.getElementById("box").innerHTML = "50 rs";
-                }
-                else if (val == Lifetime) {
-                    document.getElementById("box").innerHTML = "550 rs";
-                }
+                inputField.disabled = true;
+                inputField.value = "";
             }
 
         </script>
