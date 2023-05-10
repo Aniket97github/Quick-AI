@@ -79,7 +79,7 @@
                 <li><a href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                 <header style="color:blue">Account</header>
                 <li><a href="#"><i class="fas fa-link"></i>Affilate Program</a></li>
-                <li><a href="#"><i class="fas fa-gift"></i>Membership</a></li>
+                <li><a href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                 <li><a href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
                 <li><a href="#"><i class="fas fa-door-open"></i>Account Setting</a></li>
                 <li><a href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
@@ -156,19 +156,19 @@
                   </div><br />
                    <div class="col-md-12">
                        <div class="row">
-                           <select id="mySelect" onchange="myFunction()" cssclass="btn btn-primary">
-                           <option value="Personal">Personal</option>
-                           <option value="Business">Business</option>
-                           </select>
+                           <asp:DropDownList ID="DropDownList2" onchange="myFunction()"  runat="server">
+                               <asp:ListItem>Personal</asp:ListItem>
+                               <asp:ListItem>Buisness</asp:ListItem>
+                           </asp:DropDownList>
                        </div>
-                   </div>  
+                   </div>    
                    <div class="col-md-12">
-                     
-                       <div id="textbox" style="display:none" cssclass="form-control" height="26px" ><br />
-                           <h5>Text ID</h5><br />
-                       <input type="text" style="width:950px"/>
+                       <div class="submit-field">
+                      <div id="Headtext"  style="display:none" ><h5>Text ID</h5></div><br />
+                       <asp:TextBox id="TextBox10" style="display:none" runat="server" cssclass="form-control" height="26px" >
+                      </asp:TextBox>
+                         
                       </div>
-
                   </div>
                     <div class="col-md-12">
                       <div class="submit-field"><br />
@@ -216,252 +216,252 @@
                    </div>
                    <div class="col-md-12">
                        <h5>Country</h5><br />
-                       <select class="form-select" id="country" name="country">
-                        <option>select country</option>
-                        <option value="AF">Afghanistan</option>
-                        <option value="AX">Aland Islands</option>
-                        <option value="AL">Albania</option>
-                        <option value="DZ">Algeria</option>
-                        <option value="AS">American Samoa</option>
-                        <option value="AD">Andorra</option>
-                        <option value="AO">Angola</option>
-                        <option value="AI">Anguilla</option>
-                        <option value="AQ">Antarctica</option>
-                        <option value="AG">Antigua and Barbuda</option>
-                        <option value="AR">Argentina</option>
-                        <option value="AM">Armenia</option>
-                        <option value="BM">Bermuda</option>
-                        <option value="BT">Bhutan</option>
-                        <option value="BO">Bolivia</option>
-                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
-                        <option value="BA">Bosnia and Herzegovina</option>
-                        <option value="BW">Botswana</option>
-                        <option value="BV">Bouvet Island</option>
-                        <option value="BR">Brazil</option>
-                        <option value="IO">British Indian Ocean Territory</option>
-                        <option value="BN">Brunei Darussalam</option>
-                        <option value="BG">Bulgaria</option>
-                        <option value="BF">Burkina Faso</option>
-                        <option value="BI">Burundi</option>
-                        <option value="KH">Cambodia</option>
-                        <option value="CM">Cameroon</option>
-                        <option value="CA">Canada</option>
-                        <option value="CV">Cape Verde</option>
-                        <option value="KY">Cayman Islands</option>
-                        <option value="CF">Central African Republic</option>
-                        <option value="TD">Chad</option>
-                        <option value="CL">Chile</option>
-                        <option value="CN">China</option>
-                        <option value="CX">Christmas Island</option>
-                        <option value="CC">Cocos (Keeling) Islands</option>
-                        <option value="CO">Colombia</option>
-                        <option value="KM">Comoros</option>
-                        <option value="CG">Congo</option>
-                        <option value="CD">Congo, Democratic Republic of the Congo</option>
-                        <option value="CK">Cook Islands</option>
-                        <option value="CR">Costa Rica</option>
-                        <option value="CI">Cote D'Ivoire</option>
-                        <option value="HR">Croatia</option>
-                        <option value="CU">Cuba</option>
-                        <option value="CW">Curacao</option>
-                        <option value="CY">Cyprus</option>
-                        <option value="CZ">Czech Republic</option>
-                        <option value="DK">Denmark</option>
-                        <option value="DJ">Djibouti</option>
-                        <option value="DM">Dominica</option>
-                        <option value="DO">Dominican Republic</option>
-                        <option value="EC">Ecuador</option>
-                        <option value="EG">Egypt</option>
-                        <option value="SV">El Salvador</option>
-                        <option value="GQ">Equatorial Guinea</option>
-                        <option value="ER">Eritrea</option>
-                        <option value="EE">Estonia</option>
-                        <option value="ET">Ethiopia</option>
-                        <option value="FK">Falkland Islands (Malvinas)</option>
-                        <option value="FO">Faroe Islands</option>
-                        <option value="FJ">Fiji</option>
-                        <option value="FI">Finland</option>
-                        <option value="FR">France</option>
-                        <option value="GF">French Guiana</option>
-                        <option value="PF">French Polynesia</option>
-                        <option value="TF">French Southern Territories</option>
-                        <option value="GA">Gabon</option>
-                        <option value="GM">Gambia</option>
-                        <option value="GE">Georgia</option>
-                        <option value="DE">Germany</option>
-                        <option value="GH">Ghana</option>
-                        <option value="GI">Gibraltar</option>
-                        <option value="GR">Greece</option>
-                        <option value="GL">Greenland</option>
-                        <option value="GD">Grenada</option>
-                        <option value="GP">Guadeloupe</option>
-                        <option value="GU">Guam</option>
-                        <option value="GT">Guatemala</option>
-                        <option value="GG">Guernsey</option>
-                        <option value="GN">Guinea</option>
-                        <option value="GW">Guinea-Bissau</option>
-                        <option value="GY">Guyana</option>
-                        <option value="HT">Haiti</option>
-                        <option value="HM">Heard Island and Mcdonald Islands</option>
-                        <option value="VA">Holy See (Vatican City State)</option>
-                        <option value="HN">Honduras</option>
-                        <option value="HK">Hong Kong</option>
-                        <option value="HU">Hungary</option>
-                        <option value="IS">Iceland</option>
-                        <option value="IN">India</option>
-                        <option value="ID">Indonesia</option>
-                        <option value="IR">Iran, Islamic Republic of</option>
-                        <option value="IQ">Iraq</option>
-                        <option value="IE">Ireland</option>
-                        <option value="IM">Isle of Man</option>
-                        <option value="IL">Israel</option>
-                        <option value="IT">Italy</option>
-                        <option value="JM">Jamaica</option>
-                        <option value="JP">Japan</option>
-                        <option value="JE">Jersey</option>
-                        <option value="JO">Jordan</option>
-                        <option value="KZ">Kazakhstan</option>
-                        <option value="KE">Kenya</option>
-                        <option value="KI">Kiribati</option>
-                        <option value="KP">Korea, Democratic People's Republic of</option>
-                        <option value="KR">Korea, Republic of</option>
-                        <option value="XK">Kosovo</option>
-                        <option value="KW">Kuwait</option>
-                        <option value="KG">Kyrgyzstan</option>
-                        <option value="LA">Lao People's Democratic Republic</option>
-                        <option value="LV">Latvia</option>
-                        <option value="LB">Lebanon</option>
-                        <option value="LS">Lesotho</option>
-                        <option value="LR">Liberia</option>
-                        <option value="LY">Libyan Arab Jamahiriya</option>
-                        <option value="LI">Liechtenstein</option>
-                        <option value="LT">Lithuania</option>
-                        <option value="LU">Luxembourg</option>
-                        <option value="MO">Macao</option>
-                        <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
-                        <option value="MG">Madagascar</option>
-                        <option value="MW">Malawi</option>
-                        <option value="MY">Malaysia</option>
-                        <option value="MV">Maldives</option>
-                        <option value="ML">Mali</option>
-                        <option value="MT">Malta</option>
-                        <option value="MH">Marshall Islands</option>
-                        <option value="MQ">Martinique</option>
-                        <option value="MR">Mauritania</option>
-                        <option value="MU">Mauritius</option>
-                        <option value="YT">Mayotte</option>
-                        <option value="MX">Mexico</option>
-                        <option value="FM">Micronesia, Federated States of</option>
-                        <option value="MD">Moldova, Republic of</option>
-                        <option value="MC">Monaco</option>
-                        <option value="MN">Mongolia</option>
-                        <option value="ME">Montenegro</option>
-                        <option value="MS">Montserrat</option>
-                        <option value="MA">Morocco</option>
-                        <option value="MZ">Mozambique</option>
-                        <option value="MM">Myanmar</option>
-                        <option value="NA">Namibia</option>
-                        <option value="NR">Nauru</option>
-                        <option value="NP">Nepal</option>
-                        <option value="NL">Netherlands</option>
-                        <option value="AN">Netherlands Antilles</option>
-                        <option value="NC">New Caledonia</option>
-                        <option value="NZ">New Zealand</option>
-                        <option value="NI">Nicaragua</option>
-                        <option value="NE">Niger</option>
-                        <option value="NG">Nigeria</option>
-                        <option value="NU">Niue</option>
-                        <option value="NF">Norfolk Island</option>
-                        <option value="MP">Northern Mariana Islands</option>
-                        <option value="NO">Norway</option>
-                        <option value="OM">Oman</option>
-                        <option value="PK">Pakistan</option>
-                        <option value="PW">Palau</option>
-                        <option value="PS">Palestinian Territory, Occupied</option>
-                        <option value="PA">Panama</option>
-                        <option value="PG">Papua New Guinea</option>
-                        <option value="PY">Paraguay</option>
-                        <option value="PE">Peru</option>
-                        <option value="PH">Philippines</option>
-                        <option value="PN">Pitcairn</option>
-                        <option value="PL">Poland</option>
-                        <option value="PT">Portugal</option>
-                        <option value="PR">Puerto Rico</option>
-                        <option value="QA">Qatar</option>
-                        <option value="RE">Reunion</option>
-                        <option value="RO">Romania</option>
-                        <option value="RU">Russian Federation</option>
-                        <option value="RW">Rwanda</option>
-                        <option value="BL">Saint Barthelemy</option>
-                        <option value="SH">Saint Helena</option>
-                        <option value="KN">Saint Kitts and Nevis</option>
-                        <option value="LC">Saint Lucia</option>
-                        <option value="MF">Saint Martin</option>
-                        <option value="PM">Saint Pierre and Miquelon</option>
-                        <option value="VC">Saint Vincent and the Grenadines</option>
-                        <option value="WS">Samoa</option>
-                        <option value="SM">San Marino</option>
-                        <option value="ST">Sao Tome and Principe</option>
-                        <option value="SA">Saudi Arabia</option>
-                        <option value="SN">Senegal</option>
-                        <option value="RS">Serbia</option>
-                        <option value="CS">Serbia and Montenegro</option>
-                        <option value="SC">Seychelles</option>
-                        <option value="SL">Sierra Leone</option>
-                        <option value="SG">Singapore</option>
-                        <option value="SX">Sint Maarten</option>
-                        <option value="SK">Slovakia</option>
-                        <option value="SI">Slovenia</option>
-                        <option value="SB">Solomon Islands</option>
-                        <option value="SO">Somalia</option>
-                        <option value="ZA">South Africa</option>
-                        <option value="GS">South Georgia and the South Sandwich Islands</option>
-                        <option value="SS">South Sudan</option>
-                        <option value="ES">Spain</option>
-                        <option value="LK">Sri Lanka</option>
-                        <option value="SD">Sudan</option>
-                        <option value="SR">Suriname</option>
-                        <option value="SJ">Svalbard and Jan Mayen</option>
-                        <option value="SZ">Swaziland</option>
-                        <option value="SE">Sweden</option>
-                        <option value="CH">Switzerland</option>
-                        <option value="SY">Syrian Arab Republic</option>
-                        <option value="TW">Taiwan, Province of China</option>
-                        <option value="TJ">Tajikistan</option>
-                        <option value="TZ">Tanzania, United Republic of</option>
-                        <option value="TH">Thailand</option>
-                        <option value="TL">Timor-Leste</option>
-                        <option value="TG">Togo</option>
-                        <option value="TK">Tokelau</option>
-                        <option value="TO">Tonga</option>
-                        <option value="TT">Trinidad and Tobago</option>
-                        <option value="TN">Tunisia</option>
-                        <option value="TR">Turkey</option>
-                        <option value="TM">Turkmenistan</option>
-                        <option value="TC">Turks and Caicos Islands</option>
-                        <option value="TV">Tuvalu</option>
-                        <option value="UG">Uganda</option>
-                        <option value="UA">Ukraine</option>
-                        <option value="AE">United Arab Emirates</option>
-                        <option value="GB">United Kingdom</option>
-                        <option value="US">United States</option>
-                        <option value="UM">United States Minor Outlying Islands</option>
-                        <option value="UY">Uruguay</option>
-                        <option value="UZ">Uzbekistan</option>
-                        <option value="VU">Vanuatu</option>
-                        <option value="VE">Venezuela</option>
-                        <option value="VN">Viet Nam</option>
-                        <option value="VG">Virgin Islands, British</option>
-                        <option value="VI">Virgin Islands, U.s.</option>
-                        <option value="WF">Wallis and Futuna</option>
-                        <option value="EH">Western Sahara</option>
-                        <option value="YE">Yemen</option>
-                        <option value="ZM">Zambia</option>
-                        <option value="ZW">Zimbabwe</option>
-                    </select>
+                       <asp:DropDownList Id="DropDownList3" runat="server"   name="country">
+                        <asp:ListItem>select country</asp:ListItem>
+                        <asp:ListItem value="AF">Afghanistan</asp:ListItem>
+                        <asp:ListItem value="AX">Aland Islands</asp:ListItem>
+                        <asp:ListItem value="AL">Albania</asp:ListItem>
+                        <asp:ListItem value="DZ">Algeria</asp:ListItem>
+                        <asp:ListItem value="AS">American Samoa</asp:ListItem>
+                        <asp:ListItem value="AD">Andorra</asp:ListItem>
+                        <asp:ListItem value="AO">Angola</asp:ListItem>
+                        <asp:ListItem value="AI">Anguilla</asp:ListItem>
+                        <asp:ListItem value="AQ">Antarctica</asp:ListItem>
+                        <asp:ListItem value="AG">Antigua and Barbuda</asp:ListItem>
+                        <asp:ListItem value="AR">Argentina</asp:ListItem>
+                        <asp:ListItem value="AM">Armenia</asp:ListItem>
+                        <asp:ListItem value="BM">Bermuda</asp:ListItem>
+                        <asp:ListItem value="BT">Bhutan</asp:ListItem>
+                        <asp:ListItem value="BO">Bolivia</asp:ListItem>
+                        <asp:ListItem value="BQ">Bonaire, Sint Eustatius and Saba</asp:ListItem>
+                        <asp:ListItem value="BA">Bosnia and Herzegovina</asp:ListItem>
+                        <asp:ListItem value="BW">Botswana</asp:ListItem>
+                        <asp:ListItem value="BV">Bouvet Island</asp:ListItem>
+                        <asp:ListItem value="BR">Brazil</asp:ListItem>
+                        <asp:ListItem value="IO">British Indian Ocean Territory</asp:ListItem>
+                        <asp:ListItem value="BN">Brunei Darussalam</asp:ListItem>
+                        <asp:ListItem value="BG">Bulgaria</asp:ListItem>
+                        <asp:ListItem value="BF">Burkina Faso</asp:ListItem>
+                        <asp:ListItem value="BI">Burundi</asp:ListItem>
+                        <asp:ListItem value="KH">Cambodia</asp:ListItem>
+                        <asp:ListItem value="CM">Cameroon</asp:ListItem>
+                        <asp:ListItem value="CA">Canada</asp:ListItem>
+                        <asp:ListItem value="CV">Cape Verde</asp:ListItem>
+                        <asp:ListItem value="KY">Cayman Islands</asp:ListItem>
+                        <asp:ListItem value="CF">Central African Republic</asp:ListItem>
+                        <asp:ListItem value="TD">Chad</asp:ListItem>
+                        <asp:ListItem value="CL">Chile</asp:ListItem>
+                        <asp:ListItem value="CN">China</asp:ListItem>
+                        <asp:ListItem value="CX">Christmas Island</asp:ListItem>
+                        <asp:ListItem value="CC">Cocos (Keeling) Islands</asp:ListItem>
+                        <asp:ListItem value="CO">Colombia</asp:ListItem>
+                        <asp:ListItem value="KM">Comoros</asp:ListItem>
+                        <asp:ListItem value="CG">Congo</asp:ListItem>
+                        <asp:ListItem value="CD">Congo, Democratic Republic of the Congo</asp:ListItem>
+                        <asp:ListItem value="CK">Cook Islands</asp:ListItem>
+                        <asp:ListItem value="CR">Costa Rica</asp:ListItem>
+                        <asp:ListItem value="CI">Cote D'Ivoire</asp:ListItem>
+                        <asp:ListItem value="HR">Croatia</asp:ListItem>
+                        <asp:ListItem value="CU">Cuba</asp:ListItem>
+                        <asp:ListItem value="CW">Curacao</asp:ListItem>
+                        <asp:ListItem value="CY">Cyprus</asp:ListItem>
+                        <asp:ListItem value="CZ">Czech Republic</asp:ListItem>
+                        <asp:ListItem value="DK">Denmark</asp:ListItem>
+                        <asp:ListItem value="DJ">Djibouti</asp:ListItem>
+                        <asp:ListItem value="DM">Dominica</asp:ListItem>
+                        <asp:ListItem value="DO">Dominican Republic</asp:ListItem>
+                        <asp:ListItem value="EC">Ecuador</asp:ListItem>
+                        <asp:ListItem value="EG">Egypt</asp:ListItem>
+                        <asp:ListItem value="SV">El Salvador</asp:ListItem>
+                        <asp:ListItem value="GQ">Equatorial Guinea</asp:ListItem>
+                        <asp:ListItem value="ER">Eritrea</asp:ListItem>
+                        <asp:ListItem value="EE">Estonia</asp:ListItem>
+                        <asp:ListItem value="ET">Ethiopia</asp:ListItem>
+                        <asp:ListItem value="FK">Falkland Islands (Malvinas)</asp:ListItem>
+                        <asp:ListItem value="FO">Faroe Islands</asp:ListItem>
+                        <asp:ListItem value="FJ">Fiji</asp:ListItem>
+                        <asp:ListItem value="FI">Finland</asp:ListItem>
+                        <asp:ListItem value="FR">France</asp:ListItem>
+                        <asp:ListItem value="GF">French Guiana</asp:ListItem>
+                        <asp:ListItem value="PF">French Polynesia</asp:ListItem>
+                        <asp:ListItem value="TF">French Southern Territories</asp:ListItem>
+                        <asp:ListItem value="GA">Gabon</asp:ListItem>
+                        <asp:ListItem value="GM">Gambia</asp:ListItem>
+                        <asp:ListItem value="GE">Georgia</asp:ListItem>
+                        <asp:ListItem value="DE">Germany</asp:ListItem>
+                        <asp:ListItem value="GH">Ghana</asp:ListItem>
+                        <asp:ListItem value="GI">Gibraltar</asp:ListItem>
+                        <asp:ListItem value="GR">Greece</asp:ListItem>
+                        <asp:ListItem value="GL">Greenland</asp:ListItem>
+                        <asp:ListItem value="GD">Grenada</asp:ListItem>
+                        <asp:ListItem value="GP">Guadeloupe</asp:ListItem>
+                        <asp:ListItem value="GU">Guam</asp:ListItem>
+                        <asp:ListItem value="GT">Guatemala</asp:ListItem>
+                        <asp:ListItem value="GG">Guernsey</asp:ListItem>
+                        <asp:ListItem value="GN">Guinea</asp:ListItem>
+                        <asp:ListItem value="GW">Guinea-Bissau</asp:ListItem>
+                        <asp:ListItem value="GY">Guyana</asp:ListItem>
+                        <asp:ListItem value="HT">Haiti</asp:ListItem>
+                        <asp:ListItem value="HM">Heard Island and Mcdonald Islands</asp:ListItem>
+                        <asp:ListItem value="VA">Holy See (Vatican City State)</asp:ListItem>
+                        <asp:ListItem value="HN">Honduras</asp:ListItem>
+                        <asp:ListItem value="HK">Hong Kong</asp:ListItem>
+                        <asp:ListItem value="HU">Hungary</asp:ListItem>
+                        <asp:ListItem value="IS">Iceland</asp:ListItem>
+                        <asp:ListItem value="IN">India</asp:ListItem>
+                        <asp:ListItem value="ID">Indonesia</asp:ListItem>
+                        <asp:ListItem value="IR">Iran, Islamic Republic of</asp:ListItem>
+                        <asp:ListItem value="IQ">Iraq</asp:ListItem>
+                        <asp:ListItem value="IE">Ireland</asp:ListItem>
+                        <asp:ListItem value="IM">Isle of Man</asp:ListItem>
+                        <asp:ListItem value="IL">Israel</asp:ListItem>
+                        <asp:ListItem value="IT">Italy</asp:ListItem>
+                        <asp:ListItem value="JM">Jamaica</asp:ListItem>
+                        <asp:ListItem value="JP">Japan</asp:ListItem>
+                        <asp:ListItem value="JE">Jersey</asp:ListItem>
+                        <asp:ListItem value="JO">Jordan</asp:ListItem>
+                        <asp:ListItem value="KZ">Kazakhstan</asp:ListItem>
+                        <asp:ListItem value="KE">Kenya</asp:ListItem>
+                        <asp:ListItem value="KI">Kiribati</asp:ListItem>
+                        <asp:ListItem value="KP">Korea, Democratic People's Republic of</asp:ListItem>
+                        <asp:ListItem value="KR">Korea, Republic of</asp:ListItem>
+                        <asp:ListItem value="XK">Kosovo</asp:ListItem>
+                        <asp:ListItem value="KW">Kuwait</asp:ListItem>
+                        <asp:ListItem value="KG">Kyrgyzstan</asp:ListItem>
+                        <asp:ListItem value="LA">Lao People's Democratic Republic</asp:ListItem>
+                        <asp:ListItem value="LV">Latvia</asp:ListItem>
+                        <asp:ListItem value="LB">Lebanon</asp:ListItem>
+                        <asp:ListItem value="LS">Lesotho</asp:ListItem>
+                        <asp:ListItem value="LR">Liberia</asp:ListItem>
+                        <asp:ListItem value="LY">Libyan Arab Jamahiriya</asp:ListItem>
+                        <asp:ListItem value="LI">Liechtenstein</asp:ListItem>
+                        <asp:ListItem value="LT">Lithuania</asp:ListItem>
+                        <asp:ListItem value="LU">Luxembourg</asp:ListItem>
+                        <asp:ListItem value="MO">Macao</asp:ListItem>
+                        <asp:ListItem value="MK">Macedonia, the Former Yugoslav Republic of</asp:ListItem>
+                        <asp:ListItem value="MG">Madagascar</asp:ListItem>
+                        <asp:ListItem value="MW">Malawi</asp:ListItem>
+                        <asp:ListItem value="MY">Malaysia</asp:ListItem>
+                        <asp:ListItem value="MV">Maldives</asp:ListItem>
+                        <asp:ListItem value="ML">Mali</asp:ListItem>
+                        <asp:ListItem value="MT">Malta</asp:ListItem>
+                        <asp:ListItem value="MH">Marshall Islands</asp:ListItem>
+                        <asp:ListItem value="MQ">Martinique</asp:ListItem>
+                        <asp:ListItem value="MR">Mauritania</asp:ListItem>
+                        <asp:ListItem value="MU">Mauritius</asp:ListItem>
+                        <asp:ListItem value="YT">Mayotte</asp:ListItem>
+                        <asp:ListItem value="MX">Mexico</asp:ListItem>
+                        <asp:ListItem value="FM">Micronesia, Federated States of</asp:ListItem>
+                        <asp:ListItem value="MD">Moldova, Republic of</asp:ListItem>
+                        <asp:ListItem value="MC">Monaco</asp:ListItem>
+                        <asp:ListItem value="MN">Mongolia</asp:ListItem>
+                        <asp:ListItem value="ME">Montenegro</asp:ListItem>
+                        <asp:ListItem value="MS">Montserrat</asp:ListItem>
+                        <asp:ListItem value="MA">Morocco</asp:ListItem>
+                        <asp:ListItem value="MZ">Mozambique</asp:ListItem>
+                        <asp:ListItem value="MM">Myanmar</asp:ListItem>
+                        <asp:ListItem value="NA">Namibia</asp:ListItem>
+                        <asp:ListItem value="NR">Nauru</asp:ListItem>
+                        <asp:ListItem value="NP">Nepal</asp:ListItem>
+                        <asp:ListItem value="NL">Netherlands</asp:ListItem>
+                        <asp:ListItem value="AN">Netherlands Antilles</asp:ListItem>
+                        <asp:ListItem value="NC">New Caledonia</asp:ListItem>
+                        <asp:ListItem value="NZ">New Zealand</asp:ListItem>
+                        <asp:ListItem value="NI">Nicaragua</asp:ListItem>
+                        <asp:ListItem value="NE">Niger</asp:ListItem>
+                        <asp:ListItem value="NG">Nigeria</asp:ListItem>
+                        <asp:ListItem value="NU">Niue</asp:ListItem>
+                        <asp:ListItem value="NF">Norfolk Island</asp:ListItem>
+                        <asp:ListItem value="MP">Northern Mariana Islands</asp:ListItem>
+                        <asp:ListItem value="NO">Norway</asp:ListItem>
+                        <asp:ListItem value="OM">Oman</asp:ListItem>
+                        <asp:ListItem value="PK">Pakistan</asp:ListItem>
+                        <asp:ListItem value="PW">Palau</asp:ListItem>
+                        <asp:ListItem value="PS">Palestinian Territory, Occupied</asp:ListItem>
+                        <asp:ListItem value="PA">Panama</asp:ListItem>
+                        <asp:ListItem value="PG">Papua New Guinea</asp:ListItem>
+                        <asp:ListItem value="PY">Paraguay</asp:ListItem>
+                        <asp:ListItem value="PE">Peru</asp:ListItem>
+                        <asp:ListItem value="PH">Philippines</asp:ListItem>
+                        <asp:ListItem value="PN">Pitcairn</asp:ListItem>
+                        <asp:ListItem value="PL">Poland</asp:ListItem>
+                        <asp:ListItem value="PT">Portugal</asp:ListItem>
+                        <asp:ListItem value="PR">Puerto Rico</asp:ListItem>
+                        <asp:ListItem value="QA">Qatar</asp:ListItem>
+                        <asp:ListItem value="RE">Reunion</asp:ListItem>
+                        <asp:ListItem value="RO">Romania</asp:ListItem>
+                        <asp:ListItem value="RU">Russian Federation</asp:ListItem>
+                        <asp:ListItem value="RW">Rwanda</asp:ListItem>
+                        <asp:ListItem value="BL">Saint Barthelemy</asp:ListItem>
+                        <asp:ListItem value="SH">Saint Helena</asp:ListItem>
+                        <asp:ListItem value="KN">Saint Kitts and Nevis</asp:ListItem>
+                        <asp:ListItem value="LC">Saint Lucia</asp:ListItem>
+                        <asp:ListItem value="MF">Saint Martin</asp:ListItem>
+                        <asp:ListItem value="PM">Saint Pierre and Miquelon</asp:ListItem>
+                        <asp:ListItem value="VC">Saint Vincent and the Grenadines</asp:ListItem>
+                        <asp:ListItem value="WS">Samoa</asp:ListItem>
+                        <asp:ListItem value="SM">San Marino</asp:ListItem>
+                        <asp:ListItem value="ST">Sao Tome and Principe</asp:ListItem>
+                        <asp:ListItem value="SA">Saudi Arabia</asp:ListItem>
+                        <asp:ListItem value="SN">Senegal</asp:ListItem>
+                        <asp:ListItem value="RS">Serbia</asp:ListItem>
+                        <asp:ListItem value="CS">Serbia and Montenegro</asp:ListItem>
+                        <asp:ListItem value="SC">Seychelles</asp:ListItem>
+                        <asp:ListItem value="SL">Sierra Leone</asp:ListItem>
+                        <asp:ListItem value="SG">Singapore</asp:ListItem>
+                        <asp:ListItem value="SX">Sint Maarten</asp:ListItem>
+                        <asp:ListItem value="SK">Slovakia</asp:ListItem>
+                        <asp:ListItem value="SI">Slovenia</asp:ListItem>
+                        <asp:ListItem value="SB">Solomon Islands</asp:ListItem>
+                        <asp:ListItem value="SO">Somalia</asp:ListItem>
+                        <asp:ListItem value="ZA">South Africa</asp:ListItem>
+                        <asp:ListItem value="GS">South Georgia and the South Sandwich Islands</asp:ListItem>
+                        <asp:ListItem value="SS">South Sudan</asp:ListItem>
+                        <asp:ListItem value="ES">Spain</asp:ListItem>
+                        <asp:ListItem value="LK">Sri Lanka</asp:ListItem>
+                        <asp:ListItem value="SD">Sudan</asp:ListItem>
+                        <asp:ListItem value="SR">Suriname</asp:ListItem>
+                        <asp:ListItem value="SJ">Svalbard and Jan Mayen</asp:ListItem>
+                        <asp:ListItem value="SZ">Swaziland</asp:ListItem>
+                        <asp:ListItem value="SE">Sweden</asp:ListItem>
+                        <asp:ListItem value="CH">Switzerland</asp:ListItem>
+                        <asp:ListItem value="SY">Syrian Arab Republic</asp:ListItem>
+                        <asp:ListItem value="TW">Taiwan, Province of China</asp:ListItem>
+                        <asp:ListItem value="TJ">Tajikistan</asp:ListItem>
+                        <asp:ListItem value="TZ">Tanzania, United Republic of</asp:ListItem>
+                        <asp:ListItem value="TH">Thailand</asp:ListItem>
+                        <asp:ListItem value="TL">Timor-Leste</asp:ListItem>
+                        <asp:ListItem value="TG">Togo</asp:ListItem>
+                        <asp:ListItem value="TK">Tokelau</asp:ListItem>
+                        <asp:ListItem value="TO">Tonga</asp:ListItem>
+                        <asp:ListItem value="TT">Trinidad and Tobago</asp:ListItem>
+                        <asp:ListItem value="TN">Tunisia</asp:ListItem>
+                        <asp:ListItem value="TR">Turkey</asp:ListItem>
+                        <asp:ListItem value="TM">Turkmenistan</asp:ListItem>
+                        <asp:ListItem value="TC">Turks and Caicos Islands</asp:ListItem>
+                        <asp:ListItem value="TV">Tuvalu</asp:ListItem>
+                        <asp:ListItem value="UG">Uganda</asp:ListItem>
+                        <asp:ListItem value="UA">Ukraine</asp:ListItem>
+                        <asp:ListItem value="AE">United Arab Emirates</asp:ListItem>
+                        <asp:ListItem value="GB">United Kingdom</asp:ListItem>
+                        <asp:ListItem value="US">United States</asp:ListItem>
+                        <asp:ListItem value="UM">United States Minor Outlying Islands</asp:ListItem>
+                        <asp:ListItem value="UY">Uruguay</asp:ListItem>
+                        <asp:ListItem value="UZ">Uzbekistan</asp:ListItem>
+                        <asp:ListItem value="VU">Vanuatu</asp:ListItem>
+                        <asp:ListItem value="VE">Venezuela</asp:ListItem>
+                        <asp:ListItem value="VN">Viet Nam</asp:ListItem>
+                        <asp:ListItem value="VG">Virgin Islands, British</asp:ListItem>
+                        <asp:ListItem value="VI">Virgin Islands, U.s.</asp:ListItem>
+                        <asp:ListItem value="WF">Wallis and Futuna</asp:ListItem>
+                        <asp:ListItem value="EH">Western Sahara</asp:ListItem>
+                        <asp:ListItem value="YE">Yemen</asp:ListItem>
+                        <asp:ListItem value="ZM">Zambia</asp:ListItem>
+                        <asp:ListItem value="ZW">Zimbabwe</asp:ListItem>
+                    </asp:DropDownList>
                     </div>
                     <div class="newbtn"><br />
-                           <asp:Button ID="Button2" runat="server" CssClass="form-control btn btn-primary btn-lg" Text="Save Changes"/>
+                           <asp:Button ID="Button2" onclick="Button2_Click" runat="server" CssClass="form-control btn btn-primary btn-lg" Text="Save Changes"/>
                     </div>
                </div>
                </div>
@@ -488,14 +488,16 @@
     
         <script>
             function myFunction() {
-  var x = document.getElementById("mySelect").value;
-            if (x == "Business") {
-                document.getElementById("textbox").style.display = "block";
+                var x = document.getElementById("DropDownList2").value;
+                if (x == "Buisness") {
+                    document.getElementById("TextBox10").style.display = "block";
+                    document.getElementById("Headtext").style.display = "block";
   } else {
-                document.getElementById("textbox").style.display = "none";
+                    document.getElementById("TextBox10").style.display = "none";
+                    document.getElementById("Headtext").style.display = "none";
   }
 }
-    </script>
+        </script>
    
      </body>
     </html>

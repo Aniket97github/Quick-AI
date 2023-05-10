@@ -19,8 +19,24 @@ namespace Quick_AI_Project
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source = DESKTOP - HHOK8FO\\SQLEXPRESS; Initial Catalog = project1; Integrated Security = True");
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
             con.Open();
+            if (DropDownList2.SelectedValue == "Personal")
+            {
+                string q = ("insert into AccountBilling values('" + TextBox10.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "','" + TextBox9.Text + "','"+DropDownList3.SelectedValue.ToString()+"')");
+                SqlCommand cmd = new SqlCommand(q, con);
+                cmd.ExecuteNonQuery();
+                
+            }
+            else if (DropDownList2.SelectedValue=="Buisness")
+            {
+                string q = ("insert into AccountBilling values('" + TextBox10.Text + "' ,'"+ TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "','" + TextBox9.Text + "','"+DropDownList3.SelectedValue.ToString()+"')");
+                SqlCommand cmd = new SqlCommand(q, con);
+                
+                cmd.ExecuteNonQuery();
+                
+            }
+            con.Close();
            
         }
     }

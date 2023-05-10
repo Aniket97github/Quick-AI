@@ -76,16 +76,16 @@
             </div>
             <div  style="margin-left:40px"" class="row">
                 <div class="col-sm-1">
-                <input type="radio"  id="html" name="favlanguage" onclick="changetext(5rs permonth)" value="Html" />
-                <label for="html">Monthly</label>
+                <input type="radio"  id="monthly" name="favlanguage" onclick="updateText(this.value);" value="monthly" />
+                <label for="monthly">Monthly</label>
                     </div>
                 <div class="col-sm-1">
-                    <input type="radio"  id="css" name="favlanguage" onclick="changetext()" value="Css" />
-                    <label for="css">Yearly</label>
+                    <input type="radio"  id="yearly" name="favlanguage" onclick="updateText(this.value);" value="yearly" />
+                    <label for="yearly">Yearly</label>
                 </div>
                 <div class="col-sm-1">
-                    <input type="radio" id="javascript" name="favlanguage" onclick="changetext()" value="Javascript" />
-                    <label for="Java">Lifetime</label>
+                    <input type="radio" id="Lifetime" name="favlanguage" onclick="updateText(this.value);" value="Lifetime" />
+                    <label for="Lifetime">Lifetime</label>
                 </div>
             </div>
             </div>
@@ -100,7 +100,7 @@
                                </div>
                         </div><br /><br /><br />
                             <strong>Features of Free plan</strong>
-                            <ul style="list-style:none">
+                            <ul style="list-style:none" >
                                 <li >
                                     <strong>32</strong>&nbsp AI Document Templates
                                 </li>
@@ -160,7 +160,7 @@
                         <h5>Extended Plan</h5>
                         <div class="freecard "  style="width:250px;height:10px">
                             <div class="alert alert-secondary" role="alert">
-                               <h3 id="box" style="text-align:center">Free</h3> 
+                               <h3 id="box" style="text-align:center">5Rs/Month</h3> 
                                </div>
                         </div><br /><br /><br />
                             <strong>Features of Extended plan</strong>
@@ -255,7 +255,20 @@
                 </div>
             </div>
       </footer>
-        
+        <script>
+            function updateText(val) {
+                if (val == monthly) {
+                    document.getElementById("box").innerHTML = "5 Rs ";
+                }
+                else if (val == yearly) {
+                    document.getElementById("box").innerHTML = "50 rs";
+                }
+                else if (val == Lifetime) {
+                    document.getElementById("box").innerHTML = "550 rs";
+                }
+            }
+
+        </script>
     </form>
 </body>
 </html>
