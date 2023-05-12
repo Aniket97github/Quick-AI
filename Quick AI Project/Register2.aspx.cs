@@ -22,18 +22,40 @@ namespace Quick_AI_Project
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
             con.Open();
-            string q = "insert into QuickAi values('" + TextBox6.Text + "','" + TextBox5.Text + "','" + TextBox4.Text + "')";
-            SqlCommand cmd = new SqlCommand(q, con);
-            int i = cmd.ExecuteNonQuery();
+            string query = "select EmailId from QuickAi";
+            SqlCommand cmd = new SqlCommand(query, con);
+            string EmailId = cmd.ExecuteReader().ToString();
             con.Close();
-            if(i==1)
-            {
-                Label1.Text = "Registered Successfully";
+            try {
+                if (EmailId == TextBox2.Text)
+                {
+                    Response.Write("<script>alert('User Already Exist')</script>");
+                }
+                else if (EmailId != TextBox2.Text)
+                {
+                    SqlConnection sdm = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
+                    con.Open();
+                    string q = ("insert into QuickAi values ('" + TextBox3.Text + "','" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox4.Text + "')");
+                    SqlCommand pmd = new SqlCommand(q, con);
+                    int i = pmd.ExecuteNonQuery();
+                    if (i == 1)
+                    {
+                        Label1.Text = "Registered Successfull";
+                    }
+                    else
+                    {
+                        Label1.Text = "Try Again";
+                    }
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Label1.Text = "Not Registered";
+                Response.Write("<script>alert('User Already Exist')</script>");
             }
+               
+                con.Close();
+           
+          
         }
 
         protected void Button2_Click(object sender, EventArgs e)

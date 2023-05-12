@@ -7,18 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Quick_AI_Project
 {
-    public partial class Dashboard : System.Web.UI.Page
+    public partial class All_AI_Images : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-    
-        }
-       
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Register.aspx");
-            Session.Abandon();
-       
+
         }
     }
 }

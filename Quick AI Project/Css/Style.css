@@ -192,6 +192,7 @@ p.ex1{
     padding: 7px 10px;
     color:grey;
     list-style:none;
+    margin-left:-20px;
 }
 
 .sidebar .menu i {
@@ -208,10 +209,10 @@ p.ex1{
     color:grey;
 }
 
-.sidebar .menu li:hover{
+/*.sidebar .menu li:hover{
     border-left: 1px solid thick;
     box-shadow: 2px 2px 6px grey;
-}
+}*/
 
 .col-lg-2 {
     padding-bottom:30px;
@@ -278,8 +279,10 @@ p.ex1{
     width:1000px;
     box-shadow:2px 2px 5px grey;
     position:relative;
-   margin-top:450px;
-   margin-left:220px;
+   margin-top:200px;
+ 
+  
+
 
 
 }
@@ -327,6 +330,11 @@ p.ex1{
     margin-left:750px;
     
 }
+.breadcrumb1 {
+    margin-left: 750px;
+    margin-top:50px;
+}
+
 .membershipplan{
     margin-top:100px;
     margin-left:90px;
@@ -343,3 +351,14 @@ p.ex1{
     display: flex;
     justify-content: space-between;
 }
+
+.upgradedmemberbox {
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+   

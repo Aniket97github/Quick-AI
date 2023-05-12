@@ -111,6 +111,7 @@
                           </div>
                           <br />
                             <a href="http://localhost:64582/Forgot%20Password.aspx">Forgot Password?</a>
+                             &nbsp<asp:Label ID="Label1" runat="server" Text="Label"  ForeColor="Red"></asp:Label>
                           <br />
                           <div class="form-group">
                                <asp:Button ID="Button1"  class="btn btn-dark" runat="server" BackColor="Blue" ForeColor="White" OnClick="Button1_Click" Text="Enter" />

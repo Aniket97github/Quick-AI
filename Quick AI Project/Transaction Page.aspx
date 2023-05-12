@@ -59,30 +59,22 @@
              </div>
          </div>
             </div>
-           <div class="container align-content-lg-end">
-               <div class="row">
-                 <div class="col-md-3" >
-                    <h2>Transactions</h2>
-                     </div>
-                    <div class ="col-md-3">
-                    <div id="breadcrumbs" class="dark" style="margin:100px">
-                        <ul>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                Transactions
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-               </div> 
-           
-               </div>
+        <div class="transactionhead">
+            <div class="row">
+                <h2>Transaction Page</h2>
+            <nav aria-label="breadcrumb">
+               <ol class="breadcrumb1">
+              <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Login.aspx">Home</a></li>
+             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Membership Plan</li>
+             </ol>
+            </nav>
+            </div>
+            </div>
+       
            <div class="container">
                <h3>Transactions</h3>
              <div class="Transactionbox">
-                 <div class="row">
+                 <div style="margin-right:13px" class  ="row">
                      <div class="col-sm-2">
                          <h6 style="margin:10px;">Title</h6>
                      </div>
@@ -109,6 +101,8 @@
              </div>
                </div>
               <br />
+        <br />
+        <br />
           <footer>
            <div class="foot" style="background-color: #303030;color:silver">
                 <div  style="padding-top: 45px;padding-bottom: 45px">

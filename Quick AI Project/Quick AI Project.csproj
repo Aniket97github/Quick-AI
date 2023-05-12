@@ -71,6 +71,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account Setting.aspx" />
+    <Content Include="All AI Images.aspx" />
+    <Content Include="All Documents.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -88,6 +90,8 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Css\Style.css" />
+    <Content Include="Css\TestimonialStyle.css" />
+    <Content Include="Css\upgradecss.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Fonstawesome\css\all.css" />
     <Content Include="Fonstawesome\css\all.min.css" />
@@ -2262,7 +2266,9 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Testimonial.aspx" />
     <Content Include="Transaction Page.aspx" />
+    <Content Include="Upgraded Membership.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="reg1.aspx" />
@@ -2274,6 +2280,20 @@
     </Compile>
     <Compile Include="Account Setting.aspx.designer.cs">
       <DependentUpon>Account Setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="All AI Images.aspx.cs">
+      <DependentUpon>All AI Images.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All AI Images.aspx.designer.cs">
+      <DependentUpon>All AI Images.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="All Documents.aspx.cs">
+      <DependentUpon>All Documents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All Documents.aspx.designer.cs">
+      <DependentUpon>All Documents.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
@@ -2335,12 +2355,26 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Testimonial.aspx.cs">
+      <DependentUpon>Testimonial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testimonial.aspx.designer.cs">
+      <DependentUpon>Testimonial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Transaction Page.aspx.cs">
       <DependentUpon>Transaction Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Transaction Page.aspx.designer.cs">
       <DependentUpon>Transaction Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upgraded Membership.aspx.cs">
+      <DependentUpon>Upgraded Membership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upgraded Membership.aspx.designer.cs">
+      <DependentUpon>Upgraded Membership.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

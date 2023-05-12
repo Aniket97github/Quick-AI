@@ -11,7 +11,7 @@ namespace Quick_AI_Project
 {
 
 
-    public partial class Dashboard
+    public partial class All_AI_Images
     {
 
         /// <summary>

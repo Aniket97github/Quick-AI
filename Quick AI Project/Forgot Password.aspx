@@ -65,18 +65,22 @@
                   </div>
                   <div class="row">
                       <div class="col">
-                      &nbsp;<div class="input-group">
-                      <label class="align-content-left">Password </label>
-                      <span class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
+                      &nbsp;<div style="margin-left:80px" class="input-group">
+                      <label style="margin-right:20px" class="align-content-left">Email Id:</label>&nbsp
+                      <span  style="margin-right:0px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
                       <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                        <br /> 
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                       <br />
-                      <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox2" ControlToValidate="TextBox3" ErrorMessage="Password and confirm password must be same" ForeColor="#CC0000"></asp:CompareValidator>
-                      <br />
-                      </div>
+                           <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox3" ErrorMessage="Enter Valid Email Address" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                      <%--<asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox2" ControlToValidate="TextBox3" ErrorMessage="Password and confirm password must be same" ForeColor="#CC0000"></asp:CompareValidator>
+                      <br />--%>
+                      </div><br />
+                           <asp:Button  class="btn btn-primary" ID="Button1" runat="server" BackColor="#CC0099" BorderColor="#666666" ForeColor="White"       OnClick="Button1_Click" Text="Save" CausesValidation="False" />
+                              <br /> <asp:Label ID="Label1" runat="server" ForeColor="Green" Text="Label"></asp:Label>
                       </div>
                   </div>
-                  <div class="row">
+                  <%--<div class="row">
                       <div class="col">
                           &nbsp;<div class="input-group">
                           <label style:"align-left">Confirm Password </label>
@@ -84,7 +88,7 @@
                          <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                          <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox2" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                          </div>                     
-                    <div class="row">
+                    <%--<div class="row">
                       <div class="col">
                           &nbsp;<div class="input-group">
                           <label class="align-left">Forgot Question</label><span class="input-group-text align-content-left"><i class="fa-solid fa-lock"></i></span><asp:TextBox ID="TextBox4" runat="server" style="margin-left: 0px"></asp:TextBox>
@@ -97,7 +101,7 @@
                           <br />
                           </div>
                        </div>
-                       </div>
+                       </div>--%>
                       </div>
                      </div>
                    </div>

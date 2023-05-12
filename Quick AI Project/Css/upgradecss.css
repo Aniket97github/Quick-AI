@@ -1,0 +1,25 @@
+﻿body {
+}
+.upgradedmemberbox {
+    background-color: lightcyan;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    margin-left:100px;
+    display:inline-block;
+}
+
+.upgradedmemberbox2 {
+    background-color: lightgrey;
+    width: 300px;
+    height: 350px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 100px;
+    margin-right:20px;
+ 
+    display: inline-block;
+}

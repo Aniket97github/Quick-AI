@@ -24,6 +24,135 @@
 <body>
     <style>@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
 
+*{
+    margin-bottom:20px;
+}
+body{
+    color: #666;
+    font-size: 16px;
+    line-height: 27px;
+    background-color: #fff;
+}
+.section-headline{
+    text-align:center;
+    padding:0;
+    margin-bottom:30px;
+}
+.template-categories{
+    background:#eee;
+    padding:10px;
+    border-radius:50vh;
+    font-size:14px;
+}
+.template-categories ul{
+    padding:0;
+    margin:0;
+    display:flex;
+    white-space:nowrap;
+    list-style:none;
+}
+.template-categories ul li{
+    padding:10px 15px;
+    line-height:1.5;
+}
+.template-categories ul li.active{
+    color:#fff;
+    background:#0031a5;
+    border-radius:50vh;
+}
+.row{
+    margin-right:-15px;
+    margin-left:-15px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.col-md-12{
+    max-width:100%;
+    -webkit-box-flex:0;
+    flex:0 0 100%;
+}
+.col-md-4{
+    -webkit-box-flex: 0;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.col-md-6{
+    -webkit-box-flex: 0;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.ai-templates-category-title h4{
+    margin-top:30px;
+    font-weight:700;
+    font-size:16px;
+    border-bottom:1px dashed#ccc;
+}
+a{
+    transition:.3s;
+    box-sizing:border-box;
+}
+.ai-templates{
+    border-radius:9px;
+    border:1px solid #e5e7eb;
+    box-shadow:none;
+    transition:0.3s;
+}
+.ai-templates content{
+    padding:20px;
+}
+.ai-templates-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 9px;
+    padding: 0.5rem;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 0px 0px 1px rgba(17,24,39,.05), 0px 1px 4px rgba(17,24,39,.1), 0px 8px 16px rgba(17,24,39,.1);
+}
+.ai-templates.ai-templates-pro {
+    border-color: #ffd400;
+    background-color: #fffef7;
+}
+.ai-templates p{
+    font-size:14px;
+    line-height:1.5;
+    color:#6b7280;
+    text-decoration:none;
+}
+.yellow{
+    background-color: #fbf6dd;
+    color: #a18d29;
+}
+h4{
+    color:#333;
+    margin:0;
+    padding:0;
+}
+.dashboard-status-button{
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 2px 8px;
+    display: inline-block;
+    position: relative;
+    top:-2px;
+    margin: 0 0 4px 4px;
+    box-sizing:border-box;
+}
+.fa {
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+       -webkit-font-smoothing: antialiased;
+       display:inline-block;
+}
+span i{
+    margin-bottom:-20px;
+}
+
+ 
 {
     margin: 0;
     padding: 0;
@@ -130,6 +259,375 @@ h3 {
     }
     </style>
     <form id="form1" runat="server">
+        
+
+
+<div class="section padding-top-65 padding-bottom-65">
+        <div class="container margin-bottom-20">
+            <div class="section-headline centered margin-top-0 margin-bottom-30">
+                <h3 class="margin-bottom-5">Templates</h3>
+                <p>Generate your required content with over 60+ content creation templates</p>
+            </div>
+            <div class="template-categories home-templates">
+                <ul>
+                    <li class="active"><a href="javascript:void();" class="ai-templates-category" data-category="all">All templates</a></li>
+                                            <li><a href="javascript:void();" class="ai-templates-category" data-category="1">Article And Blogs</a></li>
+                                            <li><a href="javascript:void();" class="ai-templates-category" data-category="2">Ads And Marketing Tools</a></li>
+                                            <li><a href="javascript:void();" class="ai-templates-category" data-category="3">General Writing</a></li>
+                                            <li><a href="javascript:void();" class="ai-templates-category" data-category="4">Ecommerce</a></li>
+                                            <li><a href="javascript:void();" class="ai-templates-category" data-category="5">Social Media</a></li>
+                                            <li><a href="javascript:void();" class="ai-templates-category" data-category="6">Website</a></li>
+                                            <li><a href="javascript:void();" class="ai-templates-category" data-category="7">Other</a></li>
+                                    </ul>
+            </div>
+            <div class="row ai-template-blocks">
+                                    <div class="col-md-12 ai-templates-category-title">
+                        <h4>Article And Blogs</h4>
+                    </div>
+                                            <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-comment"></i>
+                                        </div>
+                                        <h4>Blog Ideas </h4>
+                                        <p class="margin-bottom-0">Article/blog ideas that you can use to generate more traffic, leads, and sales for your business.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-align-left"></i>
+                                        </div>
+                                        <h4>Blog Intros</h4>
+                                        <p class="margin-bottom-0">Enticing article/blog introductions that capture the attention of the audience.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </div>
+                                        <h4>Blog Titles</h4>
+                                        <p class="margin-bottom-0">Nobody wants to read boring blog titles, generate catchy blog titles with this tool.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                       <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#" title="Not available in the free plan" data-tippy-placement="top">
+                                <div class="dashboard-box ai-templates ai-templates-pro">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <h4>Blog Section
+                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                        </h4>
+                                        <p class="margin-bottom-0">Write a few paragraphs about a subheading of your article.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-check-square"></i>
+                                        </div>
+                                        <h4>Blog Conclusion</h4>
+                                        <p class="margin-bottom-0">Create powerful conclusion that will make a reader take action.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#" data-tippy-placement="top" data-tippy="" data-original-title="Not available in the free plan">
+                                <div class="dashboard-box ai-templates ai-templates-pro">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-pencil-square"></i>
+                                        </div>
+                                        <h4> Article Writer<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
+                                        <p class="margin-bottom-0">Create a fully complete high quality article from a title and outline text.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </div>
+                                        <h4>
+                                            Article Rewriter                                                                                    </h4>
+                                        <p class="margin-bottom-0">Copy an article, paste it in to the program, and with just one click you'll have an entirely different article to read.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-list-ul"></i>
+                                        </div>
+                                        <h4>
+                                            Article Outlines                                                                                    </h4>
+                                        <p class="margin-bottom-0">Detailed article outlines that help you write better content on a consistent basis.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-list-ol"></i>
+                                        </div>
+                                        <h4>
+                                            Talking Points                                                                                    </h4>
+                                        <p class="margin-bottom-0">Write short, simple and informative points for the subheadings of your article</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#" title="Not available in the free plan" data-tippy-placement="top">
+                                <div class="dashboard-box ai-templates ai-templates-pro">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-align-justify"></i>
+                                        </div>
+                                        <h4>Paragraph Writer<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                        </h4>
+                                        <p class="margin-bottom-0">Perfectly structured paragraphs that are easy to read and packed with persuasive words.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 category-1">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-refresh"></i>
+                                        </div>
+                                        <h4>
+                                            Content Rephrase                                                                                    </h4>
+                                        <p class="margin-bottom-0">Rephrase your content in a different voice and style to appeal to different readers.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <div class="col-md-12 ai-templates-category-title">
+                        <h4>Ads And Marketing Tools</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-6 category-2">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-facebook-official"></i>
+                                        </div>
+                                        <h4>
+                                            Facebook Ads                                                                                    </h4>
+                                        <p class="margin-bottom-0">Facebook ad copies that make your ads truly stand out.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-2">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-facebook-square"></i>
+                                        </div>
+                                        <h4>
+                                            Facebook Ads Headlines                                                                                    </h4>
+                                        <p class="margin-bottom-0">Write catchy and convincing headlines to make your Facebook Ads stand out.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-2">
+                            <a href="#" title="Not available in the free plan" data-tippy-placement="top">
+                                <div class="dashboard-box ai-templates ai-templates-pro">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-google"></i>
+                                        </div>
+                                        <h4>Google Ad Titles<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
+                                        <p class="margin-bottom-0">Creating ads with unique and appealing titles that entice people to click on your ad and purchase from your site.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-2">
+                            <a href="#" title="Not available in the free plan" data-tippy-placement="top">
+                                <div class="dashboard-box ai-templates ai-templates-pro">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-google"></i>
+                                        </div>
+                                        <h4>Google Ad Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>                                        </h4>
+                                        <p class="margin-bottom-0">The best-performing Google ad copy converts visitors into customers.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-2">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-linkedin"></i>
+                                        </div>
+                                        <h4>LinkedIn Ad Headlines</h4>
+                                        <p class="margin-bottom-0">Attention-grabbing, click-inducing, and high-converting ad headlines for Linkedin.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-2">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-linkedin"></i>
+                                        </div>
+                                        <h4>
+                                            LinkedIn Ad Descriptions                                                                                    </h4>
+                                        <p class="margin-bottom-0">Professional and eye-catching ad descriptions that will make your product shine.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-2">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-bell"></i>
+                                        </div>
+                                        <h4>
+                                            App and SMS Notifications                                                                                    </h4>
+                                        <p class="margin-bottom-0">Notification messages for your apps, websites, and mobile devices that keep users coming back for more.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                        <div class="col-md-12 ai-templates-category-title">
+                        <h4>General Writing</h4>
+                    </div>
+                                            <div class="col-md-4 col-sm-6 category-3">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-text-width"></i>
+                                        </div>
+                                        <h4>Text Extender</h4>
+                                        <p class="margin-bottom-0">Extend short sentences into more descriptive and interesting ones.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-3">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-text-width"></i>
+                                        </div>
+                                        <h4>
+                                            Content Shorten                                                                                    </h4>
+                                        <p class="margin-bottom-0">Short your content in a different voice and style to appeal to different readers.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-3">
+                            <a href="#" data-tippy-placement="top" data-tippy="" data-original-title="Not available in the free plan">
+                                <div class="dashboard-box ai-templates ai-templates-pro">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-quora"></i>
+                                        </div>
+                                        <h4>Quora Answers<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
+                                        <p class="margin-bottom-0">Answers to Quora questions that will position you as an authority.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-3">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-child"></i>
+                                        </div>
+                                        <h4>
+                                            Summarize for a 2nd grader                                                                                    </h4>
+                                        <p class="margin-bottom-0">Translates difficult text into simpler concepts.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-3">
+                            <a href="h#" title="Not available in the free plan" data-tippy-placement="top">
+                                <div class="dashboard-box ai-templates ai-templates-pro">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-heart-o"></i>
+                                        </div>
+                                        <h4>
+                                            Stories                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                                                                    </h4>
+                                        <p class="margin-bottom-0">Engaging and persuasive stories that will capture your reader's attention and interest.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-3">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    <div class="content">
+                                        <div class="ai-templates-icon">
+                                            <i class="fa fa-list"></i>
+                                        </div>
+                                        <h4>
+                                            Bullet Point Answers                                                                                    </h4>
+                                        <p class="margin-bottom-0">Precise and informative bullet points that provide quick and valuable answers to your customers' questions.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 category-3">
+                            <a href="#">
+                                <div class="dashboard-box ai-templates ">
+                                    </a>
+                                                </div>
+                </div>
+            </div>
+    </div>
+                                
+
         <div class="section-headline centered margin-top-0 margin-bottom-5">
                         <h3>Testimonials</h3>
          <i class="fa-sharp fa-solid fa-quote-right" style="color: #0949b9; font-size: 63px;margin-left: -473px;"></i>
@@ -143,7 +641,7 @@ h3 {
                 <div class="slide-box">
                     <!-- Testi One -->
                     
-                    <img src="images/default_user.png" style="height: 15%;"  />
+                    <img src="Images/Profile%20UI%20Icon.png"/>  
                     <div class="testimonial-author">
                         <h4>Natasha</h4>
                         <span style="background: #0949b9;">Designer</span>
@@ -155,7 +653,7 @@ h3 {
                 <div class="slide-box">
                     <!-- Testi Two -->
                    
-                    <img src="images/default_user.png" style="height: 15%;"  />
+                    <img src="Images/Profile%20UI%20Icon.png"/>  
                     <div class="testimonial-author">
                         <h4>Steve Roger</h4>
                         <span style="background: #0949b9;">Content Writer</span>
@@ -166,7 +664,7 @@ h3 {
                 </div>
                 <div class="slide-box">
                     <!-- Testi Three -->
-                    <img src="images/default_user.png" style="height: 15%;"  />
+                    <img src="Images/Profile%20UI%20Icon.png"/>  
                     <div class="testimonial-author">
                         <h4>Tony Stark</h4>
                         <span style="background: #0949b9;">Social Marketing</span>
@@ -177,10 +675,10 @@ h3 {
                 </div>
             </div>
 
-            <a href="#!" class="control-slider btn-left">
+            <a href="#!" class="control-slider btn-left  btn-dark">
                 <i class="fas fa-chevron-left"></i>
             </a>
-            <a href="#!" class="control-slider btn-right">
+            <a href="#!" class="control-slider btn-right   btn-dark">
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>

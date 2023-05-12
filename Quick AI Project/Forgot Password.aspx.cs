@@ -18,21 +18,22 @@ namespace Quick_AI_Project
         }
 
         protected void Button1_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
-            con.Open();
-            string q="update QuickAi set password='" + TextBox2.Text + "' where Forgotquestion='" + TextBox4.Text + "'";
-            SqlCommand cmd = new SqlCommand(q, con);
-            int i = cmd.ExecuteNonQuery(); //ExecuteNonQuery is used for Data Manipulation Command like Insert,update,Delete
-            con.Close();
-            if(i==1)
-            {
-                Label1.Text = "Password Changed";
-            }
-            else
-            {
-                Label1.Text = "Password Not Changed";
-            }
+        {   Label1.Text= "Confirmation mail sentPlease check your email account for the forgot password details";
+
+            //SqlConnection con = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
+            //con.Open();
+            //string q="update QuickAi set password='" + TextBox2.Text + "' where Forgotquestion='" + TextBox4.Text + "'";
+            //SqlCommand cmd = new SqlCommand(q, con);
+            //int i = cmd.ExecuteNonQuery(); //ExecuteNonQuery is used for Data Manipulation Command like Insert,update,Delete
+            //con.Close();
+            //if(i==1)
+            //{
+            //    Label1.Text = "Password Changed";
+            //}
+            //else
+            //{
+            //    Label1.Text = "Password Not Changed";
+            //}
         }
 
         protected void Button2_Click(object sender, EventArgs e)

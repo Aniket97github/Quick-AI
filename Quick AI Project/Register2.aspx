@@ -9,6 +9,30 @@
     <link href="Fonstawesome/css/all.css" rel="stylesheet" />
     <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <style type="text/css">
+        .auto-style1 {
+            flex: 1 0 0%;
+            margin-left: 0px;
+        }
+        .auto-style2 {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            width: 122%;
+            left: -231px;
+            top: 0px;
+        }
+        .auto-style3 {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            width: 100%;
+            left: -7px;
+            top: -2px;
+        }
+    </style>
     </head>
     <body>
     <form id="form1" runat="server">
@@ -49,41 +73,61 @@
                       </div>
                   </div>
 <%--for inserting line--%>
-                  <div class="row">
-                      <div class="col">
-                          <hr />
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col">
-                      <label>E-Mail Address</label>
-                          <div class="input-group">
-                          <span class="input-group-text "><i class="fa-solid fa-user"></i></span>
-                          <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-                          <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox6" ErrorMessage="Please Enter Username" ForeColor="#CC0000" OnLoad="Page_Load"></asp:RequiredFieldValidator>
-                        <br />
-                        <br />
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox6" ErrorMessage="Enter Valid Email Address" ForeColor="#CC0000" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-                          </div>
-                      </div>
-                      <div class="row">
-                      <div class="col">
-                          <label>Password</label>
-                          <div class="input-group">
-                        <span class="input-group-text "><i class="fa-solid fa-lock"></i></span>
-                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox5" ErrorMessage="Please Enter Password" ForeColor="#CC0000" OnLoad="Page_Load"></asp:RequiredFieldValidator>
-                        <br />
-                        </div>                  
                    <div class="row">
-                   <div class="col">
-                  <label>Forgot Question</label>
+                      <div class="col">
+                      &nbsp;<div style="margin-left:80px" class="input-group">
+                      <label style="margin-right:20px" class="align-content-left">FullName:</label>&nbsp
+                      <span  style="margin-right:0px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
+                      <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        <br /> 
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                          </div>
+                          </div>
+                       </div><br />
+                           <div class="row">
+                      <div class="col">
+                          <div style="margin-left:80px" class="input-group">
+                      <label style="margin-right:20px" class="align-content-left">Username:</label>&nbsp
+                      <span  style="margin-right:0px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
+                      <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        <br /> 
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                              </div>
+                          </div>
+                               </div><br />
+                           <div class="row">
+                               <div class="col">
+                      <div class="auto-style1">
+                      <div style="margin-left:80px" class="auto-style3">
+                      <label style="margin-left:5px" class="align-content-left">Email Id:</label>
+                      <span  style="margin-left:30px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
+                      <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <br /> 
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                      <br />
+                           <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Enter Valid Email Address" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                          </div>
+                          </div>
+                               </div>
+                 </div>
+                          <div class="row">
+                      <div class="col">
+                      &nbsp;<div style="margin-left:80px" class="input-group">
+                      <label style="margin-right:20px" class="align-content-left">Password:</label>&nbsp
+                      <span  style="margin-right:0px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
+                      <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                        <br /> 
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox4" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                          </div>
+                          </div>
+                       </div><br />
+                  <%--<label>Forgot Question</label>
                    <div class="input-group">
                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
                    <asp:TextBox ID="TextBox4" runat="server" CssClass="offset-sm-0"></asp:TextBox>
                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox4" ErrorMessage="Enter Forgot Question" ForeColor="#CC0000" OnLoad="Page_Load"></asp:RequiredFieldValidator>
                           <br />
-                   </div>
+                   </div>--%>
                      <div class="checkbox">
                        <input type="checkbox" id="agree_for_term" name="agree_for_term" value="1" required>
                         <label for="agree_for_term">
@@ -97,15 +141,15 @@
                                    <asp:Button ID="Button1" runat="server" BackColor="Lime" class="btn btn-primary" OnClick="Button1_Click" Text="Submit" />
                                    <asp:Label ID="Label1" runat="server" ForeColor="Lime" Text="Label"></asp:Label>
                           </div>
-                          </div>
+                          
                         </div>
-                      </div>
-                    </div>  
-                  </div>
+                     
+                    
                </div>
-             </div>
-           </div>
-         </div>
+                               </div>
+                         
+        </div>
+        
        </form>
     <br />
     <br />

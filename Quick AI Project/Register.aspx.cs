@@ -25,12 +25,12 @@ namespace Quick_AI_Project
             SqlDataReader da = cmd.ExecuteReader();
             if (da.Read())
             {
-                Session["uname"] = TextBox3.Text;
+                Session["email"] = "TextBox3.Text";
                 Response.Redirect("Dashboard.aspx");
             }
             else
             {
-                Response.Write("Password not Correct");
+                Label1.Text = "Password Not Correct";
             }
         }
 
