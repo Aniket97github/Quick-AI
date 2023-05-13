@@ -2151,6 +2151,8 @@
     <Content Include="Fonstawesome\svgs\solid\z.svg" />
     <Content Include="Forgot Password.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\check %282%29.png" />
+    <Content Include="Images\check.png" />
     <Content Include="Images\dashicon.svg" />
     <Content Include="Images\graph-up-arrow %281%29.svg" />
     <Content Include="Images\home-hero-icon.png" />

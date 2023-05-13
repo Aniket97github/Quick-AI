@@ -77,7 +77,7 @@
                 <strong>Bank Account Details</strong><br />
                 <strong>Reference</strong>
                 <p>Membership plan:Extended</p>
-               <p> Username:<?php echo name;?></p>
+               <p>Welcome,<%= Session["userName"]%></p>
                 <p style="font-style:italic" >Include a  note with Reference so that we know which amount to credit</p>
                 <strong>Amount to send</strong>
                 <i class="fas fa-indian-rupee"></i>

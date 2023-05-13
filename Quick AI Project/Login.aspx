@@ -5,10 +5,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">   
     <title></title>
-    <link href="Fonstawesome/css/all.css" rel="stylesheet" />
+    <%--<link href="Fonstawesome/css/all.css" rel="stylesheet" />
     <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
      <link href="Content/bootstrap.min.css" rel="stylesheet" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
+    <link href="Css/Style.css" rel="stylesheet" />
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link href="Fonstawesome/css/all.css" rel="stylesheet" />
+    <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.0.0.slim.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <style type="text/css">
         .auto-style1 {
             font-size: xx-large;
@@ -52,9 +64,42 @@
             <br />
             <br />
         <span class="auto-style1"><strong> Best AI Content Writer</strong><br/>
+            <span style="color: rgb(102, 102, 102); font-family: nunito, helveticaneue, &quot;helvetica neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster &amp; save hours of work.</span></span><br />
             <asp:Button ID="Button1"  runat="server" BackColor="Blue" ForeColor="White" OnClick="Button1_Click1" Text="Get Started for Free" Width="285px"  Height="50px" class="btn btn-primary"/>
             <br />
-            <span style="color: rgb(102, 102, 102); font-family: nunito, helveticaneue, &quot;helvetica neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster &amp; save hours of work.</span></span>
+            <p>No credit card required</p>
+            <div class="textcontainer">
+                <h5>How it Works?</h5>
+                <div style="margin-left:150px" class="row">
+                    <div  class="col-md-3">
+                        <i  style="font-size:xx-large"   class="fas fa-layer-group">
+                            
+                            <img src="Images/check%20(2).png" />                                                            
+                       <br /></i></div>
+                       
+                        <h7>Select a Template</h7>
+                        <p>Choose a content creation template. Multiple templates are available for your all needs.</p>
+
+                    </div>
+                    <div style=" margin-left:70px"; class="col-md-3">
+                        <i style="font-size:xx-large" class=" fas fa-folder"></i><div class="iconfolder">
+                            <img src="Images/check%20(2).png" />
+                                                                                 </div><br />
+                        <h7>Fill the form</h7>
+                        <p>Enter a detailed description of your content. Tell the AI what do you want.</p>
+                    </div>
+                    <div style="margin-left:90px" ;   class="col-md-3">
+                        <i style="font-size:xx-large" class="fas fa-file"></i><div class="iconfile">
+                            <img src="Images/check%20(2).png" />
+                            
+                                                                              </div><br/>
+                        <h7>Get Your Content</h7>
+                        <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
+                    </div>
+                </div>
+            </div>
+            
+
        </div>  
            <footer>
            <div class="foot" style="background-color: #303030;color:silver";>

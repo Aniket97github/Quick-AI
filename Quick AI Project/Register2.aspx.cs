@@ -40,6 +40,8 @@ namespace Quick_AI_Project
                     int i = pmd.ExecuteNonQuery();
                     if (i == 1)
                     {
+                        //HttpContext.Current.Session["username"] = TextBox1.Text;
+                        HttpContext.Current.Session["email"] = TextBox2.Text;
                         Label1.Text = "Registered Successfull";
                     }
                     else

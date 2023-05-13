@@ -140,7 +140,8 @@
                    </div>
                 </div>
                    <div class="submitdata">
-                       <asp:Button ID="Button1" runat="server" Text="Save Changes" CssClass="btn btn-primary btn-lg" />
+                       <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Save Changes" CssClass="btn btn-primary btn-lg" />
+      
                    </div>
                    </div>
                <div class="AccountBox2">
@@ -498,6 +499,17 @@
   }
 }
         </script>
+    <script>
+        //get values from two textboxes
+        var password = document.getElementById('TextBox2').value;
+        var confirmpassword = document.getElementById('TextBox4').value;
+        //check the values are equal
+        if (password !== confirmpassword)
+        {
+            alert('Password Do Not Match!');
+
+        }
+    </script>
    
      </body>
     </html>

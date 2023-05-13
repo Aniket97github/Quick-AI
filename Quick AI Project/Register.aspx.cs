@@ -19,19 +19,39 @@ namespace Quick_AI_Project
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            string query = "";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
             con.Open();
-            SqlCommand cmd = new SqlCommand("select emailid, password from QuickAi where emailid='" + TextBox3.Text + "' and password ='" + TextBox2.Text + "'",con);
+            string email = TextBox3.Text.ToString();
+            SqlCommand cmd = new SqlCommand("select emailid, password from QuickAi where emailid='" + email + "' and password ='" + TextBox2.Text + "'",con);
             SqlDataReader da = cmd.ExecuteReader();
             if (da.Read())
             {
-                Session["email"] = "TextBox3.Text";
+                con.Close();
+                con.Open();
+                Session["email"] = email;
+                string userName = "";
+                query = "select Username from QuickAi where emailid = '" + email + "'";
+                SqlCommand cmd1 = new SqlCommand(query, con);
+                SqlDataAdapter adpt = new SqlDataAdapter(cmd1);
+                DataTable dt = new DataTable();
+                adpt.Fill(dt);
+                if (dt.Rows.Count==1)
+                {
+                    DataRow dr = dt.Rows[0];
+
+                    userName = dr["Username"].ToString();
+                    Session["userName"] = userName;
+                }
+                //
+                //
                 Response.Redirect("Dashboard.aspx");
             }
             else
             {
                 Label1.Text = "Password Not Correct";
             }
+            //
         }
 
     
