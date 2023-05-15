@@ -337,14 +337,15 @@ p.ex1{
 
 .membershipplan{
     margin-top:100px;
-    margin-left:90px;
+    margin-left:150px;
+    margin-right:100px;
 }
 
 .membershipchart{
     box-shadow:2px 2px 5px grey;
     height:550px;
     width:1000px;
-    margin-left:130px;
+    margin-left:180px;
     margin-bottom:50px;
 }
 .flex-column{
@@ -374,3 +375,260 @@ p.ex1{
     height: 20px;
     width: 20px;
 }
+
+/*This is for testimonials Css*/
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*.testimonials {
+    background: #fff;
+    text-align: center;
+    width: 95%;
+    max-width: 600px;
+    padding: 2rem;
+    margin: 1.5rem auto;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.slider-container {
+    margin-top: 2rem;
+    margin: 2rem auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    flex: 0 0 1;
+    width: 300%;
+    / Depends On slide-box Length 100 */ transition: all 0.5s linear;
+}
+
+/*.slide-box {
+    padding: 0 80px;
+}
+
+    .slide-box .comment {
+        font-size: 0.86rem;
+        padding: 1rem 1.5rem;
+        margin-bottom: 2rem;
+        letter-spacing: 0.4px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        position: relative;
+        font-weight: 400;
+    }
+
+    .slide-box img {
+        max-width: 60px;
+        border-radius: 50%;
+    }
+
+    .slide-box .name {
+        font-size: 1rem;
+    }
+
+    .slide-box .job {
+        font-size: 0.7rem;
+        color: #8d8e97;
+        font-weight: 400;
+    }
+
+    .slide-box span {
+        border-radius: 4px;
+        color: aliceblue
+    }
+
+.control-slider {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    line-height: 40px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .slide-box {
+        padding: 0 55px;
+    }
+}*/
+/* Css for templates*/
+/**//**//*{
+    margin-bottom: 20px;
+}
+
+body {
+    color: #666;
+    font-size: 16px;
+    line-height: 27px;
+    background-color: #fff;
+}
+
+.section-headline {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.template-categories {
+    background: #eee;
+    padding: 10px;
+    border-radius: 50vh;
+    font-size: 14px;
+}
+
+    .template-categories ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        white-space: nowrap;
+        list-style: none;
+    }
+
+        .template-categories ul li {
+            padding: 10px 15px;
+            line-height: 1.5;
+        }
+
+            .template-categories ul li.active {
+                color: #fff;
+                background: #0031a5;
+                border-radius: 50vh;
+            }
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-12 {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+}
+
+.col-md-4 {
+    -webkit-box-flex: 0;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-md-6 {
+    -webkit-box-flex: 0;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.ai-templates-category-title h4 {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 1px dashed#ccc;
+}
+
+a {
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.ai-templates {
+    border-radius: 9px;
+    border: 1px solid #e5e7eb;
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+    .ai-templates content {
+        padding: 20px;
+    }
+
+.ai-templates-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 9px;
+    padding: 0.5rem;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 0px 0px 1px rgba(17,24,39,.05), 0px 1px 4px rgba(17,24,39,.1), 0px 8px 16px rgba(17,24,39,.1);
+}
+
+.ai-templates.ai-templates-pro {
+    border-color: #ffd400;
+    background-color: #fffef7;
+}
+
+.ai-templates p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.yellow {
+    background-color: #fbf6dd;
+    color: #a18d29;
+}
+
+h4 {
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-status-button {
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 2px 8px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin: 0 0 4px 4px;
+    box-sizing: border-box;
+}
+
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+}
+
+span i {
+    margin-bottom: -20px;
+}
+*/

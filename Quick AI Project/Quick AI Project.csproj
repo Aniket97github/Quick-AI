@@ -73,6 +73,7 @@
     <Content Include="Account Setting.aspx" />
     <Content Include="All AI Images.aspx" />
     <Content Include="All Documents.aspx" />
+    <Content Include="Bank Account Details.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -90,6 +91,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Css\Style.css" />
+    <Content Include="Css\Styletemplate.css" />
     <Content Include="Css\TestimonialStyle.css" />
     <Content Include="Css\upgradecss.css" />
     <Content Include="Dashboard.aspx" />
@@ -2157,6 +2159,7 @@
     <Content Include="Images\graph-up-arrow %281%29.svg" />
     <Content Include="Images\home-hero-icon.png" />
     <Content Include="Images\hype logo.png" />
+    <Content Include="Images\profile icon.jpg" />
     <Content Include="Images\Profile UI Icon.png" />
     <Content Include="Images\ui-checks-grid.svg" />
     <Content Include="JavaScript Account Setting.js" />
@@ -2296,6 +2299,13 @@
     </Compile>
     <Compile Include="All Documents.aspx.designer.cs">
       <DependentUpon>All Documents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bank Account Details.aspx.cs">
+      <DependentUpon>Bank Account Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bank Account Details.aspx.designer.cs">
+      <DependentUpon>Bank Account Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>

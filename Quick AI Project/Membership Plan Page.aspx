@@ -183,7 +183,7 @@
                                 <li><i class="fas fa-check-circle"></i>&nbsp Hide Ads</li>
                                 <li><i class="fas fa-check-circle"></i>&nbsp Free Setup</li>
                                 <li><i class="fas fa-check-circle"></i>&nbsp Free Support</li><br />
-                                <asp:Button ID="Button3" runat="server" Text="Upgrade" CssClass="btn btn-primary btn-lg " />
+                                <asp:Button ID="Button3" runat="server" Text="Upgrade" CssClass="btn btn-primary btn-lg " OnClick="Button3_Click" />
                             </ul>
                     </div>
                  </div>

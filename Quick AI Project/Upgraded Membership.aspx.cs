@@ -15,8 +15,13 @@ namespace Quick_AI_Project
         protected void Page_Load(object sender, EventArgs e)
         {
             //string name= (string)(Session["email"]);
-           
-            }
+
+
 
         }
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("Bank%20Account%20Details.aspx");
+        }
     }
+}

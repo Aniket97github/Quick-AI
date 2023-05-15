@@ -187,7 +187,7 @@
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text="Withdraws" />
                                              </asp:DropDownList>
                                         </li>
-                                        <li><a href="#"><i class="fas fa-gift"></i>Membership</a></li>
+                                        <li><a href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                                         <li><a href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
                                         <li><a href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Setting</a></li>
                                         <li><a href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
@@ -306,6 +306,14 @@
             }
         });
     </script>
-    <script type="text/javascript">        $("#icon").on("click", function () {            $(".sidebar").toggle();            $(".col-lg-9").toggleClass('col-lg-12 full-width');        });    </script>
+    <script type="text/javascript">
+
+        $("#icon").on("click", function () {
+            $(".sidebar").toggle();
+            $(".col-lg-9").toggleClass('col-lg-12 full-width');
+
+        });
+
+    </script>
 </body>
 </html>
