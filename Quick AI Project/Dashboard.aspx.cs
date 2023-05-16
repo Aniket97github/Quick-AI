@@ -16,7 +16,7 @@ namespace Quick_AI_Project
        
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Register.aspx");
+            Response.Redirect("Login.aspx");
             Session.Abandon();
        
         }

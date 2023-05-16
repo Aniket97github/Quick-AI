@@ -62,12 +62,12 @@ namespace Quick_AI_Project
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Register.aspx");
+            Response.Redirect("Login.aspx");
         }
 
         protected void Button2_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("Register.aspx");
+            Response.Redirect("Login.aspx");
         }
     }
 }

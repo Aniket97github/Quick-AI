@@ -44,7 +44,7 @@
              <li><a class="dropdown-item" href="#">  <i class="fas fa-gift"></i>Membership</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"> <i class="fas fa-note-sticky"></i>Transactions</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"> <i class="fas fa-door-open"></i>Account Settings</a></li>
-             <li><a class="dropdown-item" href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
             </ul>
              </div>
                  </div>
@@ -64,7 +64,7 @@
                 <h2>Upgraded Membership Page</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Login.aspx">Home</a></li>
+                        <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
                         <li class="breadcrumb-item active btn btn-dark" aria-current="page">Upgraded Membership</li>
                     </ol>
                 </nav>
@@ -100,7 +100,7 @@
             </div>
             </div>
             <div style="margin-left:100px;" class="bts">
-            <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Button" />
+            <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Button" OnClick="Button1_Click1" />
              
         </div>
     </form>

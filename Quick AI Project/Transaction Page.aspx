@@ -44,7 +44,7 @@
              <li><a class="dropdown-item" href="#">  <i class="fas fa-gift"></i>Membership</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"> <i class="fas fa-note-sticky"></i>Transactions</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"> <i class="fas fa-door-open"></i>Account Settings</a></li>
-             <li><a class="dropdown-item" href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
             </ul>
              </div>
                  </div>
@@ -64,7 +64,7 @@
                 <h2>Transaction Page</h2>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb1">
-              <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Login.aspx">Home</a></li>
+              <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
              <li class="breadcrumb-item active btn btn-dark" aria-current="page">Membership Plan</li>
              </ol>
             </nav>
@@ -74,30 +74,28 @@
            <div class="container">
                <h3>Transactions</h3>
              <div class="Transactionbox">
-                 <div style="margin-right:13px" class  ="row">
-                     <div class="col-sm-2">
-                         <h6 style="margin:10px;">Title</h6>
-                     </div>
-                     <div class="col-sm-2">
-                         <h6  style="margin:10px;" >Amount</h6>
-                     </div>
-                     <div class="col-sm-2">
-                         <h6  style="margin:10px;">Premium</h6>
-                     </div>
-                     <div class="col-sm-2">
-                         <h6  style="margin:10px;">Payment Method</h6>
-                     </div>
-                     <div class="col-sm-2">
-                         <h6  style="margin:10px;">Date</h6>
-                     </div>
-                     <div class="col-sm-2">
-                         <h6  style="margin:10px;">Status</h6>
-                     </div>
-                      <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
-                     <div class="textof">
-                         <h6>No result Found</h6>
-                     </div>
-                 </div>
+          string table="<table>
+  <tr>
+    <th style="padding-left:50px">Title</th>
+    <th style="padding-left:70px">Amount</th>
+    <th  style="padding-left:70px">Premium</th>
+    <th   style="padding-left:70px">Payment Method</th>
+    <th  style="padding-left:70px">Date</th>
+    <th  style="padding-left:180px">Status</th>
+  </tr>
+     <tr>
+         
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      
+     </tr>
+     
+  
+</table>
              </div>
                </div>
               <br />
@@ -171,3 +169,5 @@
     </form>
 </body>
 </html>
+
+

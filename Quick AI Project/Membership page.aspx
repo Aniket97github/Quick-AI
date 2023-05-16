@@ -44,7 +44,7 @@
              <li><a class="dropdown-item" href="#">  <i class="fas fa-gift"></i>Membership</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"> <i class="fas fa-note-sticky"></i>Transactions</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"> <i class="fas fa-door-open"></i>Account Settings</a></li>
-             <li><a class="dropdown-item" href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
             </ul>
              </div>
                  </div>
@@ -79,7 +79,7 @@
                 <li><a href="#"><i class="fas fa-gift"></i>Membership</a></li>
                 <li><a href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
                 <li><a href="#"><i class="fas fa-door-open"></i>Account Setting</a></li>
-                <li><a href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
+                <li><a href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
             </ul>
             </div>
             </div>

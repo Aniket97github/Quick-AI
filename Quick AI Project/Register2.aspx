@@ -68,7 +68,7 @@
                   <div class="row">
                       <div class="col">
                           <center><h1>Let's create your account</h1>
-                          <span>Already have a account?<a href="http://localhost:64582/Register.aspx">Log In!!</a></span>
+                          <span>Already have a account?<a href="http://localhost:64582/Login.aspx">Log In!!</a></span>
                           </center>
                       </div>
                   </div>

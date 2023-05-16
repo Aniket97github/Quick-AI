@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Quick_AI_Project
 {
@@ -16,7 +19,10 @@ namespace Quick_AI_Project
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Upgraded%20Membership.aspx");
+              
+                Response.Redirect("Upgraded%20Membership.aspx");
+            
+           
         }
     }
 }

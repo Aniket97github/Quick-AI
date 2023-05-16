@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account Setting.aspx" />
+    <Content Include="AI Images.aspx" />
     <Content Include="All AI Images.aspx" />
     <Content Include="All Documents.aspx" />
     <Content Include="Bank Account Details.aspx" />
@@ -2164,10 +2165,10 @@
     <Content Include="Images\ui-checks-grid.svg" />
     <Content Include="JavaScript Account Setting.js" />
     <Content Include="JavaScript.js" />
-    <Content Include="Login.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="Membership page.aspx" />
     <Content Include="Membership Plan Page.aspx" />
-    <Content Include="Register.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Register2.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -2271,7 +2272,6 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Testimonial.aspx" />
     <Content Include="Transaction Page.aspx" />
     <Content Include="Upgraded Membership.aspx" />
     <Content Include="Web.config" />
@@ -2285,6 +2285,13 @@
     </Compile>
     <Compile Include="Account Setting.aspx.designer.cs">
       <DependentUpon>Account Setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AI Images.aspx.cs">
+      <DependentUpon>AI Images.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI Images.aspx.designer.cs">
+      <DependentUpon>AI Images.aspx</DependentUpon>
     </Compile>
     <Compile Include="All AI Images.aspx.cs">
       <DependentUpon>All AI Images.aspx</DependentUpon>
@@ -2324,12 +2331,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Membership page.aspx.cs">
       <DependentUpon>Membership page.aspx</DependentUpon>
@@ -2346,12 +2353,12 @@
       <DependentUpon>Membership Plan Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register2.aspx.cs">
       <DependentUpon>Register2.aspx</DependentUpon>
@@ -2366,13 +2373,6 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Testimonial.aspx.cs">
-      <DependentUpon>Testimonial.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Testimonial.aspx.designer.cs">
-      <DependentUpon>Testimonial.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transaction Page.aspx.cs">
       <DependentUpon>Transaction Page.aspx</DependentUpon>

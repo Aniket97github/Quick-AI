@@ -45,7 +45,7 @@
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-gift"></i>Membership</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Settings</a></li>
-                                        <li><a class="dropdown-item" href="http://localhost:64582/Register.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Home.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -62,14 +62,14 @@
                     </div>
                 </div>
             </header>
-        <div  style="height:280px;width:900px; background-color:white;margin-top:200px;margin-left:200px;border:1px solid black " class="billingaccountbox " >
+        <div  style="height:280px;width:900px; background-color:white;margin-top:200px;margin-left:200px;border:1px solid black; " class="billingaccountbox " >
             <div class="row">
            <h6>&nbsp Bank Account Details</h6>
           <%--  <hr style="width:890px"/>--%>
             <div style="background-color:lightgrey;width:900px;margin-left:10px"; class="col-lg-3"><br />
                 <h6>Reference</h6>
                 <p>Order : Extended Plan Membership Plan  </p>
-                <p>Username:<%=Session["userName"] %> </p>
+                <p>Username: <%=Session["userName"] %> </p>
                 <p>Include a note with Reference so that we know which account to credit</p>
                  
             </div>
@@ -77,12 +77,12 @@
                 <div class="row">
                     <h6>&nbsp Amount to send</h6>
                     <p>&nbsp 5 <i class="fas fa-indian-rupee"></i></p>
-                    </div>"
+                    </div>
 
         </div>
             </div>
         <div style="margin-top:20px;margin-left:200px;" class="transacbtn">
-            <asp:Button ID="Button1" runat="server" Text="Transaction" CssClass="btn btn-primary btn-lg" />
+            <asp:Button ID="Button1" runat="server" Text="Transaction" CssClass="btn btn-primary btn-lg" OnClick="Button1_Click1" />
             
         </div><br />
          <footer>

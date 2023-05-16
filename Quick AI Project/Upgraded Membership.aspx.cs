@@ -21,7 +21,19 @@ namespace Quick_AI_Project
         }
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("Bank%20Account%20Details.aspx");
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
+            con.Open();
+
+
+            string p = "insert into BilingDetails(Title,Amount,Premium,PaymentMethod,Date,Status) values('Extended Plan','550','Membership','wire_transfer',' ',' ')";
+            SqlCommand cmd = new SqlCommand(p, con);
+            int i = cmd.ExecuteNonQuery();
+            if (i == 1)
+            {
+                Response.Redirect("Bank%20Account%20Details.aspx");
+            }
+
+           
         }
     }
 }

@@ -53,7 +53,7 @@
                   <div class="row">
                       <div class="col">
                          <center><h4>Forgot Password?</h4>
-                         <span>Go to Home Page!<a href="http://localhost:64582/Login.aspx">Home Page</a></span>
+                         <span>Go to Home Page!<a href="http://localhost:64582/Home.aspx">Home Page</a></span>
                           </center>
                           </div>
                    </div>
