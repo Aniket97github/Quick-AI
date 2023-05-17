@@ -36,7 +36,7 @@
                <img style="height:50px;width:50px;" src="Images/Profile%20UI%20Icon.png" />
                </a>
               <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#"><i  class="fas fa-qrcode"></i>Dashboard</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i  class="fas fa-qrcode"></i>Dashboard</a></li>
              <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
              <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
              <li><a class="dropdown-item" href="#"> <i class="fas fa-image"></i>AI Images</a></li>
@@ -69,7 +69,7 @@
             </div>
             <div class="menu">
             <ul>
-               <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+               <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                 <li><a href="#"><i class="fas fa-file"></i>My Documents</a></li>
                 <header style="color:blue">Organize and Manage</header>
                 <li><a href="#"><i class="fas fa-layer-group"></i>Templates</a></li>

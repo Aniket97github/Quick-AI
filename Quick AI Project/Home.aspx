@@ -25,285 +25,309 @@
         .auto-style1 {
             font-size: xx-large;
         }
-        </style>
-    <style>{
-    margin-bottom: 20px;
-}
-
-body {
-    color: #666;
-    font-size: 16px;
-    line-height: 27px;
-    background-color: #fff;
-}
-
-.section-headline {
-    text-align: center;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-.template-categories {
-    background: #eee;
-    padding: 10px;
-    border-radius: 50vh;
-    font-size: 14px;
-}
-
-    .template-categories ul {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        white-space: nowrap;
-        list-style: none;
-    }
-
-        .template-categories ul li {
-            padding: 10px 15px;
-            line-height: 1.5;
+    </style>
+    <style>
+        {
+            margin-bottom: 20px;
         }
 
-            .template-categories ul li.active {
-                color: #fff;
-                background: #0031a5;
-                border-radius: 50vh;
+        body {
+            color: #666;
+            font-size: 16px;
+            line-height: 27px;
+            background-color: #fff;
+        }
+
+        .section-headline {
+            text-align: center;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .template-categories {
+            background: #eee;
+            padding: 10px;
+            border-radius: 50vh;
+            font-size: 14px;
+        }
+
+            .template-categories ul {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                white-space: nowrap;
+                list-style: none;
             }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-    display: flex;
-    flex-wrap: wrap;
-}
+                .template-categories ul li {
+                    padding: 10px 15px;
+                    line-height: 1.5;
+                }
 
-.col-md-12 {
-    max-width: 100%;
-    -webkit-box-flex: 0;
-    flex: 0 0 100%;
-}
+                    .template-categories ul li.active {
+                        color: #fff;
+                        background: #0031a5;
+                        border-radius: 50vh;
+                    }
 
-.col-md-4 {
-    -webkit-box-flex: 0;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-.col-md-6 {
-    -webkit-box-flex: 0;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
+        .col-md-12 {
+            max-width: 100%;
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+        }
 
-.ai-templates-category-title h4 {
-    margin-top: 30px;
-    font-weight: 700;
-    font-size: 16px;
-    border-bottom: 1px dashed#ccc;
-}
+        .col-md-4 {
+            -webkit-box-flex: 0;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
 
-a {
-    transition: .3s;
-    box-sizing: border-box;
-}
+        .col-md-6 {
+            -webkit-box-flex: 0;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
 
-.ai-templates {
-    border-radius: 9px;
-    border: 1px solid #e5e7eb;
-    box-shadow: none;
-    transition: 0.3s;
-}
+        .ai-templates-category-title h4 {
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            border-bottom: 1px dashed#ccc;
+        }
 
-    .ai-templates content {
-        padding: 20px;
-    }
+        a {
+            transition: .3s;
+            box-sizing: border-box;
+        }
 
-.ai-templates-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 9px;
-    padding: 0.5rem;
-    box-shadow: 0 0 #0000, 0 0 #0000, 0px 0px 0px 1px rgba(17,24,39,.05), 0px 1px 4px rgba(17,24,39,.1), 0px 8px 16px rgba(17,24,39,.1);
-}
+        .ai-templates {
+            border-radius: 9px;
+            border: 1px solid #e5e7eb;
+            box-shadow: none;
+            transition: 0.3s;
+        }
 
-.ai-templates.ai-templates-pro {
-    border-color: #ffd400;
-    background-color: #fffef7;
-}
+            .ai-templates content {
+                padding: 20px;
+            }
 
-.ai-templates p {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #6b7280;
-    text-decoration: none;
-}
+        .ai-templates-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 9px;
+            padding: 0.5rem;
+            box-shadow: 0 0 #0000, 0 0 #0000, 0px 0px 0px 1px rgba(17,24,39,.05), 0px 1px 4px rgba(17,24,39,.1), 0px 8px 16px rgba(17,24,39,.1);
+        }
 
-.yellow {
-    background-color: #fbf6dd;
-    color: #a18d29;
-}
+        .ai-templates.ai-templates-pro {
+            border-color: #ffd400;
+            background-color: #fffef7;
+        }
 
-h4 {
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+        .ai-templates p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #6b7280;
+            text-decoration: none;
+        }
 
-.dashboard-status-button {
-    border-radius: 4px;
-    font-size: 14px;
-    line-height: 21px;
-    padding: 2px 8px;
-    display: inline-block;
-    position: relative;
-    top: -2px;
-    margin: 0 0 4px 4px;
-    box-sizing: border-box;
-}
-.fa {
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-}
+        .yellow {
+            background-color: #fbf6dd;
+            color: #a18d29;
+        }
 
-span i {
-    margin-bottom: -20px;
+        h4 {
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-}
+        .dashboard-status-button {
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 21px;
+            padding: 2px 8px;
+            display: inline-block;
+            position: relative;
+            top: -2px;
+            margin: 0 0 4px 4px;
+            box-sizing: border-box;
+        }
 
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
+        .fa {
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+        }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.testimonials {
-  background: #fff;
-  text-align: center;
-  width: 95%;
-  max-width: 600px;
-  padding: 2rem;
-  margin: 1.5rem auto;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-}
-.title {
-  font-size: 1.5rem;
-}
-.description {
-  font-size: 0.95rem;
-  color: #333;
-}
+        span i {
+            margin-bottom: -20px;
+        }
 
-.slider-container {
-  margin-top: 2rem;
-  margin: 2rem auto 0 auto;
-  position: relative;
-  overflow: hidden;
-}
-.slider {
-  display: flex;
-  flex: 0 0 1;
-  width: 300%; / Depends On slide-box Length  100 */
-  transition: all 0.5s linear;
-}
-.slide-box {
-  padding: 0 80px;
-}
-.slide-box .comment {
- 
-  font-size: 0.86rem;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-  letter-spacing: 0.4px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  position: relative;
-  font-weight: 400;
-}
+        @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
 
-.slide-box img {
-  max-width: 60px;
-  border-radius: 50%;
-}
-.slide-box .name {
-  font-size: 1rem;
-}
-.slide-box .job {
-  font-size: 0.7rem;
-  color: #8d8e97;
-  font-weight: 400;
-}
-.slide-box span{
-    border-radius:4px;
-    color:aliceblue
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.control-slider {
-  position: absolute;
-  z-index: 5;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 40px;
-  width: 40px;
-  background-color: #fff;
-  line-height: 40px;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-}
-.btn-left {
-  left: 10px;
-}
-.btn-right {
-  right: 10px;
-}
-h3{
-    margin-top:5px;
-    margin-bottom:5px;
-    text-align:center;
-}
-@media screen and (max-width: 500px) {
+        .testimonials {
+            background: #fff;
+            text-align: center;
+            width: 95%;
+            max-width: 600px;
+            padding: 2rem;
+            margin: 1.5rem auto;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .title {
+            font-size: 1.5rem;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .slider-container {
+            margin-top: 2rem;
+            margin: 2rem auto 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            flex: 0 0 1;
+            width: 300%;
+            / Depends On slide-box Length 100 */ transition: all 0.5s linear;
+        }
+
+        .slide-box {
+            padding: 0 80px;
+        }
+
+            .slide-box .comment {
+                font-size: 0.86rem;
+                padding: 1rem 1.5rem;
+                margin-bottom: 2rem;
+                letter-spacing: 0.4px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+                position: relative;
+                font-weight: 400;
+            }
+
+            .slide-box img {
+                max-width: 60px;
+                border-radius: 50%;
+            }
+
+            .slide-box .name {
+                font-size: 1rem;
+            }
+
+            .slide-box .job {
+                font-size: 0.7rem;
+                color: #8d8e97;
+                font-weight: 400;
+            }
+
+            .slide-box span {
+                border-radius: 4px;
+                color: aliceblue
+            }
+
+        .control-slider {
+            position: absolute;
+            z-index: 5;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 40px;
+            width: 40px;
+            background-color: #fff;
+            line-height: 40px;
+            color: #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        }
+
+        .btn-left {
+            left: 10px;
+        }
+
+        .btn-right {
+            right: 10px;
+        }
+
+        h3 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 500px) {
             .slide-box {
                 padding: 0 55px;
             }
         }
-
-</style>
+    </style>
 
         </head>
          <body>
     <form id="form1" runat="server">
-           <div class="container" >
+            <div class="container" >
      <div class="headerAccoutSetting">
          <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
-             <div class="col-md-2"> 
+             <div style="margin-left:4px" class="col-md-2"> 
                  <img src="Images/hype%20logo.png" />
              </div>
              <div class="col-md-6"></div>
-             <div class="col-md-2">
-                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="Blue" CausesValidation="False" ForeColor="White" OnClick="Button2_Click" /></div>
-             <div class="col-md-2">
-                 <div class="dropdown">
-                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
-                         <asp:ListItem>en</asp:ListItem>
-                         <asp:ListItem>English</asp:ListItem>
-                         <asp:ListItem>Hindi</asp:ListItem>
-                         <asp:ListItem>Kannada</asp:ListItem>
-                         <asp:ListItem></asp:ListItem>
-                     </asp:DropDownList>
+             <div style="margin-left:210px" class="col-md-2">
+               <div class="dropdown">
+               <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <img style="height:50px;width:50px;" src="Images/Profile%20UI%20Icon.png" />
+               </a>
+              <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#"><i  class="fas fa-qrcode"></i>Dashboard</a></li>
+             <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
+             <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-image"></i>AI Images</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-message"></i>AI Chat</a></li>
+             <li><a class="dropdown-item" href="#">  <i class="fas fa-headphones"></i>Speech to Text</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+             <li><a class="dropdown-item" href="#"> <i class="fas fa-link"></i>Affiliate Program</a></li>
+             <li><a class="dropdown-item" href="#">  <i class="fas fa-gift"></i>Membership</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"> <i class="fas fa-note-sticky"></i>Transactions</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"> <i class="fas fa-door-open"></i>Account Settings</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
+            </ul>
+             </div>
                  </div>
+             <div class="col-md-2">
+                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary">
+                     <asp:ListItem>en</asp:ListItem>
+                     <asp:ListItem>English</asp:ListItem>
+                     <asp:ListItem>Hindi</asp:ListItem>
+                     <asp:ListItem>Marathi</asp:ListItem>
+                 </asp:DropDownList>                               
+             </div>
              </div>
          </div>
-     </div>
-       <%-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
-           
-               
-        </nav>--%>
-    </div>
+            </div>
         <br />
         <br />
         <br />
@@ -700,13 +724,13 @@ h3{
                                         </div>
                                         <h4>
                                             Stories                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                        </h4>
                                         <p class="margin-bottom-0">Engaging and persuasive stories that will capture your reader's attention and interest.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div  style="margin-top:20px" class="col-md-4 col-sm-6 category-3">
+                            <div  style="margin-top:20px" class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -720,7 +744,7 @@ h3{
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                              <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -728,13 +752,13 @@ h3{
                                             <i class="fa fa-tasks"></i>
                                         </div>
                                         <h4>
-                                            Definition                                                                                    </h4>
+                                            Definition</h4>
                                         <p class="margin-bottom-0">A definition for a word, phrase, or acronym that's used often by your target buyers.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                             <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div style="margin-top:20px"  class="dashboard-box ai-templates ">
                                     <div class="content">

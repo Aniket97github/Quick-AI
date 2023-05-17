@@ -24,17 +24,17 @@
                 <div class="container">
                     <div class="headerAccoutSetting">
                         <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex; box-shadow: 2px 2px 5px grey;">
-                            <div class="col-md-2">
+                            <div style="margin-left:4px" class="col-md-2">
                                 <img src="Images/hype%20logo.png" />
                             </div>
-                            <div class="col-md-4"></div>
+                            <div class="col-md-6"></div>
                             <div class="col-md-2">
                                 <div class="dropdown">
                                     <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-image"></i>AI Images</a></li>

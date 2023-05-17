@@ -16,33 +16,41 @@ namespace Quick_AI_Project
         {
 
         }
-        protected void Button1_Click1(object sender,EventArgs e)
+        protected void Button1_Click1(object sender, EventArgs e)
         {
-            //Create a connection by using Sqlconnection class
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
-            //Create a Sql Query 
-            string n = "Select Title,Amount,Premium,PaymentMethod,Date,Status from bilingdetails ";
-            //Create a Sqlcommand to Execute the query
-            SqlCommand cmd = new SqlCommand(n, con);
-            //open the connnection
-            con.Open();
-            //Execute the query
-            SqlDataReader reader = cmd.ExecuteReader();
-            //Process the Result
-            while (reader.Read())
-            {
-                string title = reader["Title"].ToString();
-                string amount = reader["Amount"].ToString();
-                string premium = reader["Premium"].ToString();
-                string paymentmethod = reader["PaymentMethod"].ToString();
-                string date = reader["Date"].ToString();
-                string status = reader["Status"].ToString();
+            // Connect to the database
+            SqlConnection dim = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
 
-               
-            }
-            Response.Redirect("Transaction%20Page.aspx");
-            //Close the connection 
-            con.Close();
+            // Query the database
+            String q = "SELECT * FROM tableName";
+            SqlCommand cmd = new SqlCommand(q, dim);
+            dim.Open();
+            SqlDataReader sim = cmd.ExecuteReader();
+
+            // Build the response
+        //    String b = "[";
+        //    While(reader.Read())
+        //b += "{"
+        //b += " & "id" & "" & ":" & reader("id") & ";
+        //    b += " & "title" & "" & ":" & " & reader.GetString("title") & "" & ";
+        //b += """" & "amount" & """" & ":" & reader.GetInt32("amount") & ",";
+        //b += """" & "premium" & """" & ":" & reader.GetBoolean("premium") & ","
+        //b += """" & "paymentMethod" & """" & ":" & """" & reader.GetString("paymentMethod") & """" & ","
+        //b += """" & "date" & """" & ":" & """" & reader.GetDateTime("date") & """" & ","
+        //b += """" & "status" & """" & ":" & """" & reader.GetString("status") & """"
+        // b += "},";
+        //    End While
+      
+    //// Remove the last comma
+    //        b = b.Substring(0, b.Length - 1);
+    //        b += "]";
+
+            // Return the response
+            //Response.Write(b);
+
+    // Close the database connection
+            dim.Close();
+
         }
     }
 }

@@ -127,13 +127,13 @@
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-image"></i>AI Images</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-message"></i>AI Chat</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/AI%20Chat.aspx"><i class="fas fa-message"></i>AI Chat</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-link"></i>Affiliate Program</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-gift"></i>Membership</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Settings</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
@@ -174,9 +174,9 @@
                                              </asp:DropDownList>
                                         </li>
                                         <h6 style="color: blue">Organize and Manage</h6>
-                                        <li><a href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-                                        <li><a href="#"><i class="fas fa-image"></i>AI Images</a></li>
-                                        <li><a href="#"><i class="fas fa-message"></i>AI Chat</a></li>
+                                        <li><a href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
+                                        <li><a href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
+                                        <li><a href="http://localhost:64582/AI%20Chat.aspx"><i class="fas fa-message"></i>AI Chat</a></li>
                                         <li><a href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
                                         <li><a href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                                         <h6 style="color: blue">Account</h6>
@@ -216,7 +216,7 @@
                                             <div id="ImagesUsed">
                                                 <span>ImagesUsed</span>
                                                 <h4>0/
-                    <small>100</small>
+                                                <small>100</small>
                                                 </h4>
                                                 <i class="fa-solid fa-chart-simple" style="font-size: 60px; color: lightgreen"></i>
                                             </div>
@@ -225,7 +225,7 @@
                                             <div id="Speechtotext">
                                                 <span>Speech To Text</span>
                                                 <h4>0/
-                    <small>0</small>
+                                                <small>0</small>
                                                 </h4>
                                                 <i class="fa-solid fa-headset" style="font-size: 60px; color: orange"></i>
                                             </div>

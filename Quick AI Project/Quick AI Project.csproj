@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account Setting.aspx" />
+    <Content Include="AI Chat.aspx" />
     <Content Include="AI Images.aspx" />
     <Content Include="All AI Images.aspx" />
     <Content Include="All Documents.aspx" />
@@ -2272,6 +2273,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Templates.aspx" />
     <Content Include="Transaction Page.aspx" />
     <Content Include="Upgraded Membership.aspx" />
     <Content Include="Web.config" />
@@ -2285,6 +2287,13 @@
     </Compile>
     <Compile Include="Account Setting.aspx.designer.cs">
       <DependentUpon>Account Setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AI Chat.aspx.cs">
+      <DependentUpon>AI Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI Chat.aspx.designer.cs">
+      <DependentUpon>AI Chat.aspx</DependentUpon>
     </Compile>
     <Compile Include="AI Images.aspx.cs">
       <DependentUpon>AI Images.aspx</DependentUpon>
@@ -2373,6 +2382,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Templates.aspx.cs">
+      <DependentUpon>Templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates.aspx.designer.cs">
+      <DependentUpon>Templates.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transaction Page.aspx.cs">
       <DependentUpon>Transaction Page.aspx</DependentUpon>
