@@ -104,11 +104,21 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="container-fluid" style="position:fixed;z-index:+5">
+            <div style="background-color:cornsilk" class="row">
+                <div class="col-md-10">
+                    <p>Your email address is not verified. Please verify your email address to use all the features.</p>
+                </div>
+                <div class="col-md-2">
+                    <asp:Button ID="Button1" runat="server" Text="Verify Email" OnClick="Button1_Click1" />
+                </div>
+            </div>
+        </div>
         <div>
             <header>
                 <div class="container">
                     <div class="headerAccoutSetting">
-                        <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex; box-shadow: 2px 2px 5px grey;">
+                        <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex;margin-top:40px; box-shadow: 2px 2px 5px grey;">
                             <div class="col-md-2">
                                 <img src="Images/hype%20logo.png" />
                             </div>

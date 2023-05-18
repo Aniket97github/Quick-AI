@@ -18,39 +18,14 @@ namespace Quick_AI_Project
         }
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            // Connect to the database
-            SqlConnection dim = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
 
-            // Query the database
-            String q = "SELECT * FROM tableName";
-            SqlCommand cmd = new SqlCommand(q, dim);
-            dim.Open();
-            SqlDataReader sim = cmd.ExecuteReader();
+            Response.Redirect("Transaction%20Page.aspx");
 
-            // Build the response
-        //    String b = "[";
-        //    While(reader.Read())
-        //b += "{"
-        //b += " & "id" & "" & ":" & reader("id") & ";
-        //    b += " & "title" & "" & ":" & " & reader.GetString("title") & "" & ";
-        //b += """" & "amount" & """" & ":" & reader.GetInt32("amount") & ",";
-        //b += """" & "premium" & """" & ":" & reader.GetBoolean("premium") & ","
-        //b += """" & "paymentMethod" & """" & ":" & """" & reader.GetString("paymentMethod") & """" & ","
-        //b += """" & "date" & """" & ":" & """" & reader.GetDateTime("date") & """" & ","
-        //b += """" & "status" & """" & ":" & """" & reader.GetString("status") & """"
-        // b += "},";
-        //    End While
-      
-    //// Remove the last comma
-    //        b = b.Substring(0, b.Length - 1);
-    //        b += "]";
 
-            // Return the response
-            //Response.Write(b);
+          }
 
-    // Close the database connection
-            dim.Close();
+           
+         
 
         }
     }
-}

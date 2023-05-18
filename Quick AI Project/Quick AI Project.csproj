@@ -2273,6 +2273,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Speech To Text page.aspx" />
     <Content Include="Templates.aspx" />
     <Content Include="Transaction Page.aspx" />
     <Content Include="Upgraded Membership.aspx" />
@@ -2382,6 +2383,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Speech To Text page.aspx.cs">
+      <DependentUpon>Speech To Text page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Speech To Text page.aspx.designer.cs">
+      <DependentUpon>Speech To Text page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Templates.aspx.cs">
       <DependentUpon>Templates.aspx</DependentUpon>

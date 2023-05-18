@@ -1,6 +1,6 @@
 ﻿body {
 }
-
+/*
 * {
     margin-bottom: 20px;
 }
@@ -154,7 +154,7 @@ span i {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-}
+}*/
 
 .testimonials {
     background: #fff;
@@ -256,3 +256,16 @@ h3 {
     }
 }
 
+.speechtotextcontainer {
+    box-shadow: 2px 2px 5px grey;
+    height: 700px;
+    width: 255px;
+    margin-left:280px;
+}
+
+.speechtotextcontainer2 {
+    box-shadow: 2px 2px 5px grey;
+    height: 480px;
+    width:638px;
+    margin-left:100px;
+}

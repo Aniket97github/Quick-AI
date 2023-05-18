@@ -20,9 +20,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="container-fluid" style="position:fixed">
+            <div style="background-color:cornsilk" class="row">
+                <div class="col-md-10">
+                    <p>Your email address is not verified. Please verify your email address to use all the features.</p>
+                </div>
+                <div class="col-md-2">
+                    <asp:Button ID="Button1" runat="server" Text="Verify Email" />
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="headerAccoutSetting">
-                <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex; box-shadow: 2px 2px 5px grey;">
+                <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex;margin-top:40px; box-shadow: 2px 2px 5px grey;">
                     <div class="col-md-2">
                         <img src="Images/hype%20logo.png" />
                     </div>
@@ -62,7 +72,7 @@
         <div class="transactionhead">
             <div class="row">
                 <h2>Transaction Page</h2>
-                <nav aria-label="breadcrumb">
+                <nav style="padding-top:30px" aria-label="breadcrumb">
                     <ol class="breadcrumb1">
                         <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
                         <li class="breadcrumb-item active btn btn-dark" aria-current="page">Membership Plan</li>
@@ -85,17 +95,14 @@
                         <th style="padding-left: 180px">Status</th>
                     </tr>
                     <tr>
+                        <td><%Title.ToString();%></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-
                     </tr>
-
-
                 </table>
                     </div>
             </div>
@@ -169,40 +176,7 @@
                 </div>
             </div>
         </footer>
-        <script>
-    // Send an AJAX request
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            // Parse the response
-            var response = JSON.parse(this.responseText);
-            
-            // Start building the HTML table
-            var table = "<table>";
-            
-            // Loop through the results and output them into the HTML table
-            for(var i = 0; i < response.length; i++) {
-                table += "<tr>";
-                table += "<td>" + response[i].id + "</td>";
-                table += "<td>" + response[i].title + "</td>";
-                table += "<td>" + response[i].amount + "</td>";
-                table += "<td>" + response[i].premium + "</td>";
-                table += "<td>" + response[i].paymentMethod + "</td>";
-                table += "<td>" + response[i].date + "</td>";
-                table += "<td>" + response[i].status + "</td>";
-                table += "</tr>";
-            }
-            
-            // Close the HTML table
-            table += "</table>";
-            
-            // Add the table to the page
-            document.getElementById("tableDiv").innerHTML = table;
-        }
-    };
-    xhttp.open("GET", "data.php", true);
-    xhttp.send();
-        </script>
+     
     </form>
 </body>
 </html>
