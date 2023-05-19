@@ -72,6 +72,7 @@
   <ItemGroup>
     <Content Include="Account Setting.aspx" />
     <Content Include="AI Chat.aspx" />
+    <Content Include="AI Code.aspx" />
     <Content Include="AI Images.aspx" />
     <Content Include="All AI Images.aspx" />
     <Content Include="All Documents.aspx" />
@@ -2295,6 +2296,13 @@
     </Compile>
     <Compile Include="AI Chat.aspx.designer.cs">
       <DependentUpon>AI Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AI Code.aspx.cs">
+      <DependentUpon>AI Code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI Code.aspx.designer.cs">
+      <DependentUpon>AI Code.aspx</DependentUpon>
     </Compile>
     <Compile Include="AI Images.aspx.cs">
       <DependentUpon>AI Images.aspx</DependentUpon>

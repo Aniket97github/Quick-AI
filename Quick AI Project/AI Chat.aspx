@@ -160,8 +160,13 @@
                   </div>
                   </div>
         <div class="aichatcontainer">
-         <h6 style="margin-left:14px;margin-top:10px;"><img style="width:45px" src="Images/Profile%20UI%20Icon.png" />AI Chat Bot</h6> 
-
+           <div style="margin-left:20px;display: flex; align-items: center;"><img style="width:45px" src="Images/Profile%20UI%20Icon.png" />
+                              <h6>AI Chat Bot</h6> 
+    <button style="margin-left:670px;color:darkblue" <i class="fas fa-file-export" typeof="button" id="newt" onclick="downloadFile()"</button>
+    <button style="color:red" <i class="fas fa-trash-can" type="button" id="return" onclick="sendMessage()"></button>
+</div>
+        
+                
             <hr style="width:900px"/>
             <div class="chat-input">
     <input type="text" id="message" placeholder="Type a message..." />
@@ -197,8 +202,33 @@
                      setTimeout(function () {
                          $("#output").html("<span>Typing....you need to upgrade your plan to use this feature.</span>");
                      }, 1000);
+                     $("#return").click(function () {
+                         remove();
+
+                     });
+                     function remove() {
+                         $("#output").html("");
+                     }
                  }
              }
-        </script>   </form>
+         </script> 
+        <script>
+            function downloadFile() {
+                let fileData = "Your file data goes here";
+                let fileName = "your-file-name.txt";
+
+                let element = document.createElement('a');
+                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(fileData));
+                element.setAttribute('download', fileName);
+
+                element.style.display = 'none';
+                document.body.appendChild(element);
+
+                element.click();
+
+                document.body.removeChild(element);
+            }
+        </script>
+    </form>
 </body>
 </html>

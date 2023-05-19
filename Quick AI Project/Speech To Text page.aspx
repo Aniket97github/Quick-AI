@@ -153,7 +153,57 @@
                  </div>
                  <hr />
                  <div class="generateresultbox">
-                     <textarea style="padding-right:30px; height:400px;width:550px"></textarea>
+                      <div class="container">
+                         <div class="options">
+                             <button id="bold" class="option-button-format">
+                             <i class="fas fa-bold"></i>
+                             </button>
+                             <button id="italic" class="options-button-format">
+                               <i class="fas fa-italic"></i>
+                             </button>
+                             <button id="underline" class="options-button-format">
+                                 <i class="fas fa-underline"></i>
+                             </button>
+                             <button id="strikethrough" class="options-button-format">
+                                 <i class="fas fa-strikethrough"></i>
+                             </button>
+                             <button id="alignleft" class="options-button-format">
+                                 <i class="fas fa-align-left"></i>
+                             </button>
+                             <button id="aligncenter" class="options-button-format">
+                                 <i class="fas fa-align-center"></i>
+                             </button>
+                             <button id="alignright" class="options-button-format">
+                                 <i class="fas fa-align-right"></i>
+                             </button>
+                             <button id="link" class="options-button-format">
+                                 <i class="fas fa-link"></i>
+                             </button>
+                             <button id="blockquote"class="options-button-format">
+                                 <i class="fas fa-quote-left"></i>
+                             </button><br />
+                             <button id="undo" class="options-button-format">
+                                 <i class="fas fa-undo"></i>
+                             </button>
+                             <button id="redo" class="options-button-format">
+                                 <i class="fas fa-redo"></i>
+                             </button>
+                             <button id="clearformatting" class="options-button-format">
+                                 <i class="
+                             </button>
+                             <button id="table" class="options-button-format">
+                                 <i class="fas fa-table"></i>
+                             </button>
+                             <dropdown  id="unordered list"     <i class="fas fa-list-ul"  class="options-button-format">
+                             
+                                 <li id="unordered list circle" class="options-li-format"></li>
+                             </dropdown>
+
+                         </div>
+                             </div>
+                     <textarea style="padding-right:30px; height:400px;width:550px">
+                        
+                     </textarea>
                  </div>
              </div>
          </div>

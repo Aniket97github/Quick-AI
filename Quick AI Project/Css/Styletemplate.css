@@ -269,3 +269,15 @@ h3 {
     width:638px;
     margin-left:100px;
 }
+
+.aicodecontainer{
+    box-shadow:2px 2px 5px grey;
+    height:500px;
+    width:240px;
+
+}
+
+.aicodecontainer2 {
+    box-shadow:2px 2px 5px grey;
+    height:480px;
+}
