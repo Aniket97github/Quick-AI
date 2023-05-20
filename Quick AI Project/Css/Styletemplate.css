@@ -272,12 +272,18 @@ h3 {
 
 .aicodecontainer{
     box-shadow:2px 2px 5px grey;
-    height:500px;
-    width:240px;
+    height:400px;
+    width:260px;
+    margin-left:250px;
+
 
 }
 
 .aicodecontainer2 {
     box-shadow:2px 2px 5px grey;
-    height:480px;
+    height:140px;
+    width:650px;
+    margin-left:20px;
+  
+
 }

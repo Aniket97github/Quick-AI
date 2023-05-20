@@ -285,6 +285,173 @@
             }
         }
     </style>
+    <!--This Style is For Blogs-->
+    <style>
+*{
+    box-sizing:border-box;
+}
+body{
+    color: #666;
+    font-size: 16px;
+    line-height: 27px;
+    background-color: #fff;
+}
+.section.border-top {
+    border-top: 1px solid #e0e0e0;
+}
+.container {
+    max-width:960px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-xl-12 {
+    position:relative;
+    width:100%;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+}
+.col-xl-4 {
+    position:relative;
+    width:100%;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+}
+.margin-bottom-45{
+    margin-bottom:45px !important;
+
+}
+.margin-top-0{
+    margin-top:0!important;
+}
+.section-headline {
+    display:block;
+    position:relative;
+    padding-right:20px;
+}
+.section-headline h3 {
+    font-size:26px;
+    line-height:36PX;
+    font-weight:500;
+    color:#333;
+}
+.headline-link {
+    position:absolute;
+    right:0;
+    bottom:0;
+    text-decoration:none;
+}
+.blog-compact-item-container {
+    display:block;
+    height:100%;
+    width:100%;
+    border-radius:4px;
+    background:0 0;
+    transform: translate3d(0, 0, 0);
+    transition: transform .4s;
+    margin-bottom: 30px;
+}
+.blog-compact-item{
+    height:42px;
+    background: #ccc;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    height: 100%;
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 460px;
+    z-index: 100;
+    cursor: pointer;
+    transition: .4s;
+}
+.blog-compact-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+}
+.img {
+    vertical-align: middle;
+    border-style: none;
+}
+span.blog-item-tag {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 5px 12px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 9px;
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    z-index: 110;
+    transition: .4s;
+}
+.blog-post-tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .9;
+}
+.blog-post-tags li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.blog-compact-item-content {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    padding: 0 34px;
+    width: 100%;
+    z-index: 50;
+    box-sizing: border-box;
+}
+.blog-compact-item-content h3 {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 0;
+    font-weight: 500;
+    margin: 2px 0 0;
+    line-height: 30px;
+}
+.blog-compact-item-content p {
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    color: rgba(255, 255, 255, .8);
+    margin: 7px 0 0;
+}
+.blog-compact-item:before {
+    content: "";
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    border-radius: 4px;
+    background: linear-gradient(to top, rgba(51, 51, 51, 0.8) 0%, rgba(51, 51, 51, 0.7) 35%, rgba(51, 51, 51, 0.3) 60%, rgba(51, 51, 51, 0.3) 100%);
+    transition: .4s;
+}
+.blog-compact-item:hover {
+  transform: translate(0, -3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+</style>
 
         </head>
          <body>
@@ -1482,6 +1649,40 @@
             </a>
         </div>
     </div>
+            <div class="section border-top padding-top-65 padding-bottom-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+
+                    <!-- Section Headline -->
+                    <div class="section-headline margin-top-0 margin-bottom-45">
+                        <h3>Recent Blog</h3>
+                        <a href="http://localhost:64582/Blogs.aspx" class="headline-link">View Blog<i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                    <div class="row">
+                        <!-- Blog Post Item -->
+                            <div class="col-xl-4">
+                                <a href="#" class="blog-compact-item-container">
+                                    <div class="blog-compact-item">
+                                        <img src="Images/bloag.png" href="http://localhost:64582/Blogs.aspx" />
+                                        <span class="blog-item-tag">Admin</span>
+                                        <div class="blog-compact-item-content">
+                                            <ul class="blog-post-tags">
+                                                <li>3 years ago</li>
+                                            </ul>
+                                            <h3>First Blog</h3>
+                                            <p>Consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut eni...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           <!-- Blog post Item / End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         const sliderElm = document.querySelector(".slider-container .slider");
         const btnLeft = document.querySelector(".slider-container .btn-left");
@@ -1553,7 +1754,7 @@
                                 <div>
                                 <h6 style="padding-bottom:5px">My Account</h6>
                            <u1>
-                           <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="http://localhost:64582/Register.aspx">Login</a></li>                       
+                           <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="http://localhost:64582/Login.aspx">Login</a></li>                       
                            <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Register2.aspx">Register</a></li>
                           </u1>
                                 </div>
@@ -1562,7 +1763,7 @@
                                 <div>
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
                          <u1>
-                         <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
+                         <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Blogs.aspx">Blog</a></li>          
                          <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
                          <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
                         </u1>
@@ -1572,9 +1773,9 @@
                                 <div>
                                 <h6 style="padding-bottom:5px">Information</h6>
                               <u1>
-                              <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Register.aspx">FAQ</a></li>
+                              <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/FAQ%20Page.aspx">FAQ</a></li>
                                    
-                              <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Register2.aspx">Testimonals</a></li>
+                              <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Testimonials.aspx">Testimonals</a></li>
                               </u1>
                               </div>
                            </div>

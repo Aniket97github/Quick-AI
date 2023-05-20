@@ -119,7 +119,7 @@
                 <div class="container">
                     <div class="headerAccoutSetting">
                         <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex;margin-top:40px; box-shadow: 2px 2px 5px grey;">
-                            <div class="col-md-2">
+                            <div style="margin-left:10px" class="col-md-2">
                                 <img src="Images/hype%20logo.png" />
                             </div>
 
@@ -141,7 +141,7 @@
                                         <li><a class="dropdown-item" href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/AI%20Chat.aspx"><i class="fas fa-message"></i>AI Chat</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Speech%20To%20Text%20page.aspx"><i class="fas fa-headphones"></i>Speech to Text</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-link"></i>Affiliate Program</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
@@ -177,7 +177,7 @@
                                     <ul>
                                         <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
-                             <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
+                                                <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "My Documents" />
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" All Documents"  />
                                                  <asp:ListItem Value="http://localhost:64582/All%20AI%20Images.aspx" Text="AI Images" />
@@ -188,7 +188,7 @@
                                         <li><a href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
                                         <li><a href="http://localhost:64582/AI%20Chat.aspx"><i class="fas fa-message"></i>AI Chat</a></li>
                                         <li><a href="http://localhost:64582/Speech%20To%20Text%20page.aspx"><i class="fas fa-headphones"></i>Speech to Text</a></li>
-                                        <li><a href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+                                        <li><a href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                                         <h6 style="color: blue">Account</h6>
                                         <li> 
                                                 <i class="fas fa-link"></i><asp:DropDownList ID="DropDownList3" runat="server" onChange="window.location.href=this.value;">
@@ -210,13 +210,15 @@
 
                             <div class="container background-color:lightgrey">
                                 <div class="dash">
-                                    <h3 style="margin-right: 40px">Dashboard</h3>
+                                   <h3>Dashboard</h3>
+                                    <br />
+                                    <br />
                                     <div style="padding-left: 12px; margin-left: -150px;" class="row">
                                         <div class="col-sm-4">
                                             <div id="WordsUsed">
                                                 <span>Words Used</span>
                                                 <h4>0/
-                    <small>10,000</small>
+                                                 <small>10,000</small>
                                                 </h4>
                                                 <i class="fa fa-line-chart" style="font-size: 60px; color: lightpink" aria-hidden="true"></i>
                                             </div>
@@ -228,7 +230,7 @@
                                                 <h4>0/
                                                 <small>100</small>
                                                 </h4>
-                                                <i class="fa-solid fa-chart-simple" style="font-size: 60px; color: lightgreen"></i>
+                                                <i  class="fa-solid fa-chart-simple" style="font-size: 60px; color: lightgreen"></i>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -237,7 +239,7 @@
                                                 <h4>0/
                                                 <small>0</small>
                                                 </h4>
-                                                <i class="fa-solid fa-headset" style="font-size: 60px; color: orange"></i>
+                                                <i  class="fa-solid fa-headset" style="font-size: 60px; color: orange"></i>
                                             </div>
                                         </div>
                                     </div>

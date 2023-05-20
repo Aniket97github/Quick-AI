@@ -234,12 +234,12 @@ p.ex1{
 }
 
 .AccountBox{
-    margin-top:200px;
+    margin-top:25px;
     height:400px;
     width:900px;
     box-shadow:2px 2px 5px grey;
     position:relative;
-    margin-left:152px;
+    margin-left:23px;
     padding-bottom:35px;
 }
 .AccountBox2 {
@@ -247,7 +247,7 @@ p.ex1{
     width:900px;
     box-shadow: 2px 2px 5px grey;
     position:relative;
-    margin-left:150px;
+    margin-left:23px;
     margin-top:30px;
     padding-top:5px;
 }

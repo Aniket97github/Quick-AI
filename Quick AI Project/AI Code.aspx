@@ -11,6 +11,7 @@
     <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Css/Styletemplate.css" rel="stylesheet" />
     <link href="Css/Style.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-3.0.0.slim.min.js"></script>
@@ -20,20 +21,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
-      <div class="container-fluid" style="position:fixed;z-index:+5">
-            <div style="background-color:cornsilk" class="row">
-                <div class="col-md-10">
-                    <p>Your email address is not verified. Please verify your email address to use all the features.</p>
-                </div>
-                <div class="col-md-2">
-                    <asp:Button ID="Button1" runat="server" Text="Button" />
-                </div>
-            </div>
-        </div>
         <header>
                 <div class="container">
                     <div class="headerAccoutSetting">
-                        <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex;margin-top:40px; box-shadow: 2px 2px 5px grey;">
+                        <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex; box-shadow: 2px 2px 5px grey;">
                             <div class="col-md-2">
                                 <img src="Images/hype%20logo.png" />
                             </div>
@@ -50,7 +41,7 @@
                                         <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
@@ -78,13 +69,13 @@
                     </div>
                 </div>
             </header>
-        <div class="sidebar">
+                                <div class="sidebar">
                                 <div class="logo">
                                     <h6 style="color: blue; margin-left: 20px; margin-top: 10px;">My Account</h6>
                                 </div>
                                 <div class="menu">
                                     <ul>
-                                        <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                                        <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
                              <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "My Documents" />
@@ -113,14 +104,55 @@
                                     </ul>
                                 </div>
                             </div>
+                           <div class="membershipplan">
+            <div class="row">
+                <h2 style="margin-left:90px;">AI Chat
+                          &nbsp <i style="text-size-adjust:initial;color:darkblue "; class="fa-solid fa-chart-simple"></i>
+                            <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0 / 10,000 Words Used 
+                        </h2>
+            <nav aria-label="breadcrumb">
+               <ol class="breadcrumb">
+              <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
+             <li class="breadcrumb-item active btn btn-dark" aria-current="page">AI Chat</li>
+             </ol>
+            </nav>
+            </div>
+            </div>
                       <div class="row">
                       <div class="aicodecontainer">
-
+                     <h6> <i class="fas fa-arrow-right-arrow-left"></i>&nbsp AI CODE</h6>  
+                          <hr />
+                           <div style="width:150px;height:140px;" class="alert alert-danger d-flex align-items-center" role="alert">
+                  <svg class="bi flex-shrink-0 me-2" width="22" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                  <div>
+                     Use this code generator to create code in any programming language.
+                  </div>
+                  </div>
+                          <div class="textcontent">
+                              <h6>Title*</h6>
+                              <input type="text" id="text1" />
+                          </div>
+                          <div class="textcontainer">
+                              <h6>Description *</h6>
+                              <textarea> </textarea>
+                          </div>
+                          <div style="margin-left:30px;width:50px" class="generatebtn">
+                              <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary " Text="Button" />
+                          </div>
                       </div>
                        <div class="aicodecontainer2">
-
-                       </div>
-                          </div>
+                           <div style="margin-left:15px" class="generateresult">
+                               <h6><i class="fas fa-align-left"></i>&nbsp Generate Result</h6>
+                           </div>
+                           <hr />
+                            <div style="width:609px;height:60px" class="alert alert-danger d-flex align-items-center" role="alert">
+                  <svg class="bi flex-shrink-0 me-2" width="22" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                  <div>
+                     Use this code generator to create code in any programming language.
+                  </div>
+                  </div>
+               </div>
+          </div>
     </form>
 </body>
 </html>

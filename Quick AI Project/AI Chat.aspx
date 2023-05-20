@@ -17,39 +17,39 @@
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <style>.chat-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    <style>
+        .chat-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.chat-input input {
-    width: 300px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-}
+            .chat-input input {
+                width: 300px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-right: 10px;
+            }
 
-.chat-input button {
-    background: #0084ff;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
+            .chat-input button {
+                background: #0084ff;
+                color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+            }
 
-.chat-output {
-    padding: 10px;
-    background: #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-weight: bold;
-
-}
-  </style>
+        .chat-output {
+            padding: 10px;
+            background: #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
   <body>
     <form id="form1" runat="server">
@@ -147,7 +147,7 @@
                         </h2>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
-              <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Login.aspx">Home</a></li>
+              <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
              <li class="breadcrumb-item active btn btn-dark" aria-current="page">AI Chat</li>
              </ol>
             </nav>

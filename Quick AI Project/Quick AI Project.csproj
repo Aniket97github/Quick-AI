@@ -77,6 +77,7 @@
     <Content Include="All AI Images.aspx" />
     <Content Include="All Documents.aspx" />
     <Content Include="Bank Account Details.aspx" />
+    <Content Include="Blogs.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -98,6 +99,7 @@
     <Content Include="Css\TestimonialStyle.css" />
     <Content Include="Css\upgradecss.css" />
     <Content Include="Dashboard.aspx" />
+    <Content Include="FAQ Page.aspx" />
     <Content Include="Fonstawesome\css\all.css" />
     <Content Include="Fonstawesome\css\all.min.css" />
     <Content Include="Fonstawesome\css\brands.css" />
@@ -2156,6 +2158,7 @@
     <Content Include="Fonstawesome\svgs\solid\z.svg" />
     <Content Include="Forgot Password.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\bloag.png" />
     <Content Include="Images\check %282%29.png" />
     <Content Include="Images\check.png" />
     <Content Include="Images\dashicon.svg" />
@@ -2276,6 +2279,7 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Speech To Text page.aspx" />
     <Content Include="Templates.aspx" />
+    <Content Include="Testimonials.aspx" />
     <Content Include="Transaction Page.aspx" />
     <Content Include="Upgraded Membership.aspx" />
     <Content Include="Web.config" />
@@ -2332,12 +2336,26 @@
     <Compile Include="Bank Account Details.aspx.designer.cs">
       <DependentUpon>Bank Account Details.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Blogs.aspx.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blogs.aspx.designer.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ Page.aspx.cs">
+      <DependentUpon>FAQ Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ Page.aspx.designer.cs">
+      <DependentUpon>FAQ Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forgot Password.aspx.cs">
       <DependentUpon>Forgot Password.aspx</DependentUpon>
@@ -2405,6 +2423,13 @@
     </Compile>
     <Compile Include="Templates.aspx.designer.cs">
       <DependentUpon>Templates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testimonials.aspx.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testimonials.aspx.designer.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transaction Page.aspx.cs">
       <DependentUpon>Transaction Page.aspx</DependentUpon>
