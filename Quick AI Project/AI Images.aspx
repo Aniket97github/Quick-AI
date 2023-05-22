@@ -140,7 +140,7 @@
                                 <textarea style="width:900px" name="description" class="with-border small-input image-description" placeholder="SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old" required=""></textarea>
                         <button id="app" type="submit" @click="validate"  name="submit" class="button ripple-effect border-pilled">Generate<i class="icon-feather-arrow-right"></i></button>
                     </div>
-                    <div id="main" class="row image-advance-settings" style="display: none;">
+                    <div id="main" class="row image-advance-settings" style="display: none; margin-top:10%">
                         <div class="col-sm-3">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Image Title</h6>
@@ -245,8 +245,8 @@
                                  
                                     <div>
                                     <select >
-                                                                            <option value="256x256">Small Image (256x256)</option>
-                                                                        <option value="512x512">Medium Image (512x512)</option>
+                                          <option value="256x256">Small Image (256x256)</option>
+                                          <option value="512x512">Medium Image (512x512)</option>
                                     <option value="1024x1024">Large Image (1024x1024)</option>
                                 </select></div></div>
                             </div>
@@ -271,15 +271,16 @@
                         </div>
                     </div>
              <small>
-                 <button onclick="hideshow()">Advanced Settings</button>
-                 <strong>+</strong></small>
+                
+                 <strong></strong></small>
              <div id="snackbar" v-if="visible">API Error: The API key is missing or invalid.</div>
              <div>
                  <small class="form-error"></small>
+                   <button onclick="hideshow()">Advanced Settings</button>
              </div>
-
+             
          </div>
-        
+       
        <script>
            var div = document.getElementById('main');
            var display = 0;

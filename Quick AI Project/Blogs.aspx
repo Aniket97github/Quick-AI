@@ -637,7 +637,7 @@ button{
                                 <form action="#respond" method="post" id="commentform" class="blog-comment-form">
                                     <div class="row">
                                          <div class="col-md-12">
-                                            <p>You are commenting as: <strong>Mugilan</strong></p>
+                                            <p>You are commenting as: <strong>Aniket</strong></p>
                                         </div>
                                     <div class="col-md-12">
                                     <textarea class="with-border" rows="5" id="comment-field" name="comment" placeholder="Your comment..." required=""></textarea>

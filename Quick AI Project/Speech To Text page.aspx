@@ -18,6 +18,83 @@
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <style>
+        #container8 {
+  background-color: #ffffff;
+  width: 296px;
+  padding: 10px 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 26%;
+  top: 68%;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+  height:715px;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  padding-top:1px;
+}
+button {
+  height: 28px;
+  width: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  color: #020929;
+}
+select {
+  padding: 0px;
+  border: 1px solid #020929;
+  border-radius: 3px;
+            width: 149px;
+        }
+.options label,
+.options select {
+  font-family: "Poppins", sans-serif;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 15px;
+  height: 18px;
+  border: none;
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+input[type="color"]::-moz-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+#text-input {
+  margin-top: 10px;
+  border: 1px solid #dddddd;
+  padding: 2px;
+  height: 37vh;
+}
+.fa{
+    margin:-4px 2px;
+}
+.active {
+  background-color: #e0e9ff;
+}
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -113,7 +190,7 @@
             
         <div class="row">
              <div   class="speechtotextcontainer">
-                 <i class="fas fa-headphones"></i><h8>Speech to Text</h8>
+                 <i class="fas fa-headphones"></i><h8>&nbsp Speech to Text</h8>
                  <hr />
                  <div style="width:234px;height:50px;margin-right:27px;" class="alert alert-primary d-flex align-items-center" role="alert">
                   <svg class="bi flex-shrink-0 me-2" width="22" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
@@ -121,16 +198,20 @@
                      Create audio transcription from a file
                   </div>
                   </div>
-                 <h6>Title &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp    &nbsp                0/100</h6>
-                 <input type="text" ,id="text1" /><br /><br />
+                 <div class="row">
+                 <h6>Title</h6>      <asp:Label ID="charCountLabel" runat="server" Text="Label"></asp:Label>  
+                     </div>
+                 <asp:TextBox ID="TextBox1" runat="server"  onchange="updateCharacterCount()"></asp:TextBox>
+                 <br />
                  <div class="media-content">
                      <h9>Upload Media</h9>*<br />
                      <input type="file" ,id="file2" />
                  </div><br />
                  <h9>.mp3, .mp4, .mpeg, .mpga, .m4a, .wav, .webm allowed. Max file size: 0 MB</h9><br /><br />
                  <div class="audioset">
-                     <h6>Audio Description&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 0/200 </h6>*
-                     <textarea></textarea><br />
+                     <asp:Label ID="charCountLabel2" runat="server" Text="Label"></asp:Label>
+                     <h6>Audio Description</h6>*
+                     <textarea id="TextArea1" cols="20" rows="2" runat="server" onchange="updateCharacterCount2()"></textarea>
                      <h9>200Describe the speech from the file to help the AI. (Optional)</h9><br /><br />
                      <div style="margin-left:45px;" class="generate">
                      <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary btn-lg" Text="Generate" /><br />
@@ -141,71 +222,110 @@
                      Audio Transcription may take time due to the file size
                   </div>
                   </div>
-
-
-
                  </div>
 
              </div>
              <div class="speechtotextcontainer2">
-                 <div class="row">
-                 <i class="fas fa-align-left"></i><h8>Generated Result</h8>
-                 </div>
+                 
+                 <i class="fas fa-align-left"></i><h8>&nbsp Generated Result</h8>
+              
                  <hr />
                  <div class="generateresultbox">
-                      <div class="container">
-                         <div class="options">
-                             <button id="bold" class="option-button-format">
-                             <i class="fas fa-bold"></i>
-                             </button>
-                             <button id="italic" class="options-button-format">
-                               <i class="fas fa-italic"></i>
-                             </button>
-                             <button id="underline" class="options-button-format">
-                                 <i class="fas fa-underline"></i>
-                             </button>
-                             <button id="strikethrough" class="options-button-format">
-                                 <i class="fas fa-strikethrough"></i>
-                             </button>
-                             <button id="alignleft" class="options-button-format">
-                                 <i class="fas fa-align-left"></i>
-                             </button>
-                             <button id="aligncenter" class="options-button-format">
-                                 <i class="fas fa-align-center"></i>
-                             </button>
-                             <button id="alignright" class="options-button-format">
-                                 <i class="fas fa-align-right"></i>
-                             </button>
-                             <button id="link" class="options-button-format">
-                                 <i class="fas fa-link"></i>
-                             </button>
-                             <button id="blockquote"class="options-button-format">
-                                 <i class="fas fa-quote-left"></i>
-                             </button><br />
-                             <button id="undo" class="options-button-format">
-                                 <i class="fas fa-undo"></i>
-                             </button>
-                             <button id="redo" class="options-button-format">
-                                 <i class="fas fa-redo"></i>
-                             </button>
-                             <button id="clearformatting" class="options-button-format">
-                                 <i class="
-                             </button>
-                             <button id="table" class="options-button-format">
-                                 <i class="fas fa-table"></i>
-                             </button>
-                             <dropdown  id="unordered list"     <i class="fas fa-list-ul"  class="options-button-format">
-                             
-                                 <li id="unordered list circle" class="options-li-format"></li>
-                             </dropdown>
+                      <div class="container8">
+               
+        
+      <div class="options">
+          
+          <!-- Headings -->
+        <select id="formatBlock" class="adv-option-button">
+            <option value="H1">Paragraph</option>
+          <option value="H1">Heading 1</option>
+          <option value="H2">Heading 2</option>
+          <option value="H3">Heading 3</option>
+          <option value="H4">Heading 4</option>
+          <option value="H5">Heading 5</option>
+          <option value="H6">Heading 6</option>
+        </select>
 
+        <!-- Text Format -->
+        <button id="bold" class="option-button format">
+          <i class="fa fa-bold " aria-hidden="true"></i>
+        </button>
+        <button id="italic" class="option-button format">
+          <i class="fa-solid fa-italic"></i>
+        </button>
+        <button id="underline" class="option-button format">
+          <i class="fa-solid fa-underline"></i>
+        </button>
+        <button id="strikethrough" class="option-button format">
+          <i class="fa-solid fa-strikethrough"></i>
+        </button>
+
+        <!-- Alignment -->
+        <button id="justifyLeft" class="option-button align">
+          <i class="fa-solid fa-align-left"></i>
+        </button>
+        <button id="justifyCenter" class="option-button align">
+          <i class="fa-solid fa-align-center"></i>
+        </button>
+        <button id="justifyRight" class="option-button align">
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+
+          <!-- Link -->
+        <button id="createLink" class="adv-option-button">
+          <i class="fa fa-link"></i>
+        </button>
+          <!-- blockquote -->
+          <button>
+        <i class="fa fa-quote-right" aria-hidden="true"></i>
+    </button>
+                    </div>
+        <hr />
+<div class="options">
+    
+          <!-- Undo/Redo -->
+        <button id="undo" class="option-button">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+        <button id="redo" class="option-button">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+
+        <!-- List -->
+        <button id="insertOrderedList" class="option-button">
+          <div class="fa-solid fa-list-ol"></div>
+        </button>
+        <button id="insertUnorderedList" class="option-button">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        
+        
+
+        
+        
+
+        
+        <%-- indentation --%>
+    <button id="outdent" class="option-button spacing">
+          <i class="fa-solid fa-outdent"></i>
+        </button>
+
+        <button id="indent" class="option-button spacing">
+          <i class="fa-solid fa-indent"></i>
+        </button>
+        
+
+        
+
+        
+      </div>
+      <div id="text-input" contenteditable="true"></div>
                          </div>
-                             </div>
-                     <textarea style="padding-right:30px; height:400px;width:550px">
-                        
-                     </textarea>
+                          
+                
                  </div>
-             </div>
+                </div>
          </div>
         <hr  />
          <footer>               
@@ -226,6 +346,155 @@
                     </div>
                </div>            
          </footer>
+        <script type="text/javascript">
+            function updateCharacterCount() {
+            var tb = document.getElementById('<%=TextBox1.ClientID%>');
+            var lbl = document.getElementById('<%=charCountLabel.ClientID%>');
+            var value = tb.value;
+                var count = 0;
+                for (var i = 0; i < value.length; i++) {
+                count++;
+            }
+                lbl.innerHTML = 'Character count: ' + count ;
+            }
+        </script>
+          <script type="text/javascript">
+              function updateCharacterCount2() {
+                  var ta = document.getElementById('<%=TextArea1.ClientID%>');
+            var lbl2 = document.getElementById('<%=charCountLabel2.ClientID%>');
+                  var value = ta.value;
+                  var count = 0;
+                  for (var i = 0; i < value.length; i++) {
+                      count++;
+                  }
+                  lbl2.innerHTML = 'Character count: ' + count;
+              }
+          </script>
+         
+               <script>
+                   let optionsButtons = document.querySelectorAll(".option-button");
+                   let advancedOptionButton = document.querySelectorAll(".adv-option-button");
+                   let fontName = document.getElementById("fontName");
+                   let fontSizeRef = document.getElementById("fontSize");
+                   let writingArea = document.getElementById("text-input");
+                   let linkButton = document.getElementById("createLink");
+                   let blockquote = document.getElementById("blockquote");
+                   let alignButtons = document.querySelectorAll(".align");
+                   let spacingButtons = document.querySelectorAll(".spacing");
+                   let formatButtons = document.querySelectorAll(".format");
+                   let scriptButtons = document.querySelectorAll(".script");
+
+                   //List of fontlist
+                   let fontList = [
+                       "Arial",
+                       "Verdana",
+                       "Times New Roman",
+                       "Garamond",
+                       "Georgia",
+                       "Courier New",
+                       "cursive",
+                   ];
+
+                   //Initial Settings
+                   const initializer = () => {
+                       //function calls for highlighting buttons
+                       //No highlights for link, unlink,lists, undo,redo since they are one time operations
+                       highlighter(alignButtons, true);
+                       highlighter(spacingButtons, true);
+                       highlighter(formatButtons, false);
+                       highlighter(scriptButtons, true);
+
+                       //create options for font names
+                       fontList.map((value) => {
+                           let option = document.createElement("option");
+                           option.value = value;
+                           option.innerHTML = value;
+                           fontName.appendChild(option);
+                       });
+
+                       //fontSize allows only till 7
+                       for (let i = 1; i <= 7; i++) {
+                           let option = document.createElement("option");
+                           option.value = i;
+                           option.innerHTML = i;
+                           fontSizeRef.appendChild(option);
+                       }
+
+                       //default size
+                       fontSizeRef.value = 3;
+                   };
+
+                   //main logic
+                   const modifyText = (command, defaultUi, value) => {
+                       //execCommand executes command on selected text
+                       document.execCommand(command, defaultUi, value);
+                   };
+
+                   //For basic operations which don't need value parameter
+                   optionsButtons.forEach((button) => {
+                       button.addEventListener("click", () => {
+                           event.preventDefault();
+                           modifyText(button.id, false, null);
+                       });
+                   });
+
+                   //options that require value parameter (e.g colors, fonts)
+                   advancedOptionButton.forEach((button) => {
+                       button.addEventListener("change", () => {
+                           modifyText(button.id, false, button.value);
+                       });
+                   });
+
+                   //link
+                   linkButton.addEventListener("click", () => {
+                       event.preventDefault();
+                       let userLink = prompt("Enter a URL");
+                       //if link has http then pass directly else add https
+                       if (/http/i.test(userLink)) {
+                           modifyText(linkButton.id, false, userLink);
+                       } else {
+                           userLink = "http://" + userLink;
+                           modifyText(linkButton.id, false, userLink);
+                       }
+                   });
+
+                   //Highlight clicked button
+                   const highlighter = (className, needsRemoval) => {
+                       className.forEach((button) => {
+                           button.addEventListener("click", () => {
+                               event.preventDefault();
+                               //needsRemoval = true means only one button should be highlight and other would be normal
+                               if (needsRemoval) {
+                                   let alreadyActive = false;
+
+                                   //If currently clicked button is already active
+                                   if (button.classList.contains("active")) {
+                                       alreadyActive = true;
+                                   }
+
+                                   //Remove highlight from other buttons
+                                   highlighterRemover(className);
+                                   if (!alreadyActive) {
+                                       //highlight clicked button
+                                       button.classList.add("active");
+                                   }
+                               } else {
+                                   //if other buttons can be highlighted
+                                   button.classList.toggle("active");
+                               }
+                           });
+                       });
+                   };
+
+                   const highlighterRemover = (className) => {
+                       className.forEach((button) => {
+                           button.classList.remove("active");
+                       });
+                   };
+
+                   window.onload = initializer();
+
+               </script>
     </form>
 </body>
 </html>

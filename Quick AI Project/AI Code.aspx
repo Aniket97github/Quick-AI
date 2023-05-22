@@ -106,14 +106,14 @@
                             </div>
                            <div class="membershipplan">
             <div class="row">
-                <h2 style="margin-left:90px;">AI Chat
+                <h2 style="margin-left:90px;">AI Code
                           &nbsp <i style="text-size-adjust:initial;color:darkblue "; class="fa-solid fa-chart-simple"></i>
                             <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0 / 10,000 Words Used 
                         </h2>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
-             <li class="breadcrumb-item active btn btn-dark" aria-current="page">AI Chat</li>
+             <li class="breadcrumb-item active btn btn-dark" aria-current="page">AI Code</li>
              </ol>
             </nav>
             </div>
@@ -127,17 +127,20 @@
                   <div>
                      Use this code generator to create code in any programming language.
                   </div>
+                               
                   </div>
                           <div class="textcontent">
-                              <h6>Title*</h6>
-                              <input type="text" id="text1" />
+                              <div class="row">
+                              <h6>Title*</h6> <asp:Label ID="charCountLabel" runat="server"  Text="Label"></asp:Label>
+                             </div>
+                            <asp:TextBox ID="TextBox1" onchange="updateCharacterCount()" runat="server"></asp:TextBox>
                           </div>
                           <div class="textcontainer">
                               <h6>Description *</h6>
                               <textarea> </textarea>
                           </div>
                           <div style="margin-left:30px;width:50px" class="generatebtn">
-                              <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary " Text="Button" />
+                              <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary " Text="Generate" />
                           </div>
                       </div>
                        <div class="aicodecontainer2">
@@ -153,6 +156,37 @@
                   </div>
                </div>
           </div>
+        <hr />
+         <footer>               
+            <div class="container-fluid">
+                <div id="footnew" >      
+                      <div class="rownew"><br />
+                            <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>   
+                        <div class="col-mg-3"></div>
+                        <div class="img">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>  
+		                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
+		                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+		                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+		                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+		                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                         </div>
+                       </div>
+                    </div>
+               </div>            
+         </footer>
+         <script type="text/javascript">
+            function updateCharacterCount() {
+            var tb = document.getElementById('<%=TextBox1.ClientID%>');
+            var lbl = document.getElementById('<%=charCountLabel.ClientID%>');
+            var value = tb.value;
+                var count = 0;
+                for (var i = 0; i < value.length; i++) {
+                count++;
+            }
+                lbl.innerHTML = 'Character count: ' + count ;
+            }
+         </script>
     </form>
 </body>
 </html>
