@@ -177,7 +177,7 @@
                                     <ul>
                                         <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
-                                                <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
+                                                <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server"  onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "My Documents" />
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" All Documents"  />
                                                  <asp:ListItem Value="http://localhost:64582/All%20AI%20Images.aspx" Text="AI Images" />
@@ -191,10 +191,10 @@
                                         <li><a href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                                         <h6 style="color: blue">Account</h6>
                                         <li> 
-                                                <i class="fas fa-link"></i><asp:DropDownList ID="DropDownList3" runat="server" onChange="window.location.href=this.value;">
-                                                 <asp:ListItem Value="#" Text = "Afiliate Program" />
-                                                 <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" Afiliate Program"  />
-                                                 <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text="Withdraws" />
+                                                <i class="fas fa-link"></i><asp:DropDownList ID="DropDownList3" runat="server" onChange="window.location.href=this.value;" >
+                                                 <asp:ListItem Value="#"  Text = "Afiliate Program" />
+                                                 <asp:ListItem Value="http://localhost:64582/Affiliate%20Program.aspx" Text=" Afiliate Program"  />
+                                                 <asp:ListItem Value="http://localhost:64582/Withdraw.aspx#" Text="Withdraws" />
                                              </asp:DropDownList>
                                         </li>
                                         <li><a href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>

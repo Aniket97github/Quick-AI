@@ -42,7 +42,7 @@
                                         <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
@@ -76,7 +76,7 @@
                                 </div>
                                 <div class="menu">
                                     <ul>
-                                        <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                                        <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
                                                 <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "My Documents" />
@@ -122,33 +122,33 @@
                               <div class="row">
                                   <div class="col-md-3">
                                        <div style="box-shadow:2px 2px 5px grey;height:150px;width:243px;margin-left:90px" class="withdraw">
-                                           <div style="margin-bottom:20px" class="fun-fact-text">
-                                           <span>Wallet</span>
+                                           <div style="padding:30px 0px 10px 15px" class="fun-fact-text">
+                                         <h5>  Wallet</h5>
                                            <h4>0.00</h4>
                                                </div>
-                                           <div style="width:100px;height:100px;background-color:hotpink;margin-left:100px;margin-top:-28px" class="fun-fact-image">
+                                           <div style="width:100px;height:100px;background-color:hotpink;margin-left:100px;margin-top:-80px" class="fun-fact-image">
                                                 <i style="font-size:40px;align-content:center;color:deeppink;padding-top:29px;padding-left:30px" class="fa-brands fa-get-pocket"></i>
                                            </div>
                                        </div>
                                   </div>
                                           <div class="col-md-3">
                                        <div style="box-shadow:2px 2px 5px grey;height:150px;width:243px;margin-left:90px" class="withdraw">
-                                            <div style="margin-bottom:20px" class="fun-fact-text">
-                                           <span>Total Reffered</span>
+                                            <div style="padding:30px 0px 10px 15px" class="fun-fact-text">
+                                           <h5>Total Reffered</h5>
                                            <h4>0</h4>
                                                </div>
-                                           <div style="width:100px;height:100px;background-color:lightgreen;margin-left:100px;margin-top:-28px" class="fun-fact-image">
+                                           <div style="width:100px;height:100px;background-color:lightgreen;margin-left:141px;margin-top:-76px" class="fun-fact-image">
                                                 <i style="font-size:40px;align-content:center;color:forestgreen;padding-top:29px;padding-left:30px"                                 class="fa-solid fa-user-plus"></i>
                                            </div>
                                        </div>
                                   </div>
                                    <div class="col-md-3">
                                        <div style="box-shadow:2px 2px 5px grey;height:150px;width:243px;margin-left:90px" class="withdraw">
-                                            <div style="margin-bottom:20px" class="fun-fact-text">
-                                           <span>Total Earning</span>
+                                            <div style="padding:30px 0px 10px 15px" class="fun-fact-text">
+                                           <h5>Total Earning</h5>
                                            <h4></h4>
                                                </div>
-                                           <div style="width:100px;height:100px;background-color:lightyellow;margin-left:100px;margin-top:1px" class="fun-fact-image">
+                                           <div style="width:100px;height:100px;background-color:lightyellow;margin-left:132px;margin-top:-36px" class="fun-fact-image">
                                                <i style="font-size:48px;align-content:center;color:orange;padding-top:20px;padding-left:23px"                                 class="fa-regular fa-money-bill-1"></i>
                                            </div>
                                        </div>

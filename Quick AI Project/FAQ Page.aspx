@@ -5,18 +5,88 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+       
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link href="Fonstawesome/css/all.css" rel="stylesheet" />
     <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+     <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="Css/Style.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-3.0.0.slim.min.js"></script>
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <style>
+        /* @author Tim himself */
+
+.ziehharmonika h3 {
+	background: #0566ed;
+	color: #ffffff;
+	text-align: left;
+	border-radius: 4px;
+	padding: 14px 12px;
+	cursor: pointer;
+	margin-top: 0;
+	margin-bottom: 9px;
+	padding-right: 40px;
+	transition: 0.25s all;
+	position: relative;
+}
+.ziehharmonika h3.active {
+	margin-bottom: 21px;
+	background: #0566ed;
+}
+.ziehharmonika h3::before {
+	content: attr(data-prefix);
+	font-size: 18px;
+	margin-right: 9px;
+}
+.ziehharmonika h3.alignLeft {
+	padding-left: 35px;
+}
+.ziehharmonika > div {
+	display: none;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #cdcdcd;
+	text-align: left;
+	padding: 31px 33px;
+	margin-bottom: 9px;
+}
+.ziehharmonika .arrowDown {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 13.0px 7.5px 0 7.5px;
+	border-color: #272e35 transparent transparent transparent;
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	transition: 0.25s all;
+	opacity: 0;
+}
+.ziehharmonika .active .arrowDown {
+	bottom: -13px;
+	border-color: #009641 transparent transparent transparent;
+	opacity: 1;
+}
+.ziehharmonika .collapseIcon {
+	position: absolute;
+	right: 20px;
+	top: 45%;
+	font-size: 25px;
+	font-weight: 300;
+	-ms-transform: translate(0, -50%);
+	    transform: translate(0, -50%);
+}
+.ziehharmonika .collapseIcon.alignLeft {
+	right: initial;
+	left: 20px;
+}
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -62,7 +132,7 @@
                     </div>
                 </div>
                  </header>
-         <div style="background-color:lightgrey;margin-bottom:23px"  class="membershipplan">
+         <div style="margin-bottom:23px"  class="membershipplan">
             <div style="width:100%;" class="row">
                 <h2>Frequently Asked Questions</h2>
                 <h6>Got Questions? We Got Answers!</h6>
@@ -74,8 +144,29 @@
             </nav>
             </div>
             </div>
-        <div style="box-shadow:2px 2px 5px grey;width:100%;height:200px;margin-top:15px" class="container">
-        </div>
+       <div class="container">
+		<div class="ziehharmonika">
+			<h3>Lorem ipsum dolor sit amet</h3>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum rhoncus libero ut condimentum. Etiam pretium diam odio, vitae varius dolor tristique quis. Fusce sodales dolor commodo iaculis vehicula. Maecenas laoreet leo massa, ut sagittis nulla pellentesque vel. In hac habitasse platea dictumst. In rhoncus vehicula tristique. Fusce auctor iaculis ornare. Duis condimentum est non massa lobortis, quis pellentesque nisi pulvinar.</p>
+			</div>
+			
+		</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="ziehharmonika.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.ziehharmonika').ziehharmonika({
+            collapsible: true,
+            prefix: ''
+        });
+    });
+</script>
+
+        
         <br />
           <footer>
            <div class="foot" style="background-color: #303030;color:silver";>
@@ -141,8 +232,111 @@
                     </div>
                 </div>
             </div>
+              
       </footer>
         </form>
+    <script>
+        // @author Tim himself
+
+        (function ($) {
+            var settings;
+            $.fn.ziehharmonika = function (actionOrSettings, parameter) {
+                if (typeof actionOrSettings === 'object' || actionOrSettings === undefined) {
+                    // Default settings:
+                    settings = $.extend({
+                        // To use a headline tag other than h3, adjust or overwrite ziehharmonika.css as well
+                        headline: 'h3',
+                        // Give headlines a certain prefix, e.g. "♫ My headline"
+                        prefix: false,
+                        // Only 1 accordion can be open at any given time
+                        highlander: true,
+                        // Allow or disallow last open accordion to be closed
+                        collapsible: false,
+                        // Arrow down under headline
+                        arrow: true,
+                        // Opened/closed icon on the right hand side of the headline (either false or JSON containing symbols or image paths)
+                        collapseIcons: {
+                            opened: '&ndash;',
+                            closed: '+'
+                        },
+                        // Collapse icon left or right
+                        collapseIconsAlign: 'right',
+                        // Scroll to opened accordion element
+                        scroll: true
+                    }, actionOrSettings);
+                }
+                // actions
+                if (actionOrSettings == "open") {
+                    if (settings.highlander) {
+                        $(this).ziehharmonika('forceCloseAll');
+                    }
+                    var ogThis = $(this);
+                    $(this).addClass('active').next('div').slideDown(400, function () {
+                        if (settings.collapseIcons) {
+                            $('.collapseIcon', ogThis).html(settings.collapseIcons.opened);
+                        }
+                        // parameter: scroll to opened element
+                        if (parameter !== false) {
+                            smoothScrollTo($(this).prev(settings.collapseIcons));
+                        }
+                    });
+                    return this;
+                } else if (actionOrSettings == "close" || actionOrSettings == "forceClose") {
+                    // forceClose ignores collapsible setting
+                    if (actionOrSettings == "close" && !settings.collapsible && $(settings.headline + '[class="active"]').length == 1) {
+                        return this;
+                    }
+                    var ogThis = $(this);
+                    $(this).removeClass('active').next('div').slideUp(400, function () {
+                        if (settings.collapseIcons) {
+                            $('.collapseIcon', ogThis).html(settings.collapseIcons.closed);
+                        }
+                    });
+                    return this;
+                } else if (actionOrSettings == "closeAll") {
+                    $(settings.headline).ziehharmonika('close');
+                } else if (actionOrSettings == "forceCloseAll") {
+                    // forceCloseAll ignores collapsible setting
+                    $(settings.headline).ziehharmonika('forceClose');
+                }
+
+                if (settings.prefix) {
+                    $(settings.headline, this).attr('data-prefix', settings.prefix);
+                }
+                //if (settings.arrow) {
+                //    $(settings.headline, this).append('<div class="arrowDown"></div>');
+                //}
+                if (settings.collapseIcons) {
+                    $(settings.headline, this).each(function (index, el) {
+                        if ($(this).hasClass('active')) {
+                            $(this).append('<div class="collapseIcon">' + settings.collapseIcons.opened + '</div>');
+                        } else {
+                            $(this).append('<div class="collapseIcon">' + settings.collapseIcons.closed + '</div>');
+                        }
+                    });
+                }
+                if (settings.collapseIconsAlign == 'left') {
+                    $('.collapseIcon, ' + settings.headline).addClass('alignLeft');
+                }
+
+                $(settings.headline, this).click(function () {
+                    if ($(this).hasClass('active')) {
+                        $(this).ziehharmonika('close');
+                    } else {
+                        $(this).ziehharmonika('open', settings.scroll);
+                    }
+                });
+            };
+
+            function smoothScrollTo(element, callback) {
+                var time = 400;
+                $('html, body').animate({
+                    scrollTop: $(element).offset().top
+                }, time, callback);
+            }
+        }(jQuery));
+
+    </script>
 </body>
  
 </html>

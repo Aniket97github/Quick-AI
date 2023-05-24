@@ -459,7 +459,7 @@ span.blog-item-tag {
             <div class="container" >
      <div class="headerAccoutSetting">
          <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
-             <div style="margin-left:4px" class="col-md-2"> 
+             <div style="margin-left:10px" class="col-md-2"> 
                  <img src="Images/hype%20logo.png" />
              </div>
              <div class="col-md-6"></div>
@@ -503,8 +503,11 @@ span.blog-item-tag {
             <br />
             <br />
         <span class="auto-style1"><strong> Best AI Content Writer</strong><br/>
+            <br />
             <span style="color: rgb(102, 102, 102); font-family: nunito, helveticaneue, &quot;helvetica neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster &amp; save hours of work.</span></span><br />
+            <br />
             <asp:Button ID="Button1"  runat="server" BackColor="Blue" ForeColor="White" OnClick="Button1_Click1" Text="Get Started for Free" Width="285px"  Height="50px" class="btn btn-primary"/>
+            <br />
             <br />
             <p>No credit card required</p>
             <div class="textcontainer">
@@ -1765,7 +1768,7 @@ span.blog-item-tag {
                          <u1>
                          <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Blogs.aspx">Blog</a></li>          
                          <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Contact.aspx">Contact</a></li>
                         </u1>
                                 </div>
                            </div>

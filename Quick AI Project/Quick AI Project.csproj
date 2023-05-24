@@ -79,6 +79,7 @@
     <Content Include="All Documents.aspx" />
     <Content Include="Bank Account Details.aspx" />
     <Content Include="Blogs.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -101,6 +102,7 @@
     <Content Include="Css\upgradecss.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="FAQ Page.aspx" />
+    <Content Include="Feedback.aspx" />
     <Content Include="Fonstawesome\css\all.css" />
     <Content Include="Fonstawesome\css\all.min.css" />
     <Content Include="Fonstawesome\css\brands.css" />
@@ -2352,6 +2354,13 @@
     <Compile Include="Blogs.aspx.designer.cs">
       <DependentUpon>Blogs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2365,6 +2374,13 @@
     </Compile>
     <Compile Include="FAQ Page.aspx.designer.cs">
       <DependentUpon>FAQ Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forgot Password.aspx.cs">
       <DependentUpon>Forgot Password.aspx</DependentUpon>

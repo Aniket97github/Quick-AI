@@ -40,7 +40,7 @@
                                         <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                         <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="menu">
                                     <ul>
-                                        <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                                        <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
                                                 <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "My Documents" />
@@ -117,10 +117,10 @@
             </div>
             </div>
         <div class="container">
-            <div style="width:904px;height:615px;box-shadow:2px 2px 5px grey;margin-left:100px;"  class="withdrawals">
+            <div style="width:904px;height:615px;box-shadow:2px 2px 5px grey;margin-left:100px;" id="demo"  class="withdrawals">
              <span style="margin-left:20px;margin-top:15px"><i style="color:blue;background-color:white"                class="fa-regular fa-bell"></i>&nbsp Request Withdrawl</span>
                 <div style="margin-left:800px" class="icon">
-                  <button style="border:none"> <i class="fa-solid fa-chevron-down"></i></button> 
+                  <button style="border:none" id="btn"  onclick="document.getElementById('demo').style.display = (this.withdrawals == 'Hide') ? 'none': 'block'" ><i class="fa-solid fa-chevron-down"></i></button> 
                 </div>
                 <hr />
                   <div style="width:750px;height:70px;margin-left:10px" class="alert alert-primary d-flex align-items-center" role="alert">
@@ -138,14 +138,14 @@
               <input style="margin-bottom:10px" type="number" id="number1"  placeholder="number" min="50"  />
                     </div>
                     
-                <span><i class="fa-solid fa-circle-info"></i>Minimum withdraw amount : 50 <i class="fa-solid fa-indian-rupee-sign"></i></span>
+                <span><i class="fa-solid fa-circle-info"></i>&nbsp Minimum withdraw amount : 50 <i class="fa-solid fa-indian-rupee-sign"></i></span>
                     <div style="margin-top:20px" class="paymentmethod">
                         <h5>Payment Method</h5>
                         <div class="radio1">
-                        <input type="radio" name="payment" value="paypal" />Paypal 
+                        <input type="radio" name="payment" value="paypal" /> Paypal 
                             </div>
                          <div class="radio2">
-                          <input type="radio" name="payment" value="bank" />Bank Deposit 
+                          <input type="radio" name="payment" value="bank" /> Bank Deposit 
                              </div>
                         <div style="margin-top:20px" class="account">
                             <h3>Account Details</h3>
@@ -160,9 +160,12 @@
                     </div>
                     </div>
             </div>
-            <div style="width:904px;height:251px;box-shadow:2px 2px 5px grey;margin-left:100px;margin-top:20px" class="withdraws2">
+
+        </div>
+                    <div style="width:904px;height:251px;box-shadow:2px 2px 5px grey;margin-left:220px;margin-top:20px" class="withdraws2">
                 <div class="headline">
-               <h6>&nbsp<i style="color:blue;background-color:white" class="fa-regular fa-rectangle-list"></i>&nbsp Withdrawls Request</h6>  
+               <h6>&nbsp<i style="color:blue;background-color:white" class="fa-regular fa-rectangle-list"></i>&nbsp Withdrawls Request</h6> 
+                     <button style="border:none;margin-left:800px" id="btn2"  onclick="document.getElementById('demo').style.display = (this.withdrawals == 'Show') ? 'none': 'block'" ><i class="fa-solid fa-chevron-down"></i></button> 
                 </div>
                 <hr />
                 <div style="border:solid" class="datatable 3">
@@ -179,15 +182,15 @@
                         
                        <tbody>
                            <tr>
-                                <hr />
+                               
                                <td colspan="5" class="text-center control">No result found.</td>
                            </tr>
                        </tbody>
                     </table>
                 </div>
             </div>
-        </div>
         <br />
+        <hr />
         <footer>               
             <div class="container-fluid">
                 <div id="footnew" >      
@@ -206,6 +209,31 @@
                     </div>
                </div>            
          </footer>
+        <script>
+           
+            var btn = document.getElementById("btn");
+
+            btn.onclick = function () {
+                event.preventDefault();
+                var div = document.getElementById("demo");
+                if (div.style.height == "615px")
+                    div.style.height = "60px";
+                else
+                    div.style.height = "615px";
+
+            }
+            btn.onclick = function () {
+                event.preventDefault();
+                var div = document.getElementById("demo");
+                if (div.style.display === 'block') {
+                    div.style.display = 'none';
+                    this.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
+                } else {
+                    div.style.display = 'block';
+                    this.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
+                }
+            }
+        </script>
     </form>
 </body>
 </html>
