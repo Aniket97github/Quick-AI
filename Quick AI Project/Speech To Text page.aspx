@@ -111,15 +111,16 @@ input[type="color"]::-moz-color-swatch {
                <img style="height:50px;width:50px;" src="Images/Profile%20UI%20Icon.png" />
                </a>
               <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#"><i  class="fas fa-qrcode"></i>Dashboard</a></li>
-             <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
-             <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-image"></i>AI Images</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-message"></i>AI Chat</a></li>
-             <li><a class="dropdown-item" href="#">  <i class="fas fa-headphones"></i>Speech to Text</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
-             <li><a class="dropdown-item" href="#"> <i class="fas fa-link"></i>Affiliate Program</a></li>
-             <li><a class="dropdown-item" href="#">  <i class="fas fa-gift"></i>Membership</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i  class="fas fa-qrcode"></i>Dashboard</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/All%20Documents.aspx"><i class="fas fa-file"></i>My Documents</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/AI%20Images.aspx"> <i class="fas fa-image"></i>AI Images</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/AI%20Chat.aspx"> <i class="fas fa-message"></i>AI Chat</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Speech%20To%20Text%20page.aspx">  <i class="fas fa-headphones"></i>Speech to Text</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/AI%20Code.aspx"> <i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+             <li><a class="dropdown-item" href="http://localhost:64582/Affiliate%20Program.aspx"> <i class="fas fa-link"></i>Affiliate Program</a></li>
+
+             <li><a class="dropdown-item" href="http://localhost:64582/Membership%20page.aspx">  <i class="fas fa-gift"></i>Membership</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"> <i class="fas fa-note-sticky"></i>Transactions</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"> <i class="fas fa-door-open"></i>Account Settings</a></li>
              <li><a class="dropdown-item" href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
@@ -147,23 +148,24 @@ input[type="color"]::-moz-color-swatch {
                                         <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
                              <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
-                                                 <asp:ListItem Value="#" Text = "My Documents" />
+                                                 <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text = "My Documents" />
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" All Documents"  />
                                                  <asp:ListItem Value="http://localhost:64582/All%20AI%20Images.aspx" Text="AI Images" />
                                              </asp:DropDownList>
                                         </li>
                                         <h6 style="color: blue">Organize and Manage</h6>
-                                        <li><a href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-                                        <li><a href="#"><i class="fas fa-image"></i>AI Images</a></li>
-                                        <li><a href="#"><i class="fas fa-message"></i>AI Chat</a></li>
-                                        <li><a href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
-                                        <li><a href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+                                        <li><a href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
+                                        <li><a href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
+                                        <li><a href="http://localhost:64582/AI%20Chat.aspx"><i class="fas fa-message"></i>AI Chat</a></li>
+                                        <li><a href="http://localhost:64582/Speech%20To%20Text%20page.aspx"><i class="fas fa-headphones"></i>Speech to Text</a></li>
+                                        <li><a href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                                         <h6 style="color: blue">Account</h6>
                                         <li> 
                                                 <i class="fas fa-link"></i><asp:DropDownList ID="DropDownList3" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "Afiliate Program" />
-                                                 <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" Afiliate Program"  />
-                                                 <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text="Withdraws" />
+                                                 <asp:ListItem Value="http://localhost:64582/Affiliate%20Program.aspx" Text=" Afiliate Program"  />
+
+                                                 <asp:ListItem Value=" http://localhost:64582/Withdraw.aspx" Text="Withdraws" />
                                              </asp:DropDownList>
                                         </li>
                                         <li><a href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
@@ -226,14 +228,19 @@ input[type="color"]::-moz-color-swatch {
 
              </div>
              <div class="speechtotextcontainer2">
-                 
+                 <div class="result">
                  <i class="fas fa-align-left"></i><h8>&nbsp Generated Result</h8>
-              
+                     <div style="margin-left:508px" class="icons">
+                      <button style=" color:darkblue" <i class="fa-solid fa-file-word" type="button" id="btn1" onclick="location.href='filename.docx'"</button>
+    <button style="color:darkblue" <i class="fa-sharp fa-solid fa-file-lines" type="button" id="btn2" onclick="downloadFile()" ></button>
+                    <button  style=" color:darkblue" <i class="fa-sharp fa-solid fa-copy" onclick="copyText()" type="button"></button>
+                         </div>
+              </div>
                  <hr />
                  <div class="generateresultbox">
                       <div class="container8">
                
-        
+       
       <div class="options">
           
           <!-- Headings -->
@@ -346,6 +353,36 @@ input[type="color"]::-moz-color-swatch {
                     </div>
                </div>            
          </footer>
+        <script>
+            function copyText() {
+                var text = document.querySelector('#text-input').innerText;
+                navigator.clipboard.writeText(text).then(function () {
+                    alert('Text copied');
+                });
+            }
+        </script>
+        <script>
+            document.getElementById('btn1').addEventListener('click', function (e) {
+                window.open(encodeURI('filename.docx'), '_blank');
+            });
+        </script>
+        <script>
+            function downloadFile() {
+                let fileData = "Your file data goes here";
+                let fileName = "your-file-name.txt";
+
+                let element = document.createElement('a');
+                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(fileData));
+                element.setAttribute('download', fileName);
+
+                element.style.display = 'none';
+                document.body.appendChild(element);
+
+                element.click();
+
+                document.body.removeChild(element);
+            }
+        </script>
         <script type="text/javascript">
             function updateCharacterCount() {
             var tb = document.getElementById('<%=TextBox1.ClientID%>');

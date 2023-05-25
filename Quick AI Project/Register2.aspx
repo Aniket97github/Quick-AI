@@ -39,7 +39,7 @@
         <div class="container" >
      <div class="headerAccoutSetting">
          <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
-             <div class="col-md-2"> 
+             <div style="margin-left:10px" class="col-md-2"> 
                  <img src="Images/hype%20logo.png" />
              </div>
              <div class="col-md-6"></div>
@@ -76,11 +76,11 @@
                    <div class="row">
                       <div class="col">
                       &nbsp;<div style="margin-left:80px" class="input-group">
-                      <label style="margin-right:20px" class="align-content-left">FullName:</label>&nbsp
+                      <label style="margin-right:23px" class="align-content-left">FullName:</label>&nbsp
                       <span  style="margin-right:0px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
                       <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                         <br /> 
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="Please Enter Fullname" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                           </div>
                        </div><br />
@@ -91,7 +91,7 @@
                       <span  style="margin-right:0px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
                       <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                         <br /> 
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please Enter Username" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                               </div>
                           </div>
                                </div><br />
@@ -100,7 +100,7 @@
                       <div class="auto-style1">
                       <div style="margin-left:80px" class="auto-style3">
                       <label style="margin-left:5px" class="align-content-left">Email Id:</label>
-                      <span  style="margin-left:30px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
+                      <span  style="margin-left:39px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
                       <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                         <br /> 
                       <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
@@ -112,12 +112,12 @@
                  </div>
                           <div class="row">
                       <div class="col">
-                      &nbsp;<div style="margin-left:80px" class="input-group">
+                      &nbsp;<div style="margin-left:83px" class="input-group">
                       <label style="margin-right:20px" class="align-content-left">Password:</label>&nbsp
                       <span  style="margin-right:0px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
                       <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                         <br /> 
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox4" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                      <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox4" ErrorMessage="Please Enter Password" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                           </div>
                        </div><br />
@@ -169,9 +169,9 @@
                                 <div>
                                 <h6 style="padding-bottom:5px">My Account</h6>
                                     <u1>
-                                    <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="https://localhost:44368/loginpage.aspx" > Login</a></li>
+                                    <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="http://localhost:64582/Login.aspx" > Login</a></li>
                                    
-                                    <li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Register</a></li>
+                                    <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Register2.aspx">Register</a></li>
                                     </u1>
                                 </div>
                             </div>
@@ -179,9 +179,9 @@
                             <div>
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
                                 <u1>
-                                <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
-                                <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
-                                <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                                <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Blogs.aspx">Blog</a></li>          
+                                <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Feedback.aspx">Feedback</a></li>
+                                <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Contact.aspx">Contact</a></li>
                                 </u1>
                            </div>
                            </div>
@@ -189,9 +189,9 @@
                            <div>
                                 <h6 style="padding-bottom:5px">Information</h6>
                                     <u1>
-                                    <li style="list-style:none;padding-bottom:8px"><a href="https://localhost:44368/loginpage.aspx">FAQ</a></li>
+                                    <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/FAQ%20Page.aspx">FAQ</a></li>
                                    
-                                    <li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Testimonals</a></li>
+                                    <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Testimonials.aspx">Testimonals</a></li>
                                     </u1>
                            </div>
                           </div>

@@ -37,16 +37,16 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-image"></i>AI Images</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-message"></i>AI Chat</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-link"></i>Affiliate Program</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-gift"></i>Membership</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:64582/All%20Documents.aspx"><i class="fas fa-file"></i>My Documents</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:64582/AI%20Chat.aspx"><i class="fas fa-message"></i>AI Chat</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:64582/Speech%20To%20Text%20page.aspx"><i class="fas fa-headphones"></i>Speech to Text</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:64582/Affiliate%20Program.aspx"><i class="fas fa-link"></i>Affiliate Program</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                                 <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-door-open"></i>Account Settings</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Settings</a></li>
                                 <li><a class="dropdown-item" href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
                             </ul>
                         </div>
@@ -70,18 +70,18 @@
                 <div class="menu">
                     <ul>
                         <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
-                        <li><a href="#"><i class="fas fa-file"></i>My Documents</a></li>
+                        <li><a href="http://localhost:64582/All%20Documents.aspx"><i class="fas fa-file"></i>My Documents</a></li>
                         <header style="color: blue">Organize and Manage</header>
-                        <li><a href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-                        <li><a href="#"><i class="fas fa-image"></i>AI Images</a></li>
-                        <li><a href="#"><i class="fas fa-message"></i>AI Chat</a></li>
-                        <li><a href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
-                        <li><a href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+                        <li><a href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
+                        <li><a href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
+                        <li><a href="http://localhost:64582/AI%20Chat.aspx"><i class="fas fa-message"></i>AI Chat</a></li>
+                        <li><a href="http://localhost:64582/Speech%20To%20Text%20page.aspx"><i class="fas fa-headphones"></i>Speech to Text</a></li>
+                        <li><a href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                         <header style="color: blue">Account</header>
-                        <li><a href="#"><i class="fas fa-link"></i>Affilate Program</a></li>
+                        <li><a href="http://localhost:64582/Affiliate%20Program.aspx"><i class="fas fa-link"></i>Affilate Program</a></li>
                         <li><a href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                         <li><a href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
-                        <li><a href="#"><i class="fas fa-door-open"></i>Account Setting</a></li>
+                        <li><a href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Setting</a></li>
                         <li><a href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
                     </ul>
                 </div>

@@ -46,7 +46,7 @@
         <div class="container" >
      <div class="headerAccoutSetting">
          <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
-             <div class="col-md-2"> 
+             <div style="margin-left:10px" class="col-md-2"> 
                  <img src="Images/hype%20logo.png" />
              </div>
              <div class="col-md-6"></div>
@@ -140,9 +140,9 @@
                                 <div>
                                 <h6 style="padding-bottom:5px">My Account</h6>
                                 <u1>
-                            <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="https://localhost:44368/loginpage.aspx" > Login</a></li>
+                            <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="http://localhost:64582/Login.aspx" > Login</a></li>
                                    
-                            <li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Register</a></li>
+                            <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Register2.aspx">Register</a></li>
                                 </u1>
                                </div>
                            </div>
@@ -150,9 +150,9 @@
                                 <div>
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
                                 <u1>
-                                <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
-                                <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
-                                <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                                <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Blogs.aspx">Blog</a></li>          
+                                <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Feedback.aspx">Feedback</a></li>
+                                <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Contact.aspx">Contact</a></li>
                                </u1>
                                 </div>
                             </div>
@@ -160,9 +160,9 @@
                                 <div>
                                 <h6 style="padding-bottom:5px">Information</h6>
                                     <u1>
-                                    <li style="list-style:none;padding-bottom:8px"><a href="https://localhost:44368/loginpage.aspx">FAQ</a></li>
+                                    <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/FAQ%20Page.aspx">FAQ</a></li>
                                    
-                                    <li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Testimonals</a></li>
+                                    <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Testimonials.aspx">Testimonals</a></li>
                                     </u1>
                                 </div>
                              </div>

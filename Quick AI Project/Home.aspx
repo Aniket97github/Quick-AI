@@ -1767,7 +1767,7 @@ span.blog-item-tag {
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
                          <u1>
                          <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Blogs.aspx">Blog</a></li>          
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Feedback.aspx">Feedback</a></li>
                          <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Contact.aspx">Contact</a></li>
                         </u1>
                                 </div>

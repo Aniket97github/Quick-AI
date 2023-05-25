@@ -41,14 +41,14 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-file"></i>My Documents</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-image"></i>AI Images</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-message"></i>AI Chat</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-link"></i>Affiliate Program</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-gift"></i>Membership</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/All%20Documents.aspx"><i class="fas fa-file"></i>My Documents</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/AI%20Chat.aspx"><i class="fas fa-message"></i>AI Chat</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Speech%20To%20Text%20page.aspx"><i class="fas fa-headphones"></i>Speech to Text</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Affiliate%20Program.aspx"><i class="fas fa-link"></i>Affiliate Program</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Settings</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Login.aspx"><i class="fas fa-power-off"></i>Logout</a></li>
@@ -86,17 +86,18 @@
                                              </asp:DropDownList>
                                         </li>
                                         <h6 style="color: blue">Organize and Manage</h6>
-                                        <li><a href="#"><i class="fas fa-layer-group"></i>Templates</a></li>
-                                        <li><a href="#"><i class="fas fa-image"></i>AI Images</a></li>
-                                        <li><a href="#"><i class="fas fa-message"></i>AI Chat</a></li>
-                                        <li><a href="#"><i class="fas fa-headphones"></i>Speech to Text</a></li>
-                                        <li><a href="#"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
+                                        <li><a href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
+                                        <li><a href="http://localhost:64582/AI%20Images.aspx"><i class="fas fa-image"></i>AI Images</a></li>
+                                        <li><a href="http://localhost:64582/AI%20Chat.aspx"><i class="fas fa-message"></i>AI Chat</a></li>
+                                        <li><a href="http://localhost:64582/Speech%20To%20Text%20page.aspx"><i class="fas fa-headphones"></i>Speech to Text</a></li>
+                                        <li><a href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                                         <h6 style="color: blue">Account</h6>
                                         <li> 
                                                 <i class="fas fa-link"></i><asp:DropDownList ID="DropDownList3" runat="server" onChange="window.location.href=this.value;">
-                                                 <asp:ListItem Value="#" Text = "Afiliate Program" />
-                                                 <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" Afiliate Program"  />
-                                                 <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text="Withdraws" />
+                                                 <asp:ListItem Value="http://localhost:64582/Affiliate%20Program.aspx " Text = "Afiliate Program" />
+                                                                                                                      
+                                                 <asp:ListItem Value="http://localhost:64582/Affiliate%20Program.aspx" Text=" Afiliate Program"  />
+                                                 <asp:ListItem Value="http://localhost:64582/Withdraw.aspx" Text="Withdraws" />
                                              </asp:DropDownList>
                                         </li>
                                         <li><a href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
@@ -141,13 +142,14 @@
                         <button id="app" type="submit" @click="validate"  name="submit" class="button ripple-effect border-pilled">Generate<i class="icon-feather-arrow-right"></i></button>
                     </div>
                     <div id="main" class="row image-advance-settings" style="display: none; margin-top:10%">
+                        <div class="row">
                         <div class="col-sm-3">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Image Title</h6>
                                 <input name="title" class="with-border small-input" type="text" value="New Image"/>
                             </div>
                         </div>
-                        <div class="col-sm-3" style="    margin-left: 198px; margin-top: -76px;">
+                        <div class="col-sm-3" style="    margin-left: 90px; margin-top: -1px;">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Art style</h6>
                                 <div class="btn-group bootstrap-select with-border small-input">
@@ -189,7 +191,7 @@
                                 </select></div></div>
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-left: 439px; margin-top: -107px;">
+                        <div class="col-sm-3" style="margin-left: 215px; margin-top: -59px;">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Lighting style</h6>
                                 <div class="btn-group bootstrap-select with-border small-input">
@@ -214,7 +216,7 @@
                                 </select></div></div>
                             </div>
                         </div>
-                        <div class="col-sm-3" style="    margin-left: 630px;  margin-top: -107px;">
+                        <div class="col-sm-3" style="    margin-left: 729px;  margin-top: -59px;">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Mood</h6>
                                 <div class="btn-group bootstrap-select with-border small-input">
@@ -251,7 +253,7 @@
                                 </select></div></div>
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-left: 300px; margin-top: -108px;">
+                        <div class="col-sm-3" style="margin-left: 300px; margin-top: -59px;">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Number of Images</h6>
                                 <div class="btn-group bootstrap-select with-border small-input">
@@ -270,13 +272,14 @@
                             </div>
                         </div>
                     </div>
+                  </div>
              <small>
                 
                  <strong></strong></small>
-             <div id="snackbar" v-if="visible">API Error: The API key is missing or invalid.</div>
+           <%--  <div id="snackbar" v-if="visible">API Error: The API key is missing or invalid.</div>--%>
              <div>
                  <small class="form-error"></small>
-                   <button onclick="hideshow()">Advanced Settings</button>
+                   <button style="margin-top:32px" onclick="hideshow()">Advanced Settings</button>
              </div>
              
          </div>
