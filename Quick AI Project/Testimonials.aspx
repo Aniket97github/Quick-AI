@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <meta name="viewport" content="width-device-width,initial-scale=1.0" />
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link href="Fonstawesome/css/all.css" rel="stylesheet" />
     <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
@@ -17,18 +18,28 @@
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <style>
+        .navbar{
+            display:grid;
+            grid-template-columns:0fr 8fr 0fr 0fr;
+        }
+
+
+
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
          <header>
-                <div class="container">
+             <%--   <div class="container">--%>
                     <div class="headerAccoutSetting">
-                        <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex; box-shadow: 2px 2px 5px grey;">
-                            <div class="col-md-2">
+                        <div class="row navbar navbar-expand-sm bg-white fixed-top" style="box-shadow: 2px 2px 5px grey; display:grid;
+            grid-template-columns:0fr 8fr 0fr 0fr;">
+                            <div <%--class="col-2"--%>>
                                 <img src="Images/hype%20logo.png" />
                             </div>
-                            <div class="col-md-4"></div>
-                            <div style="margin-left:210px" class="col-md-2">
+                            <div <%--class="col-4"--%>></div>
+                            <div <%--style="margin-left:210px" class="col-md-2"--%>>
                                 <div class="dropdown">
                                     <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
@@ -50,7 +61,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div <%--class="col-2"--%>>
                                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary">
                                     <asp:ListItem>en</asp:ListItem>
                                     <asp:ListItem>English</asp:ListItem>
@@ -61,7 +72,7 @@
                         </div>
 
                     </div>
-                </div>
+                <%--</div>--%>
                  </header>
               <div class="membershipplan">
             <div class="row">
