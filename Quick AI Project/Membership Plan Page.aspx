@@ -80,7 +80,7 @@
                 <div class="radio">
                <input type="radio"  name="radio-buttons" value="monthly" onchange="enableInputField(5)"/> Monthly&nbsp; &nbsp; &nbsp;
                <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)"/> Yearly&nbsp; &nbsp; &nbsp;
-               <input type="radio" name="radio-buttons" value="Lifetime" onchange="enableInputField(550)"/> Life Time>&nbsp; &nbsp; &nbsp;
+               <input type="radio" name="radio-buttons" value="Lifetime" onchange="enableInputField(550)"/> Life Time&nbsp; &nbsp; &nbsp;
                 </div>
               </div>
         </div>

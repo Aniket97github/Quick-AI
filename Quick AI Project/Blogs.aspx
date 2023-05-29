@@ -750,7 +750,7 @@ button{
     </div>
         <footer>
            <div class="foot" style="background-color: #303030;color:silver";>
-                <div  style="padding-top: 45px;padding-bottom: 45px">
+                <div  style="padding-top: -4px;padding-bottom: -10px">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">

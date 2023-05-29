@@ -180,7 +180,7 @@ input[type="color"]::-moz-color-swatch {
             
                 <h2 style="margin-left:90px;">Speech to Text
                           &nbsp <i style="text-size-adjust:initial;color:darkblue "; class="fa-solid fa-chart-simple"></i>
-                            <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0/0 Used 
+                            <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0/0 Used </i>
                         </h2>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
@@ -205,23 +205,23 @@ input[type="color"]::-moz-color-swatch {
                      </div>
                  <asp:TextBox ID="TextBox1" runat="server"  onchange="updateCharacterCount()"></asp:TextBox>
                  <br />
-                 <div class="media-content">
+                 <div style="margin-top:10px;margin-bottom:10px" class="media-content">
                      <h9>Upload Media</h9>*<br />
                      <input type="file" ,id="file2" />
-                 </div><br />
+                 </div>
                  <h9>.mp3, .mp4, .mpeg, .mpga, .m4a, .wav, .webm allowed. Max file size: 0 MB</h9><br /><br />
                  <div class="audioset">
                      <asp:Label ID="charCountLabel2" runat="server" Text="Label"></asp:Label>
                      <h6>Audio Description</h6>*
                      <textarea id="TextArea1" cols="20" rows="2" runat="server" onchange="updateCharacterCount2()"></textarea>
-                     <h9>200Describe the speech from the file to help the AI. (Optional)</h9><br /><br />
+                     <h9>Describe the speech from the file to help the AI. (Optional)</h9><br /><br />
                      <div style="margin-left:45px;" class="generate">
                      <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary btn-lg" Text="Generate" /><br />
                          </div>
                         <div style="width:234px;height:70px;margin-right:27px;margin-top:5px" class="alert alert-primary d-flex align-items-center" role="alert">
                   <svg class="bi flex-shrink-0 me-2" width="22" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
                   <div>
-                     Audio Transcription may take time due to the file size
+                  <span>  Audio Transcription may take time due to the file size</span> 
                   </div>
                   </div>
                  </div>

@@ -46,7 +46,20 @@
             <br />
             <br />
                 <br />
-               <div class="container" style="padding-top:160px;padding-bottom:100px">
+                  <div class="membershipplan">
+            <div class="row">
+                <h2 style="margin-left:-181px;margin-top:15px">Forgot Password  Page
+                         
+                        </h2>
+            <nav aria-label="breadcrumb">
+               <ol style="margin-left:750px" class="breadcrumb">
+              <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
+             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Forgot Password Page</li>
+             </ol>
+            </nav>
+            </div>
+            </div>
+               <div class="container" style="padding-top:40px;padding-bottom:12px">
                <div class="col-md-6 mx-auto">
                <div class="card" >
                <div class="card-body">

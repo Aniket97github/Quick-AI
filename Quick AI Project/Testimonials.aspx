@@ -76,52 +76,56 @@
                  </header>
               <div class="membershipplan">
             <div class="row">
-                <h2 style="margin-left:40px;">Testimonials
+                <h2 style="margin-left:-9rem;">Testimonials
                         </h2>
             <nav aria-label="breadcrumb">
-               <ol class="breadcrumb">
+               <ol style="margin-left:-9rem" class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
              <li class="breadcrumb-item active btn btn-dark" aria-current="page">Testimonials</li>
              </ol>
             </nav>
             </div>
             </div>
-        <div style="margin-top:15px" class="container">
+        <div style="margin-top:10rem;margin-bottom:7rem" class="container">
             <div class="row">
             <div style="background-color:lightgrey" class="col-md-3">
                  <div class="card-header"></div>
-  <div style="width:200px;height:100px;" class="card-body">
+  <div style="width:100%;height:19rem;" class="card-body">
     <h5 class="card-title"><i class="fas fa-quote-left"></i></h5>
     <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <i style="margin-left:160px" class="fas fa-quote-right"></i>
+      <i style="margin-left:9rem" class="fas fa-quote-right"></i>
       <div class="row">
           
-          <h6><img style="height:60px;width:80px;margin-bottom:10px"; src="Images/Profile%20UI%20Icon.png" />Tony Stark
+          <h6><img style="height:26%;width:5rem;margin-bottom:9rem"; src="Images/Profile%20UI%20Icon.png" />Tony Stark
                
           </h6>
+          <h6>Social Marketing</h6>
          
          
       </div>
   </div>
             </div>
-                <div style="background-color:lightgrey;margin-left:20px" class="col-md-3">
+                <div style="background-color:lightgrey;margin-left:0rem" class="col-md-3">
                     <div class="card-header"></div>
-                     <div style="width:200px;height:100px;" class="card-body">
+                     <div style="width:100%;height:19rem;" class="card-body">
     <h5 class="card-title"><i class="fas fa-quote-left"></i></h5>
     <p class="card-text">Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e.safsdh rsfd asdfa adfa</p>
                          <i style="margin-left:160px" class="fas fa-quote-right"></i>
       <div class="row">
-          <h6><img style="height:60px;width:80px;margin-top:25px" src="Images/Profile%20UI%20Icon.png" />Steve Roger       </h6>
+          <h6><img style="height:4rem;width:22%;margin-top:2rem" src="Images/Profile%20UI%20Icon.png" />Steve Roger       </h6>
+            <h6>Content Writer</h6>
       </div>
                 </div>
                     </div>
-                <div style="background-color:lightgrey;margin-left:20px" class="col-md-3">
+                <div style="background-color:lightgrey;margin-left:0rem" class="col-md-3">
                     <div class="card-header"></div>
-                    <div style="width:135px;height:340px;" class="card-body">
+                    <div style="width:100%;height:18rem;" class="card-body">
     <h5 class="card-title"><i class="fas fa-quote-left"></i></h5>
     <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo ore et dolore magna aliqua.</p>
-                        <i style="margin-left:160px" class="fas fa-quote-right"></i>
+                        <i style="margin-left:11rem" class="fas fa-quote-right"></i>
                      <h6 style="display:flex">   <img style="height:60px;width:80px;margin-bottom:20px" src="Images/Profile%20UI%20Icon.png" /> Natasha</h6>
+                        <h6>Designer</h6>
+                      
       <div class="row">
           
               
@@ -135,7 +139,7 @@
         <br />
          <footer>
            <div class="foot" style="background-color: #303030;color:silver";>
-                <div  style="padding-top: 45px;padding-bottom: 45px">
+                <div  style="padding-top: 1rem;padding-bottom: 0rem">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">

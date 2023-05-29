@@ -61,7 +61,20 @@
     </div>
         <br />
         <br />
-    <div class="container" style="padding-top:160px;padding-bottom:100px">
+          <div class="membershipplan">
+            <div class="row">
+                <h2 style="margin-left:200px;margin-top:31px">Register Page
+                         
+                        </h2>
+            <nav aria-label="breadcrumb">
+               <ol style="margin-left:750px" class="breadcrumb">
+              <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
+             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Register Page</li>
+             </ol>
+            </nav>
+            </div>
+            </div>
+    <div class="container" style="padding-top:62px;padding-bottom:8px">
     <div class="col-md-6 mx-auto">
         <div class="card" >
               <div class="card-body">

@@ -113,7 +113,7 @@
             <div class="row">
                 <h2 style="margin-left:90px;">AI Images
                            <i style="text-size-adjust:initial;color:darkblue "; class="fa-solid fa-chart-simple"></i>
-                            <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0 / 100 
+                            <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0 / 100 </i>
                             <strong> Images Used</strong>
                         </h2>
             <nav aria-label="breadcrumb">

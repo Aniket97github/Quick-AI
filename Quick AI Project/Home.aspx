@@ -511,7 +511,7 @@ span.blog-item-tag {
             <br />
             <p>No credit card required</p>
             <div class="textcontainer">
-                <h5>How it Works?</h5>
+                <h3>How it Works?</h3><br />
                 <div style="margin-left:150px" class="row">
                     <div  class="col-md-3">
                         <i  style="font-size:xx-large"   class="fas fa-layer-group">
@@ -519,7 +519,7 @@ span.blog-item-tag {
                             <img src="Images/check%20(2).png" /></i><br />                                                        
                       <br />
                        
-                        <h7>Select a Template</h7>
+                        <h5>Select a Template</h5>
                         <p>Choose a content creation template. Multiple templates are available for your all needs.</p>
                          </div>
                    
@@ -527,7 +527,7 @@ span.blog-item-tag {
                         <i style="font-size:xx-large" class=" fas fa-folder">
                             <img src="Images/check%20(2).png" /> </i><br />
                         <br />
-                        <h7>Fill the form</h7>
+                        <h5>Fill the form</h5>
                         <p>Enter a detailed description of your content. Tell the AI what do you want.</p>
                     </div>
                     <div style="margin-left:90px" ;   class="col-md-3">
@@ -535,7 +535,7 @@ span.blog-item-tag {
                             <img src="Images/check%20(2).png" /></i><br />
                             <br />
                                                                           
-                        <h7>Get Your Content</h7>
+                        <h5>Get Your Content</h5>
                         <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
                     </div>
               </div>
