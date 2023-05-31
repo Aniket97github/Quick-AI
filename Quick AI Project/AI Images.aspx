@@ -139,7 +139,7 @@
                     <h4 style="color:black" class="margin-bottom-10 padding-left-5">Start with a detailed description. <a href="#" class="try-example"><strong>Try an example</strong></a></h4>
                     <div  class="message-reply ai_image_description margin-bottom-10" >
                                 <textarea style="width:900px" name="description" class="with-border small-input image-description" placeholder="SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old" required=""></textarea>
-                        <button id="app" type="submit" @click="validate"  name="submit" class="button ripple-effect border-pilled">Generate<i class="icon-feather-arrow-right"></i></button>
+                        <button  id="app" type="submit" @click="validate"  name="submit"  class="button ripple-effect border-pilled">Generate<i class="icon-feather-arrow-right"></i></button>
                     </div>
                     <div id="main" class="row image-advance-settings" style="display: none; margin-top:10%">
                         <div class="row">

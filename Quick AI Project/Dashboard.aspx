@@ -168,8 +168,8 @@
 
                 <div class="main_box">
                     <div class="row">
-                        <div class="col-lg-3">
-                            <div class="sidebar">
+                        <div style=" background-color:lightgrey" class="col-lg-3">
+                            <div style=" background-color:lightgrey" class="sidebar">
                                 <div class="logo">
                                     <h6 style="color: blue; margin-left: 20px; margin-top: 10px;">My Account</h6>
                                 </div>
@@ -206,9 +206,9 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-9">
+                        <div style=" background-color:lightgrey" class="col-lg-9">
 
-                            <div class="container background-color:lightgrey">
+                            <div style=" background-color:lightgrey" class="container">
                                 <div class="dash">
                                    <h3>Dashboard</h3>
                                     <br />
@@ -220,7 +220,9 @@
                                                 <h4>0/
                                                  <small>10,000</small>
                                                 </h4>
-                                                <i class="fa fa-line-chart" style="font-size: 60px; color: lightpink" aria-hidden="true"></i>
+                                                <div style="width:100px;height:100px;margin-left: 177px;background-color:lightpink;margin-top:-15px" class="icon new1">
+                                                <i class="fa fa-line-chart" style="margin-top:9px   ; margin-left: 16px;font-size: 60px; color: darkmagenta" aria-hidden="true"></i>
+                                                    </div>
                                             </div>
                                         </div>
 
@@ -230,7 +232,9 @@
                                                 <h4>0/
                                                 <small>100</small>
                                                 </h4>
-                                                <i  class="fa-solid fa-chart-simple" style="font-size: 60px; color: lightgreen"></i>
+                                                <div style="width:100px;height:100px;margin-left: 177px;background-color:lightgreen;margin-top:-15px" class="icon new2">
+                                                <i  class="fa-solid fa-chart-simple" style=" margin-top:21px ;  margin-left: 17px;font-size: 60px; color: green"></i>
+                                                    </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -239,14 +243,16 @@
                                                 <h4>0/
                                                 <small>0</small>
                                                 </h4>
-                                                <i  class="fa-solid fa-headset" style="font-size: 60px; color: orange"></i>
+                                                <div style="width:100px;height:100px;margin-left: 177px;background-color:lightsalmon;margin-top:-15px" class="icon new3">
+                                                <i   class="fa-solid fa-headset" style="margin-top:17px  ;  margin-left: 17px;font-size: 60px; color: orangered"></i>
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="container">
+                            <div style=" background-color:lightgrey" class="container">
                                 <div style="margin-top: -90px; margin-left: 1px;" class="chart">
                                     <p>Words Used in this Month</p>
                                     <div>
@@ -263,7 +269,7 @@
             <%-- Footer Part Code Here --%>
             <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
             <footer>
-                <div class="container-fluid">
+                <div style=" background-color:lightgrey" class="container-fluid">
                     <div id="footnew">
                         <div class="rownew">
                             <br />

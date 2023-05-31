@@ -147,7 +147,7 @@ input[type="color"]::-moz-color-swatch {
                                     <ul>
                                         <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
-                             <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
+                      <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text = "My Documents" />
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" All Documents"  />
                                                  <asp:ListItem Value="http://localhost:64582/All%20AI%20Images.aspx" Text="AI Images" />

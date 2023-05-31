@@ -88,9 +88,9 @@
             </div>
         <div style="margin-top:10rem;margin-bottom:7rem" class="container">
             <div class="row">
-            <div style="background-color:lightgrey" class="col-md-3">
+            <div style="background-color:lightgrey;margin-left:0.5rem" class="col-md-3">
                  <div class="card-header"></div>
-  <div style="width:100%;height:19rem;" class="card-body">
+  <div style="width:100%;height:19rem;" class="card-body1">
     <h5 class="card-title"><i class="fas fa-quote-left"></i></h5>
     <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <i style="margin-left:9rem" class="fas fa-quote-right"></i>
@@ -105,25 +105,25 @@
       </div>
   </div>
             </div>
-                <div style="background-color:lightgrey;margin-left:0rem" class="col-md-3">
+                <div style="background-color:lightgrey;margin-left:0.5rem" class="col-md-3">
                     <div class="card-header"></div>
-                     <div style="width:100%;height:19rem;" class="card-body">
+                     <div style="width:100%;height:19rem;" class="card-body2">
     <h5 class="card-title"><i class="fas fa-quote-left"></i></h5>
     <p class="card-text">Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e.safsdh rsfd asdfa adfa</p>
                          <i style="margin-left:160px" class="fas fa-quote-right"></i>
       <div class="row">
-          <h6><img style="height:4rem;width:22%;margin-top:2rem" src="Images/Profile%20UI%20Icon.png" />Steve Roger       </h6>
+          <h6><img style="height:4rem;width:21%;margin-top:2rem" src="Images/Profile%20UI%20Icon.png" />Steve Roger       </h6>
             <h6>Content Writer</h6>
       </div>
                 </div>
                     </div>
-                <div style="background-color:lightgrey;margin-left:0rem" class="col-md-3">
+                <div style="background-color:lightgrey;margin-left:0.5rem" class="col-md-3">
                     <div class="card-header"></div>
-                    <div style="width:100%;height:18rem;" class="card-body">
+                    <div style="width:100%;height:18rem;" class="card-body3">
     <h5 class="card-title"><i class="fas fa-quote-left"></i></h5>
     <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo ore et dolore magna aliqua.</p>
                         <i style="margin-left:11rem" class="fas fa-quote-right"></i>
-                     <h6 style="display:flex">   <img style="height:60px;width:80px;margin-bottom:20px" src="Images/Profile%20UI%20Icon.png" /> Natasha</h6>
+                     <h6 style="display:flex">   <img style="height:4rem;width:20%;margin-bottom:2px" src="Images/Profile%20UI%20Icon.png" /> Natasha</h6>
                         <h6>Designer</h6>
                       
       <div class="row">

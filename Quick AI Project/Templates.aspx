@@ -36,7 +36,7 @@ body{
     background:#eee;
     padding:10px;
     border-radius:50vh;
-    font-size:14px;
+    font-size:17px;
 }
 .template-categories ul{
     padding:0;
@@ -184,7 +184,7 @@ span i{
                                     <ul>
                                         <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
-                             <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
+                              <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "My Documents" />
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" All Documents"  />
                                                  <asp:ListItem Value="http://localhost:64582/All%20AI%20Images.aspx" Text="AI Images" />
@@ -242,7 +242,7 @@ span i{
         <div class="section padding-top-65 padding-bottom-65">
         <div style="margin-left:200px" class="container margin-bottom-20">
             <div class="template-categories home-templates">
-                <ul>
+                <ul style="margin-top:15px">
                     <li class="active"><a href="javascript:void();" class="ai-templates-category" data-category="all">All templates</a></li>
                                             <li><a href="javascript:void();" class="ai-templates-category" data-category="1">Article And Blogs</a></li>
                                             <li><a href="javascript:void();" class="ai-templates-category" data-category="2">Ads And Marketing Tools</a></li>
@@ -1178,6 +1178,7 @@ span i{
                 $('#template-search').val('');
             }
         });</script>
+        
         <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
             <footer>
                 <div class="container-fluid">

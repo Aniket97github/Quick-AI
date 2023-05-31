@@ -61,13 +61,13 @@
     </div>
         <br />
         <br />
-          <div class="membershipplan">
-            <div class="row">
-                <h2 style="margin-left:200px;margin-top:31px">Register Page
+         <div class="membershipplan">
+            <div style="margin-left:300px;margin-top:30px" class="row">
+                <h2 >Register Page
                          
                         </h2>
             <nav aria-label="breadcrumb">
-               <ol style="margin-left:750px" class="breadcrumb">
+               <ol  class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
              <li class="breadcrumb-item active btn btn-dark" aria-current="page">Register Page</li>
              </ol>
@@ -80,7 +80,7 @@
               <div class="card-body">
                   <div class="row">
                       <div class="col">
-                          <center><h1>Let's create your account</h1>
+                          <center><h4>Let's create your account</h4>
                           <span>Already have a account?<a href="http://localhost:64582/Login.aspx">Log In!!</a></span>
                           </center>
                       </div>

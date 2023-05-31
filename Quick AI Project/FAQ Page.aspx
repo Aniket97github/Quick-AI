@@ -194,9 +194,9 @@
                                 <div>
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
                                 <u1>
-                                <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
-                                <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
-                                <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                                <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Blogs.aspx">Blog</a></li>          
+                                <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Feedback.aspx">Feedback</a></li>
+                                <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Contact.aspx">Contact</a></li>
                                </u1>
                                 </div>
                             </div>
@@ -204,9 +204,9 @@
                                 <div>
                                 <h6 style="padding-bottom:5px">Information</h6>
                                     <u1>
-                                    <li style="list-style:none;padding-bottom:8px"><a href="https://localhost:44368/loginpage.aspx">FAQ</a></li>
+                                    <li style="list-style:none;padding-bottom:8px"><a href="">FAQ</a></li>
                                    
-                                    <li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Testimonals</a></li>
+                                    <li style="list-style:none;padding-bottom:5px"><a href="">Testimonals</a></li>
                                     </u1>
                                 </div>
                              </div>

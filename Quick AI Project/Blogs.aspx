@@ -367,7 +367,7 @@ h2 {
     -ms-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
-    -khtml-user-select: none;
+  /*  -khtml-user-select: none;*/
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
@@ -774,8 +774,8 @@ button{
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
                          <u1>
                          <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Feedback.aspx">Feedback</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="">Contact</a></li>
                         </u1>
                                 </div>
                            </div>

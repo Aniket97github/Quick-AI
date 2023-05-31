@@ -78,7 +78,7 @@
                                     <ul>
                                         <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
-                                                <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
+                                    <i class="fas fa-file"></i>  <asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "My Documents" />
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" All Documents"  />
                                                  <asp:ListItem Value="http://localhost:64582/All%20AI%20Images.aspx" Text="AI Images" />
@@ -177,7 +177,7 @@
                                       </div>
                                       <div style="margin-top:15px;margin-left:10px" class="col-md-6">
                                           <h4>Affiliate Url</h4>
-                                          <input type="text" />&nbsp <button style="color:white;background-color:blue" id="affiliatebtn"       <i class="fas fa-copy"></button>
+                                          <input type="text" />&nbsp <button  style=" color:darkblue" <i class="fa-sharp fa-solid fa-copy" onclick="copyText2()" type="button"></button>
                                       </div>
                                   </div>
                               </div><br />
@@ -203,7 +203,7 @@
                                                 
                                                 <tr>
                                                
-                                                <td style="padding:8px 10px";colspan="6"   class="text center-control">No Result Found</td>
+                                                <%--<td  colspan="9"   class="text center-control">No Result Found</td>--%>
                                                     </tr>
                                             </tbody>
                                         </table>
@@ -213,22 +213,32 @@
         <hr />
          <footer>               
             <div class="container-fluid">
-                <div id="footnew" >      
-                      <div class="rownew"><br />
+                <div id="footnew" >  
+                    <div class="row">
+                      <div style="margin-left:209px" class="rnew"><br />
                             <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>   
-                        <div class="col-mg-3"></div>
-                        <div class="img">
-                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>  
+                    
+                     
+                                <a  href="https://www.facebook.com/ " style="margin-left:840px;margin-top:30px"    ><i  class="fa-brands fa-facebook-f"></i></a>  
 		                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
 		                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
 		                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
 		                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
 		                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
                          </div>
-                       </div>
+                           
+                      </div>
                     </div>
                </div>            
          </footer>
+        <script>
+            function copyText2() {
+                var text = document.querySelector('#text-input').innerText;
+                navigator.clipboard.writeText(text).then(function () {
+                    alert('Text copied');
+                });
+            }
+        </script>
     </form>
 </body>
 </html>

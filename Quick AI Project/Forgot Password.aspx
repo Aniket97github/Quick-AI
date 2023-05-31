@@ -52,7 +52,7 @@
                          
                         </h2>
             <nav aria-label="breadcrumb">
-               <ol style="margin-left:750px" class="breadcrumb">
+               <ol style="margin-left:782px" class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
              <li class="breadcrumb-item active btn btn-dark" aria-current="page">Forgot Password Page</li>
              </ol>

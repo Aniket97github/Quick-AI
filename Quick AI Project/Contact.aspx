@@ -17,6 +17,24 @@
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <style>
+        <style>
+        .responsive-map {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+            padding: 200px;
+        }
+            .responsive-map iframe {
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+    </style>
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -77,6 +95,11 @@
             </nav>
             </div>
             </div>
+        <div style="height:609px;width:800px" class="container" >
+            <div class="responsive-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+        </div>
         <div style="width:726px;height:482px;margin-left:20px" class="ContactUs">
             <div class="heading">
                 <h4>Contact Us</h4>
@@ -147,8 +170,8 @@
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
                          <u1>
                          <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Blogs.aspx">Blog</a></li>          
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="">Feedback</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Contact.aspx">Contact</a></li>
                         </u1>
                                 </div>
                            </div>

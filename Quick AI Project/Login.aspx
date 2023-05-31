@@ -71,15 +71,15 @@
             <br class="auto-style4" />
     </span>
             <br />
-         <div class="membershipplan">
-            <div class="row">
-                <h2 style="margin-left:200px;margin-top:15px">Login Page
+     <div class="membershipplan">
+            <div style="margin-top:30px;margin-left:40px" class="row">
+                <h2 >Login Page
                          
                         </h2>
             <nav aria-label="breadcrumb">
-               <ol style="margin-left:750px" class="breadcrumb">
+               <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
-             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Login</li>
+             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Login Page</li>
              </ol>
             </nav>
             </div>
@@ -90,7 +90,7 @@
            <div class="card-body">
                   <div class="row">
                       <div class="col">
-                  <center><h1>Welcome Back!</h1>
+                  <center><h4>Welcome Back!</h4>
                           <span>Don't Have an Account?<a href="http://localhost:64582/Register2.aspx">Sign up Now!</a></span>
                   </center>
                       </div>
