@@ -485,7 +485,7 @@ span.blog-item-tag {
              </div>
                  </div>
              <div class="col-md-2">
-                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary">
+                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-dark" ForeColor="#FFFFFF">
                      <asp:ListItem>en</asp:ListItem>
                      <asp:ListItem>English</asp:ListItem>
                      <asp:ListItem>Hindi</asp:ListItem>

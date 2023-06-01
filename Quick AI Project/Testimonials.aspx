@@ -90,16 +90,16 @@
             <div class="row">
             <div style="background-color:lightgrey;margin-left:0.5rem" class="col-md-3">
                  <div class="card-header"></div>
-  <div style="width:100%;height:19rem;" class="card-body1">
+  <div style="width:100%;height:28rem;" class="card-body1">
     <h5 class="card-title"><i class="fas fa-quote-left"></i></h5>
     <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <i style="margin-left:9rem" class="fas fa-quote-right"></i>
+      <i style="margin-left:8rem" class="fas fa-quote-right"></i>
       <div class="row">
           
           <h6><img style="height:26%;width:5rem;margin-bottom:9rem"; src="Images/Profile%20UI%20Icon.png" />Tony Stark
                
           </h6>
-          <h6>Social Marketing</h6>
+       <%--   <h6>Social Marketing</h6>--%>
          
          
       </div>
@@ -110,7 +110,7 @@
                      <div style="width:100%;height:19rem;" class="card-body2">
     <h5 class="card-title"><i class="fas fa-quote-left"></i></h5>
     <p class="card-text">Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e.safsdh rsfd asdfa adfa</p>
-                         <i style="margin-left:160px" class="fas fa-quote-right"></i>
+                         <i style="margin-left:8rem" class="fas fa-quote-right"></i>
       <div class="row">
           <h6><img style="height:4rem;width:21%;margin-top:2rem" src="Images/Profile%20UI%20Icon.png" />Steve Roger       </h6>
             <h6>Content Writer</h6>

@@ -42,11 +42,11 @@ namespace Quick_AI_Project
                     {
                         //HttpContext.Current.Session["username"] = TextBox1.Text;
                         HttpContext.Current.Session["email"] = TextBox2.Text;
-                        Label1.Text = "Registered Successfull";
+                        //Label1.Text = "Registered Successfull";
                     }
                     else
                     {
-                        Label1.Text = "Try Again";
+                        Response.Write("<script>alert('try again')</script>");
                     }
                 }
             }

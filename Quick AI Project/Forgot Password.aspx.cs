@@ -18,7 +18,10 @@ namespace Quick_AI_Project
         }
 
         protected void Button1_Click(object sender, EventArgs e)
-        {   Label1.Text= "Confirmation mail sentPlease check your email account for the forgot password details";
+
+        {
+            Label1.Visible = true;
+            Label1.Text= "Confirmation mail sentPlease check your email account for the forgot password details";
 
             //SqlConnection con = new SqlConnection("Data Source=DESKTOP-HHOK8FO\\SQLEXPRESS;Initial Catalog=project1;Integrated Security=True");
             //con.Open();

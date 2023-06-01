@@ -51,10 +51,10 @@
              </div>
              <div class="col-md-6"></div>
              <div class="col-md-2">
-                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="Blue" CausesValidation="False" OnClick="Button2_Click1" /></div>
+                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="#174698" CausesValidation="False" OnClick="Button2_Click1" /></div>
              <div class="col-md-2">
                  <div class="dropdown">
-                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
+                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-dark" ForeColor="#FFFFFF">
                          <asp:ListItem>en</asp:ListItem>
                          <asp:ListItem>English</asp:ListItem>
                          <asp:ListItem>Hindi</asp:ListItem>
@@ -71,15 +71,15 @@
             <br class="auto-style4" />
     </span>
             <br />
-     <div class="membershipplan">
+     <div class="breadcreum2">
             <div style="margin-top:30px;margin-left:40px" class="row">
-                <h2 >Login Page
+                <h3 >Login
                          
-                        </h2>
+                        </h3>
             <nav aria-label="breadcrumb">
-               <ol class="breadcrumb">
+               <ol style="    margin-left: 880px" class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
-             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Login Page</li>
+             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Login</li>
              </ol>
             </nav>
             </div>
@@ -91,7 +91,7 @@
                   <div class="row">
                       <div class="col">
                   <center><h4>Welcome Back!</h4>
-                          <span>Don't Have an Account?<a href="http://localhost:64582/Register2.aspx">Sign up Now!</a></span>
+                          <span>Don't Have an Account?<a style="color:#174698" href="http://localhost:64582/Register2.aspx">Sign up Now!</a></span>
                   </center>
                       </div>
                    </div>
@@ -123,11 +123,11 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please Enter Password" ForeColor="Red"></asp:RequiredFieldValidator>
                           </div>
                           <br />
-                            <a href="http://localhost:64582/Forgot%20Password.aspx">Forgot Password?</a>
-                             &nbsp<asp:Label ID="Label1" runat="server" Text="Label"  ForeColor="Red"></asp:Label>
+                            <a style="color:#174698" href="http://localhost:64582/Forgot%20Password.aspx">Forgot Password?</a>
+                             &nbsp<asp:Label ID="Label1" runat="server" Text="Label"  ForeColor="Red" SkinID="True" Visible="False"></asp:Label>
                           <br />
-                          <div class="form-group">
-                               <asp:Button ID="Button1"  class="btn btn-dark" runat="server" BackColor="Blue" ForeColor="White" OnClick="Button1_Click" Text="Enter" />
+                          <div style="margin-top: 10px; margin-left: 3px" class="form-group">
+                               <asp:Button ID="Button1"  class="btn btn-dark" runat="server" BackColor="#174698" ForeColor="White" OnClick="Button1_Click" Text="Login" />
                           </div>
                          <br /> 
                       </div>

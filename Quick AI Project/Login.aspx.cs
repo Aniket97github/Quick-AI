@@ -13,8 +13,8 @@ namespace Quick_AI_Project
     public partial class Register : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
+        {    
+           
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -49,6 +49,7 @@ namespace Quick_AI_Project
             }
             else
             {
+                Label1.Visible = true;
                 Label1.Text = "Password Not Correct";
             }
             //

@@ -44,10 +44,10 @@
              </div>
              <div class="col-md-6"></div>
              <div class="col-md-2">
-                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="Blue" CausesValidation="False" /></div>
+                 <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Join Now" BackColor="#174698" CausesValidation="False" /></div>
              <div class="col-md-2">
                  <div class="dropdown">
-                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
+                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-dark" ForeColor="#FFFFFF">
                          <asp:ListItem>en</asp:ListItem>
                          <asp:ListItem>English</asp:ListItem>
                          <asp:ListItem>Hindi</asp:ListItem>
@@ -61,15 +61,15 @@
     </div>
         <br />
         <br />
-         <div class="membershipplan">
+         <div class="breadcreum1">
             <div style="margin-left:300px;margin-top:30px" class="row">
-                <h2 >Register Page
+                <h3 >Register
                          
-                        </h2>
+                        </h3>
             <nav aria-label="breadcrumb">
-               <ol  class="breadcrumb">
+               <ol style="margin-left: 444px" class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
-             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Register Page</li>
+             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Register</li>
              </ol>
             </nav>
             </div>
@@ -81,7 +81,7 @@
                   <div class="row">
                       <div class="col">
                           <center><h4>Let's create your account</h4>
-                          <span>Already have a account?<a href="http://localhost:64582/Login.aspx">Log In!!</a></span>
+                          <span>Already have a account?<a style="color:#174698" href="http://localhost:64582/Login.aspx">Log In!!</a></span>
                           </center>
                       </div>
                   </div>
@@ -113,7 +113,7 @@
                       <div class="auto-style1">
                       <div style="margin-left:80px" class="auto-style3">
                       <label style="margin-left:5px" class="align-content-left">Email Id:</label>
-                      <span  style="margin-left:39px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
+                      <span  style="margin-left:39px" class="input-group-text  align-content-left"><i class="fa-sharp fa-regular fa-envelope"></i></span>
                       <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                         <br /> 
                       <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please Enter Email Id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
@@ -127,7 +127,7 @@
                       <div class="col">
                       &nbsp;<div style="margin-left:83px" class="input-group">
                       <label style="margin-right:20px" class="align-content-left">Password:</label>&nbsp
-                      <span  style="margin-right:0px" class="input-group-text  align-content-left"><i class="fa-solid fa-user"></i></span>
+                      <span  style="margin-right:0px" class="input-group-text  align-content-left"><i class="fas fa-lock"></i></></span>
                       <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                         <br /> 
                       <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox4" ErrorMessage="Please Enter Password" ForeColor="#CC0000"></asp:RequiredFieldValidator>
@@ -150,9 +150,9 @@
                        </label>
                      </div>
                           <br />
-                          <div class="form-group">
-                                   <asp:Button ID="Button1" runat="server" BackColor="Lime" class="btn btn-primary" OnClick="Button1_Click" Text="Submit" />
-                                   <asp:Label ID="Label1" runat="server" ForeColor="Lime" Text="Label"></asp:Label>
+                          <div style="    margin-left: 195px;" class="form-group">
+                                   <asp:Button ID="Button1" runat="server" BackColor="#174698" class="btn btn-primary" OnClick="Button1_Click" Text="Register" />
+                                   
                           </div>
                           
                         </div>

@@ -254,6 +254,9 @@ h3 {
     .slide-box {
         padding: 0 55px;
     }
+    .col-md-3 .card-header .card-body1 {
+        height: 19rem;
+    }
 }
 
 /*@media screen and (min-width:800px){
@@ -275,7 +278,7 @@ h3 {
 }
 @media screen and (max-width:820px){
     .col-md-3 .card-header .card-body1{
-        height:28rem;
+        height:30rem;
     }
     .col-md-3 .card-header .card-body2 {
         height: 28rem;
