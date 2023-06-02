@@ -151,7 +151,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary">
+                                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-dark">
                                     <asp:ListItem>en</asp:ListItem>
                                     <asp:ListItem>English</asp:ListItem>
                                     <asp:ListItem>Hindi</asp:ListItem>
@@ -220,7 +220,7 @@
                                                 <h4>0/
                                                  <small>10,000</small>
                                                 </h4>
-                                                <div style="width:100px;height:100px;margin-left: 177px;background-color:lightpink;margin-top:-15px" class="icon new1">
+                                                <div style="width:100px;height:100px;margin-left: 171px;background-color:lightpink;margin-top:-11px" class="icon new1">
                                                 <i class="fa fa-line-chart" style="margin-top:9px   ; margin-left: 16px;font-size: 60px; color: darkmagenta" aria-hidden="true"></i>
                                                     </div>
                                             </div>
@@ -232,7 +232,7 @@
                                                 <h4>0/
                                                 <small>100</small>
                                                 </h4>
-                                                <div style="width:100px;height:100px;margin-left: 177px;background-color:lightgreen;margin-top:-15px" class="icon new2">
+                                                <div style="width:100px;height:100px;margin-left: 171px;background-color:lightgreen;margin-top:-12px" class="icon new2">
                                                 <i  class="fa-solid fa-chart-simple" style=" margin-top:21px ;  margin-left: 17px;font-size: 60px; color: green"></i>
                                                     </div>
                                             </div>
@@ -271,10 +271,14 @@
             <footer>
                 <div style=" background-color:lightgrey" class="container-fluid">
                     <div id="footnew">
-                        <div class="rownew">
-                            <br />
+                        <div class="col-xl-12">
+                            <div class="row">
+                        <%--<div class="rownew">--%>
+                            <div style="margin-left:175px"    class="col-xl-6">
                             <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>
-                            <div class="col-mg-3"></div>
+                                </div>
+                          <%--  <div class="col-mg-3"></div>--%>
+                                <div class="col-xl-6">
                             <div class="img">
                                 <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
@@ -283,14 +287,17 @@
                                 <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
                                 <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
                             </div>
+                                    </div>
+                                </div>
+                        </div>
                         </div>
                     </div>
 
-                </div>
+                </footer>
 
-            </footer>
+           
 
-        </div>
+       
 
     </form>
     <script>

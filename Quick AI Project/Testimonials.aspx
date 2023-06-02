@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                             <div <%--class="col-2"--%>>
-                                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary">
+                                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-dark">
                                     <asp:ListItem>en</asp:ListItem>
                                     <asp:ListItem>English</asp:ListItem>
                                     <asp:ListItem>Hindi</asp:ListItem>
@@ -139,42 +139,45 @@
         <br />
          <footer>
            <div class="foot" style="background-color: #303030;color:silver";>
-                <div  style="padding-top: 1rem;padding-bottom: 0rem">
+                <div  style="padding-top: 45px;padding-bottom: 45px">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
                                 <div>
-                                    <img src="Images/hype%20logo.png" align="left" />
+                                    <img style="    padding-left: 40px;" src="Images/hype%20logo.png" align="left" />
                                 </div> <br />
                                 <br />
-                                <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
+                               
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
+                                 <p style=" padding-left: 44px;">Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
+                            </div>
+                            <div style="margin-left:0px" class="col-md-2">
                                 <div>
                                 <h6 style="padding-bottom:5px">My Account</h6>
                            <u1>
-                           <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="http://localhost:64582/Register.aspx">Login</a></li>                       
+                           <li style="list-style:none;padding-bottom:8px" class="text-decoration-none"><a href="http://localhost:64582/Login.aspx">Login</a></li>                       
                            <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Register2.aspx">Register</a></li>
                           </u1>
                                 </div>
                            </div>
-                            <div class="col-md-4" >
+                            <div class="col-md-2" >
                                 <div>
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
                          <u1>
-                         <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                         <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Blogs.aspx">Blog</a></li>          
+                         <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Feedback.aspx">Feedback</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Contact.aspx">Contact</a></li>
                         </u1>
                                 </div>
                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-2">
                                 <div>
                                 <h6 style="padding-bottom:5px">Information</h6>
                               <u1>
-                              <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/Register.aspx">FAQ</a></li>
+                              <li style="list-style:none;padding-bottom:8px"><a href="http://localhost:64582/FAQ%20Page.aspx">FAQ</a></li>
                                    
-                              <li style="list-style:none;padding-bottom:5px"><a href="">Testimonals</a></li>
+                              <li style="list-style:none;padding-bottom:5px"><a href="http://localhost:64582/Testimonials.aspx">Testimonals</a></li>
                               </u1>
                               </div>
                            </div>
@@ -184,22 +187,26 @@
             <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" />
                 <div class="foot" style="padding-top:15px;padding-bottom:15px">
                     <div class="container">
-                        <div class="row">
+                     <%--   <div class="row">--%>
                             <div class="col-xl-12" >
-                                <div>
+                                   <div class="row">
+                                       <div style="margin-left: -5px" class="col-xl-6">
+                              
                                <p>2023 Socius IGB Pvt Ltd, All right reserved</p>
                                </div>   
+                                       <div style="margin-left: 650px;  margin-top: -38px" class="col-xl-6">
                                       <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-		                              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-		                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-		                              <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-		                              <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-		                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+		                              <a  style="margin-left:10px" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+		                              <a   style="margin-left:16px"href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+		                              <a  style="margin-left:17px" href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+		                              <a  style="margin-left:17px" href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+		                              <a style="margin-left:17px" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                           </div>
                             </div>    
                         </div>
                     </div>
                 </div>
-            </div>
+           
         </footer>
     </form>
 </body>

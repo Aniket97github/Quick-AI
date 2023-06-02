@@ -162,7 +162,7 @@ span i{
              </div>
              <div style="margin-top:16px;" class="col-md-2">
                  <div class="dropdown">
-                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-primary" ForeColor="#333333">
+                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-dark" >
                          <asp:ListItem>en</asp:ListItem>
                          <asp:ListItem>English</asp:ListItem>
                          <asp:ListItem>Hindi</asp:ListItem>

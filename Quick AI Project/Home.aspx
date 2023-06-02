@@ -349,7 +349,7 @@ body{
 .blog-compact-item-container {
     display:block;
     height:100%;
-    width:100%;
+    width:37%;
     border-radius:4px;
     background:0 0;
     transform: translate3d(0, 0, 0);
@@ -459,14 +459,14 @@ span.blog-item-tag {
             <div class="container" >
      <div class="headerAccoutSetting">
          <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display:inline-flex;box-shadow: 2px 2px 5px grey;">
-             <div style="margin-left:10px" class="col-md-2"> 
+             <div style="border-right:1px solid #e0e0e0 ;margin-left:10px" class="col-md-2"> 
                  <img src="Images/hype%20logo.png" />
              </div>
              <div class="col-md-6"></div>
              <div style="margin-left:210px" class="col-md-2">
                <div class="dropdown">
                <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               <img style="height:50px;width:50px;" src="Images/Profile%20UI%20Icon.png" />
+               <img style="border-left:1px solid #e0e0e0 ; height:50px;width:50px;" src="Images/Profile%20UI%20Icon.png" />
                </a>
               <ul class="dropdown-menu">
              <li><a class="dropdown-item" href="#"><i  class="fas fa-qrcode"></i>Dashboard</a></li>
@@ -484,7 +484,7 @@ span.blog-item-tag {
             </ul>
              </div>
                  </div>
-             <div class="col-md-2">
+             <div style="border-left:1px solid #e0e0e0" class="col-md-2">
                  <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-dark" ForeColor="#FFFFFF">
                      <asp:ListItem>en</asp:ListItem>
                      <asp:ListItem>English</asp:ListItem>
@@ -1659,7 +1659,7 @@ span.blog-item-tag {
 
                     <!-- Section Headline -->
                     <div class="section-headline margin-top-0 margin-bottom-45">
-                        <h3>Recent Blog</h3>
+                        <h3 style="margin-right:592px">Recent Blog</h3>
                         <a href="http://localhost:64582/Blogs.aspx" class="headline-link">View Blog<i class="bi bi-arrow-right"></i></a>
                     </div>
 
@@ -1686,6 +1686,27 @@ span.blog-item-tag {
             </div>
         </div>
     </div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="margin-left:550px;padding: 30px 0px" src="Images/logo-carousel-01.png" " class="d-block " alt="..."/>
+    </div>
+    <div class="carousel-item">
+        <img style="margin-left:550px;padding: 30px 0px" src="Images/logo-carousel-02.png"   class="d-block " alt="..."/>
+    </div>
+    <div class="carousel-item">
+        <img style="margin-left:550px;padding: 30px 0px" src="Images/logo-carousel-03.png"  class="d-block " alt="..."/>
+    </div>
+  </div>
+  <button style="color:black" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span  class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <%--<span class="visually-hidden">Previous</span>--%>
+  </button>
+  <button style="color:black" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <%--<span class="visually-hidden">Next</span>--%>
+  </button>
+</div>
     <script>
         const sliderElm = document.querySelector(".slider-container .slider");
         const btnLeft = document.querySelector(".slider-container .btn-left");
@@ -1741,6 +1762,7 @@ span.blog-item-tag {
             
 
        </div>  
+       
            <footer>
            <div class="foot" style="background-color: #303030;color:silver";>
                 <div  style="padding-top: 45px;padding-bottom: 45px">
@@ -1748,12 +1770,15 @@ span.blog-item-tag {
                         <div class="row">
                             <div class="col-md-12">
                                 <div>
-                                    <img src="Images/hype%20logo.png" align="left" />
+                                    <img style="    padding-left: 40px;" src="Images/hype%20logo.png" align="left" />
                                 </div> <br />
                                 <br />
-                                <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
+                               
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
+                                 <p style=" padding-left: 44px;">Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
+                            </div>
+                            <div style="margin-left:180px" class="col-md-2">
                                 <div>
                                 <h6 style="padding-bottom:5px">My Account</h6>
                            <u1>
@@ -1762,7 +1787,7 @@ span.blog-item-tag {
                           </u1>
                                 </div>
                            </div>
-                            <div class="col-md-4" >
+                            <div class="col-md-2" >
                                 <div>
                                 <h6 style="padding-bottom:5px">Helpful Links</h6>
                          <u1>
@@ -1772,7 +1797,7 @@ span.blog-item-tag {
                         </u1>
                                 </div>
                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-2">
                                 <div>
                                 <h6 style="padding-bottom:5px">Information</h6>
                               <u1>
@@ -1788,22 +1813,26 @@ span.blog-item-tag {
             <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" />
                 <div class="foot" style="padding-top:15px;padding-bottom:15px">
                     <div class="container">
-                        <div class="row">
+                     <%--   <div class="row">--%>
                             <div class="col-xl-12" >
-                                <div>
+                                   <div class="row">
+                                       <div style="margin-left: -5px" class="col-xl-6">
+                              
                                <p>2023 Socius IGB Pvt Ltd, All right reserved</p>
                                </div>   
+                                       <div style="margin-left: 650px;  margin-top: -38px" class="col-xl-6">
                                       <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-		                              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-		                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-		                              <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-		                              <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-		                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+		                              <a  style="margin-left:10px" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+		                              <a   style="margin-left:16px"href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+		                              <a  style="margin-left:17px" href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+		                              <a  style="margin-left:17px" href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+		                              <a style="margin-left:17px" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                           </div>
                             </div>    
                         </div>
                     </div>
                 </div>
-            </div>
+           
         </footer>
          <script>
              function enableInputField(value) {
