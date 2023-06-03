@@ -102,17 +102,17 @@
         </div>
         <div style="width:726px;height:482px;margin-left:20px" class="ContactUs">
             <div class="heading">
-                <h4>Contact Us</h4>
+                <h4 style="margin-left: 30px">Contact Us</h4>
             </div>
-            <div style="border-style:solid;" class="row">
+            <div <%--style="border-style:solid;"--%> class="row">
                 <div class="col-md-8">
-                <div style="margin:20px 0px 16px;padding:0px 20px;"    class="col-sm-4">
+                <div style="margin:20px 2px 16px;padding:0px 20px;"    class="col-sm-4">
                     <input type="text" placeholder="Your Name" />
                 </div>
                 <div style="margin:20px 0px 16px;padding:0px 20px;" class="col-sm-3">
                     <input type="email" placeholder="Your Email" />
                 </div>
-                <div style="margin:0px 0px 16px;padding:0px 20px;" class="col-sm-12">
+                <div style="margin:0px 1px 16px;padding:0px 20px;" class="col-sm-12">
                     <input type="text" placeholder="Subject" />
                 </div>
                 <div  style="margin:0px 0px 16px;padding:0px 20px;" class="col-sm-12">
@@ -140,7 +140,7 @@
                 </div>
             </div>
             <br />
-            <div style="margin-left:10px" class="submit">
+            <div style="margin-left:24px" class="submit">
             <asp:Button ID="Button1" runat="server"  CssClass="btn btn-primary" BackColor="#174698"  Text="Send Message" />
                 </div>
         </div>

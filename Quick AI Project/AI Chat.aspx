@@ -169,50 +169,41 @@
         
                 
             <hr style="width:900px"/>
-            <div class="chat-input">
+            <div style="margin-top: 340px" class="chat-input">
     <input type="text" id="message" placeholder="Type a message..." />
-    <button type="button" id="send" onclick="sendMessage()">Send</button>
+   <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
     </div>
     <div class="chat-output" id="output"></div>	
   		
         </div>
-         <footer>               
-            <div class="container-fluid">
-                <div id="footnew" >      
-                      <div class="rownew"><br />
-                            <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>   
-                        <div class="col-mg-3"></div>
-                        <div class="img">
-                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>  
-		                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
+         <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
+            <footer>
+                <div  class="container-fluid">
+                    <div id="footnew">
+                        <div class="col-xl-12">
+                            <div class="row">
+                        <%--<div class="rownew">--%>
+                            <div style="margin-left:175px"    class="col-md-4">
+                            <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>
+                                </div>
+                          <%--  <div class="col-mg-3"></div>--%>
+                                <div style="margin-left: 156px" class="col-md-4">
+                            <div class="img">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
 		                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-		                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-		                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-		                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                         </div>
-                       </div>
+                                <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
                     </div>
-               </div>            
-         </footer>
-         <script>
-             function sendMessage() {
-                 let input = $("#message").val();
 
-                 if (input === "hii" || input === "hello") {
-                     $("#output").html("<span>Typing...</span>");
-                     setTimeout(function () {
-                         $("#output").html("<span>Typing....you need to upgrade your plan to use this feature.</span>");
-                     }, 1000);
-                     $("#return").click(function () {
-                         remove();
-
-                     });
-                     function remove() {
-                         $("#output").html("");
-                     }
-                 }
-             }
-         </script> 
+                </footer>
+          
         <script>
             function downloadFile() {
                 let fileData = "Your file data goes here";

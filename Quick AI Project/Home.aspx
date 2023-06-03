@@ -499,22 +499,22 @@ span.blog-item-tag {
         <br />
         <br />
         <div class="text-center hero-content">
-        <img src="Images/home-hero-icon.png" width="180px" align="center"/>
+        <img src="Images/home-hero-icon.png" width="140px" align="center"/>
             <br />
             <br />
-        <span class="auto-style1"><strong> Best AI Content Writer</strong><br/>
+        <span class="auto-style1"><strong style="font-size:46px;color:black"> Best AI Content Writer</strong><br/>
             <br />
-            <span style="color: rgb(102, 102, 102); font-family: nunito, helveticaneue, &quot;helvetica neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster &amp; save hours of work.</span></span><br />
+            <span style="color: rgb(102, 102, 102); font-family: nunito, helveticaneue, &quot;helvetica neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster &amp; save hours of work.</span></span><br />
             <br />
-            <asp:Button ID="Button1"  runat="server" BackColor="Blue" ForeColor="White" OnClick="Button1_Click1" Text="Get Started for Free" Width="285px"  Height="50px" class="btn btn-primary"/>
+            <asp:Button ID="Button1"  runat="server" BackColor="#184698" ForeColor="White" OnClick="Button1_Click1" Text="Get Started for Free" Width="285px"  Height="50px" class="btn btn-primary"/>
             <br />
             <br />
             <p>No credit card required</p>
             <div class="textcontainer">
-                <h3>How it Works?</h3><br />
+                <h4>How it Works?</h4><br />
                 <div style="margin-left:150px" class="row">
                     <div  class="col-md-3">
-                        <i  style="font-size:xx-large"   class="fas fa-layer-group">
+                        <i  style="font-size:xxx-large"   class="fas fa-layer-group">
                             
                             <img src="Images/check%20(2).png" /></i><br />                                                        
                       <br />
@@ -524,14 +524,14 @@ span.blog-item-tag {
                          </div>
                    
                     <div style=" margin-left:70px"; class="col-md-3">
-                        <i style="font-size:xx-large" class=" fas fa-folder">
+                        <i style="font-size:xxx-large" class=" fas fa-folder">
                             <img src="Images/check%20(2).png" /> </i><br />
                         <br />
                         <h5>Fill the form</h5>
                         <p>Enter a detailed description of your content. Tell the AI what do you want.</p>
                     </div>
                     <div style="margin-left:90px" ;   class="col-md-3">
-                        <i style="font-size:xx-large" class="fas fa-file">
+                        <i style="font-size:xxx-large" class="fas fa-file">
                             <img src="Images/check%20(2).png" /></i><br />
                             <br />
                                                                           
@@ -540,7 +540,7 @@ span.blog-item-tag {
                     </div>
               </div>
                 </div>
-             <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" />
+           
 
             
 
@@ -567,7 +567,7 @@ span.blog-item-tag {
                                     <div class="col-md-12 ai-templates-category-title">
                         <h4>Article And Blogs</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-1">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -581,7 +581,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-1">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -594,7 +594,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-1">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -725,7 +725,7 @@ span.blog-item-tag {
                                         <div class="col-md-12 ai-templates-category-title">
                         <h4>Ads And Marketing Tools</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-2">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -739,7 +739,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-2">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -753,7 +753,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-2">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-2">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -828,7 +828,7 @@ span.blog-item-tag {
                                         <div class="col-md-12 ai-templates-category-title">
                         <h4>General Writing</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -842,7 +842,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -856,7 +856,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1105,7 +1105,7 @@ span.blog-item-tag {
                                         <div class="col-md-12 ai-templates-category-title">
                         <h4>Ecommerce</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-4">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-4">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -1119,7 +1119,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-4">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-4">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -1133,7 +1133,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-4">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-4">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1181,7 +1181,7 @@ span.blog-item-tag {
                                         <div class="col-md-12 ai-templates-category-title">
                         <h4>Social Media</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-5">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-5">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -1195,7 +1195,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-5">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-5">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1210,7 +1210,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-5">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-5">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -1329,7 +1329,7 @@ span.blog-item-tag {
                                         <div class="col-md-12 ai-templates-category-title">
                         <h4>Website</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-6">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1344,7 +1344,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-6">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1359,7 +1359,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-6">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1377,7 +1377,7 @@ span.blog-item-tag {
                                         <div class="col-md-12 ai-templates-category-title">
                         <h4>Other</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-7">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-7">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1392,7 +1392,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-7">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-7">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1407,7 +1407,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-7">
+                                            <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-7">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -1492,6 +1492,9 @@ span.blog-item-tag {
                 </div>
               </div>
         </div>
+                <div style="box-shadow:2px 2px 3px grey;width:100px;height:30px; background-color:#1D52AE;margin-left: 700px ;width: 299px""; class="boxex">
+                   <h7 style="color:white"> Recommended</h7>
+                </div>
                 </div>
             </div>
             
@@ -1499,7 +1502,7 @@ span.blog-item-tag {
  
                 <div class="row">
                     <div style="margin-left:25px;margin-top:20px;"" class="col-md-3">
-                        <h5>Free Plan</h5>
+                        <h5 style="margin-right: 140px";>Free Plan</h5>
                         <div class="freecard " style="width:250px;height:10px">
                             <div class="alert alert-secondary" role="alert">
                                <h3 style="text-align:center">Free</h3> 
@@ -1527,7 +1530,7 @@ span.blog-item-tag {
                                 <li><i class="fas fa-check-circle"></i>&nbsp Hide Ads</li>
                                 <li><i class="fas fa-xmark-circle"></i>&nbsp Free Setup</li>
                                 <li><i class="fas fa-xmark-circle"></i>&nbsp Free Support</li><br />
-                                <asp:Button ID="Button5" runat="server" Text="Current Plan" cssclass="btn btn-primary btn-lg"/>
+                                <asp:Button ID="Button5" runat="server" Text="Current Plan" BackColor="#184698" cssclass="btn btn-primary btn-lg"/>
                             </ul>
                     </div>
                     <div  style="margin-left:60px;margin-top:20px;"" class="col-lg-3">
@@ -1559,7 +1562,7 @@ span.blog-item-tag {
                                 <li><i class="fas fa-check-circle"></i>&nbsp Hide Ads</li>
                                 <li><i class="fas fa-xmark-circle"></i>&nbsp Free Setup</li>
                                 <li><i class="fas fa-xmark-circle"></i>&nbsp Free Support</li><br />
-                                <asp:Button ID="Button4" runat="server" Text="Upgrade"  CssClass="btn btn-primary btn-lg"/>
+                                <asp:Button ID="Button4" runat="server" Text="Upgrade" BackColor="#184698" CssClass="btn btn-primary btn-lg"/>
                             </ul>
                      </div>
                     <div  style="margin-left:115px;margin-top:20px;"" class="col-lg-3">
@@ -1591,7 +1594,7 @@ span.blog-item-tag {
                               <li><i class="fas fa-check-circle"></i>&nbsp Hide Ads</li>
                               <li><i class="fas fa-check-circle"></i>&nbsp Free Setup</li>
                               <li><i class="fas fa-check-circle"></i>&nbsp Free Support</li><br />
-                               <asp:Button ID="Button3" runat="server" Text="Upgrade"  CssClass="btn btn-primary btn-lg"/>
+                               <asp:Button ID="Button3" runat="server" Text="Upgrade" BackColor="#184698"  CssClass="btn btn-primary btn-lg"/>
                             </ul>
                     </div>
                  </div>

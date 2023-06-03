@@ -140,13 +140,18 @@
                 
             </div>
         </div>
-         <footer>
-                <div class="container-fluid">
+         <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
+            <footer>
+                <div  class="container-fluid">
                     <div id="footnew">
-                        <div class="rownew">
-                            <br />
+                        <div class="col-xl-12">
+                            <div class="row">
+                        <%--<div class="rownew">--%>
+                            <div style="margin-left:175px"    class="col-md-4">
                             <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>
-                            <div class="col-mg-3"></div>
+                                </div>
+                          <%--  <div class="col-mg-3"></div>--%>
+                                <div style="margin-left: 156px" class="col-md-4">
                             <div class="img">
                                 <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
@@ -155,12 +160,13 @@
                                 <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
                                 <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
                             </div>
+                                    </div>
+                                </div>
+                        </div>
                         </div>
                     </div>
 
-                </div>
-
-            </footer>
+                </footer>
     </form>
 </body>
 </html>

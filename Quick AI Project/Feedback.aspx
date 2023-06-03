@@ -67,7 +67,7 @@
                  </header>
          <div style="margin-bottom:23px"  class="membershipplan">
             <div style="width:100%;" class="row">
-                <h2>Feedback</h2>
+                <h4>Feedback</h4>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
@@ -82,38 +82,38 @@
               <div class="row">
             <div  style="padding:0px 0px 0px 50px"    class="col-md-6">
                 <div class="info">
-                    <h3>Tell Us What u think of us</h3>
+                    <h5>Tell Us What u think of us</h5>
                     <div class="para">
                         <p>We would like to hear your opinions about the website. We would be grateful if you could take the time to fill out this form</p>
                     </div>
                 </div>
                 <div  class="col-md-12">
                     <div class="fname">
-                        <h5>Full Name</h5>
+                        <h6>Full Name</h6>
                     </div>
                     <asp:TextBox ID="TextBox1" runat="server" Height="35px" CssClass="btn-lg" ></asp:TextBox>
                 </div>
                 <div class="col-md-12">
                     <div class="lname">
-                        <h5>Email Address</h5>
+                        <h6>Email Address</h6>
                     </div>
                      <asp:TextBox ID="TextBox2" runat="server" Height="35px" CssClass="btn-lg"></asp:TextBox>
                 </div>
                 <div class="col-md-12">
                     <div class="phone">
-                        <h5>Phone Number</h5>
+                        <h6>Phone Number</h6>
                     </div>
                        <asp:TextBox ID="TextBox3" runat="server" Height="35px" CssClass="btn-lg"></asp:TextBox>
                 </div>
                 <div class="col-md-12">
                     <div class="sub">
-                        <h5>Subject</h5>
+                        <h6>Subject</h6>
                     </div>
                     <asp:TextBox ID="TextBox4" runat="server" Height="35px" CssClass="btn-lg"></asp:TextBox>
                 </div>
                 <div class="col-md-12">
                     <div class="infor">
-                        <h5> Is there anything you would like to tell us</h5>
+                        <h6> Is there anything you would like to tell us</h6>
                     </div>
                  <textarea id="TextArea1" class="btn-lg" cols="20" rows="2" height="50px" ></textarea>
                 </div>
@@ -122,27 +122,27 @@
            </div>
             </div>
           
-            <div style="margin-left:50px;box-shadow:2px 2px 3px grey;width:400px;height:200px;background-color:lightgray" class="col-md-3">
+            <div style="margin-left:50px;width:400px;height:200px; class="col-md-3">
                 <div class="new2">
-                    <h3>Recent Blog</h3>
+                    <h5 style="margin-left: 28px">Recent Blog</h5>
                 </div>
-                <div  class="new3">
-                    <div class="row">
+               <%-- <div  class="new3">--%>
+                    <div style="margin-left: 20px" class="row">
                         <div class="img">
                             <img style="width:90px;height:90px" src="Images/bloag.png" />
                         </div>
                         <div class="info5">
-                            <h5>First Blog</h5>
+                            <h7>First Blog</h7>
                             <div class="icons3">
-                               <h5> <i class="fa-regular fa-clock"></i>3 years ago</h5>
+                               <h8> <i class="fa-regular fa-clock"></i>3 years ago</h8>
                             </div>
                         </div>
                     </div>
-                </div>
+               <%-- </div>--%>
                 <div class="col-md-3">
                    <h5 style="margin-top:30px">Testimonials</h5>
                    <div class="testimonials3">
-                       <div style="width:200px;height:340px; box-shadow:2px 2px 3px grey;background-color:lightgrey" class="card-body">
+                       <div style="width:200px;height:340px; box-shadow:2px 2px 3px grey;background-color:#cccccc"; class="card-body">
     <h5 class="card-title"><i class="fas fa-quote-left"></i></h5>
     <p class="card-text">Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e.safsdh rsfd asdfa adfa</p>
                          <i style="margin-left:160px" class="fas fa-quote-right"></i>
@@ -195,8 +195,9 @@
                   
         </div>
             </div>
-         <footer>
-           <div style="margin-top: 144px ";background-color: "#303030";color:"silver"; class="foot" >
+   
+          <footer style="margin-top: 145px">
+           <div class="foot" style="background-color: #303030;color:silver";>
                 <div  style="padding-top: 45px;padding-bottom: 45px">
                     <div class="container-fluid">
                         <div class="row">
@@ -210,7 +211,7 @@
                             <div class="col-md-6">
                                  <p style=" padding-left: 44px;">Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
                             </div>
-                            <div style="margin-left:0px" class="col-md-2">
+                            <div style="margin-left:-1px" class="col-md-2">
                                 <div>
                                 <h6 style="padding-bottom:5px">My Account</h6>
                            <u1>
@@ -264,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-           </div>
+           
         </footer>
         
     </form>

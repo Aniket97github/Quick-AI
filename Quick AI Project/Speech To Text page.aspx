@@ -201,7 +201,7 @@ input[type="color"]::-moz-color-swatch {
                   </div>
                   </div>
                  <div class="row">
-                 <h6>Title</h6>      <asp:Label ID="charCountLabel" runat="server" Text="Label"></asp:Label>  
+                 <h6>Title</h6>      <asp:Label ID="charCountLabel" runat="server" Text="Label1"></asp:Label>  
                      </div>
                  <asp:TextBox ID="TextBox1" runat="server"  onchange="updateCharacterCount()"></asp:TextBox>
                  <br />
@@ -211,7 +211,7 @@ input[type="color"]::-moz-color-swatch {
                  </div>
                  <h9>.mp3, .mp4, .mpeg, .mpga, .m4a, .wav, .webm allowed. Max file size: 0 MB</h9><br /><br />
                  <div class="audioset">
-                     <asp:Label ID="charCountLabel2" runat="server" Text="Label"></asp:Label>
+                     <asp:Label ID="charCountLabel2" runat="server" Text="Label2"></asp:Label>
                      <h6>Audio Description</h6>*
                      <textarea id="TextArea1" cols="20" rows="2" runat="server" onchange="updateCharacterCount2()"></textarea>
                      <h9>Describe the speech from the file to help the AI. (Optional)</h9><br /><br />
@@ -335,24 +335,33 @@ input[type="color"]::-moz-color-swatch {
                 </div>
          </div>
         <hr  />
-         <footer>               
-            <div class="container-fluid">
-                <div id="footnew" >      
-                      <div class="rownew"><br />
-                            <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>   
-                        <div class="col-mg-3"></div>
-                        <div class="img">
-                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>  
-		                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
+          <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
+            <footer>
+                <div  class="container-fluid">
+                    <div id="footnew">
+                        <div class="col-xl-12">
+                            <div class="row">
+                        <%--<div class="rownew">--%>
+                            <div style="margin-left:175px"    class="col-md-4">
+                            <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>
+                                </div>
+                          <%--  <div class="col-mg-3"></div>--%>
+                                <div style="margin-left: 156px" class="col-md-4">
+                            <div class="img">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
 		                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-		                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-		                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-		                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                         </div>
-                       </div>
+                                <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
                     </div>
-               </div>            
-         </footer>
+
+                </footer>
         <script>
             function copyText() {
                 var text = document.querySelector('#text-input').innerText;
@@ -386,13 +395,14 @@ input[type="color"]::-moz-color-swatch {
         <script type="text/javascript">
             function updateCharacterCount() {
             var tb = document.getElementById('<%=TextBox1.ClientID%>');
-            var lbl = document.getElementById('<%=charCountLabel.ClientID%>');
+            var lbl1 = document.getElementById('<%=charCountLabel.ClientID%>');
             var value = tb.value;
                 var count = 0;
                 for (var i = 0; i < value.length; i++) {
                 count++;
-            }
-                lbl.innerHTML = 'Character count: ' + count ;
+                }
+                lbl1.visible = true;
+                lbl1.innerHTML = 'Character count: ' + count ;
             }
         </script>
           <script type="text/javascript">
@@ -404,6 +414,7 @@ input[type="color"]::-moz-color-swatch {
                   for (var i = 0; i < value.length; i++) {
                       count++;
                   }
+                  lbl2.visible = true;
                   lbl2.innerHTML = 'Character count: ' + count;
               }
           </script>

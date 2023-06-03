@@ -274,11 +274,11 @@
                         <div class="col-xl-12">
                             <div class="row">
                         <%--<div class="rownew">--%>
-                            <div style="margin-left:175px"    class="col-xl-6">
+                            <div style="margin-left:175px"    class="col-md-4">
                             <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>
                                 </div>
                           <%--  <div class="col-mg-3"></div>--%>
-                                <div class="col-xl-6">
+                                <div style="margin-left: 156px" class="col-md-4">
                             <div class="img">
                                 <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>

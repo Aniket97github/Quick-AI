@@ -211,26 +211,33 @@
                               </div>
                           </div>
         <hr />
-         <footer>               
-            <div class="container-fluid">
-                <div id="footnew" >  
-                    <div class="row">
-                      <div style="margin-left:209px" class="rnew"><br />
-                            <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>   
-                    
-                     
-                                <a  href="https://www.facebook.com/ " style="margin-left:840px;margin-top:30px"    ><i  class="fa-brands fa-facebook-f"></i></a>  
-		                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
+         <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
+            <footer>
+                <div  class="container-fluid">
+                    <div id="footnew">
+                        <div class="col-xl-12">
+                            <div class="row">
+                        <%--<div class="rownew">--%>
+                            <div style="margin-left:175px"    class="col-md-4">
+                            <p>&nbsp;2023 Socius IGB Pvt Limited All Rights Reserved</p>
+                                </div>
+                          <%--  <div class="col-mg-3"></div>--%>
+                                <div style="margin-left: 156px" class="col-md-4">
+                            <div class="img">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></>
 		                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-		                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-		                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-		                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                         </div>
-                           
-                      </div>
+                                <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
                     </div>
-               </div>            
-         </footer>
+
+                </footer>
         <script>
             function copyText2() {
                 var text = document.querySelector('#text-input').innerText;
