@@ -119,7 +119,7 @@
                                 <li><i class="fas fa-check-circle"></i>&nbsp Hide Ads</li>
                                 <li><i class="fas fa-xmark-circle"></i>&nbsp Free Setup</li>
                                 <li><i class="fas fa-xmark-circle"></i>&nbsp Free Support</li><br />
-                                <asp:Button ID="Button1" runat="server" Text="Current Plan" CssClass="btn btn-primary btn-lg" />
+                                <asp:Button ID="Button1" BackColor="#184698" runat="server" Text="Current Plan" CssClass="btn btn-primary btn-lg" />
                             </ul>
                     </div>
                     <div  style="margin-left:60px;margin-top:20px;"" class="col-lg-3">
@@ -151,7 +151,7 @@
                                 <li><i class="fas fa-check-circle"></i>&nbsp Hide Ads</li>
                                 <li><i class="fas fa-xmark-circle"></i>&nbsp Free Setup</li>
                                 <li><i class="fas fa-xmark-circle"></i>&nbsp Free Support</li><br />
-                                <asp:Button ID="Button2" runat="server" Text="Upgrade" CssClass="btn btn-primary btn-lg" />
+                                <asp:Button ID="Button2" BackColor="#184698" runat="server" Text="Upgrade" CssClass="btn btn-primary btn-lg" />
                             </ul>
                      </div>
                     <div  style="margin-left:115px;margin-top:20px;"" class="col-lg-3">
@@ -183,7 +183,7 @@
                                 <li><i class="fas fa-check-circle"></i>&nbsp Hide Ads</li>
                                 <li><i class="fas fa-check-circle"></i>&nbsp Free Setup</li>
                                 <li><i class="fas fa-check-circle"></i>&nbsp Free Support</li><br />
-                                <asp:Button ID="Button3" runat="server" Text="Upgrade" CssClass="btn btn-primary btn-lg " OnClick="Button3_Click" />
+                                <asp:Button ID="Button3" BackColor="#184698" runat="server" Text="Upgrade" CssClass="btn btn-primary btn-lg " OnClick="Button3_Click" />
                             </ul>
                     </div>
                  </div>

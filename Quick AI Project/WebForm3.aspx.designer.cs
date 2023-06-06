@@ -11,7 +11,7 @@ namespace Quick_AI_Project
 {
 
 
-    public partial class AI_Chat
+    public partial class WebForm3
     {
     }
 }

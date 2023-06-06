@@ -102,13 +102,13 @@
              </ol>
             </nav>
             </div>
-            <div class="memberchart"><i class="fas fa-file"></i><h7>All Images</h7>
+            <div class="memberchart"><i style="margin-left: 10px" class="fas fa-file"></i><h7 style="margin-left: 10px">All Images</h7>
                  <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" /><br />
                 <div class="menumember">
                  <div class="row">
                  
                      <div class="col-sm-3">
-                         <h7>Image</h7>
+                         <h7 style="margin-left: 10px">Image</h7>
                      </div>
                      <div class="col-sm-3">
                          <h7>Resolution</h7>
@@ -124,10 +124,10 @@
                      
                     </div>
                  <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             <h7></h7>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             <h7></h7>
                         </div>
                         <div class="col-sm-3">

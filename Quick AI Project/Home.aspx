@@ -510,7 +510,7 @@ span.blog-item-tag {
             <br />
             <br />
             <p>No credit card required</p>
-            <div class="textcontainer">
+            <div style="background-color:#f9f9f9" class="textcontainer">
                 <h4>How it Works?</h4><br />
                 <div style="margin-left:150px" class="row">
                     <div  class="col-md-3">
@@ -570,12 +570,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-comment"></i>
                                         </div>
-                                        <h4>
-                                            Blog Ideas                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Blog Ideas                                                                                    </h5>
                                         <p class="margin-bottom-0">Article/blog ideas that you can use to generate more traffic, leads, and sales for your business.</p>
                                     </div>
                                 </div>
@@ -584,11 +584,11 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-align-left"></i>
                                         </div>
-                                        <h4> Blog Intros </h4>
+                                        <h5 style="color:black"> Blog Intros </h5>
                                         <p class="margin-bottom-0">Enticing article/blog introductions that capture the attention of the audience.</p>
                                     </div>
                                 </div>
@@ -597,11 +597,11 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-ellipsis-h"></i>
                                         </div>
-                                        <h4>Blog Titles </h4>
+                                        <h5 style="color:black">Blog Titles </h5>
                                         <p class="margin-bottom-0">Nobody wants to read boring blog titles, generate catchy blog titles with this tool.</p>
                                     </div>
                                 </div>
@@ -614,9 +614,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-book"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Blog Section   <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Write a few paragraphs about a subheading of your article.</p>
                                     </div>
                                 </div>
@@ -625,12 +625,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div  style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-check-square"></i>
                                         </div>
-                                        <h4>
-                                            Blog Conclusion                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Blog Conclusion                                                                                    </h5>
                                         <p class="margin-bottom-0">Create powerful conclusion that will make a reader take action.</p>
                                     </div>
                                 </div>
@@ -643,9 +643,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-pencil-square"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Article Writer                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Create a fully complete high quality article from a title and outline text.</p>
                                     </div>
                                 </div>
@@ -658,8 +658,8 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                           <i class="fa-light fa-pen-to-square"></i>
                                         </div>
-                                        <h4>
-                                            Article Rewriter                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Article Rewriter                                                                                    </h5>
                                         <p class="margin-bottom-0">Copy an article, paste it in to the program, and with just one click you'll have an entirely different article to read.</p>
                                     </div>
                                 </div>
@@ -668,12 +668,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-list-ul"></i>
                                         </div>
-                                        <h4>
-                                            Article Outlines                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Article Outlines                                                                                    </h5>
                                         <p class="margin-bottom-0">Detailed article outlines that help you write better content on a consistent basis.</p>
                                     </div>
                                 </div>
@@ -682,12 +682,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-list-ol"></i>
                                         </div>
-                                        <h4>
-                                            Talking Points                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Talking Points                                                                                    </h5>
                                         <p class="margin-bottom-0">Write short, simple and informative points for the subheadings of your article</p>
                                     </div>
                                 </div>
@@ -696,13 +696,13 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-1">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-align-justify"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Paragraph Writer                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Perfectly structured paragraphs that are easy to read and packed with persuasive words.</p>
                                     </div>
                                 </div>
@@ -711,12 +711,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-refresh"></i>
                                         </div>
-                                        <h4>
-                                            Content Rephrase                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Content Rephrase                                                                                    </h5>
                                         <p class="margin-bottom-0">Rephrase your content in a different voice and style to appeal to different readers.</p>
                                     </div>
                                 </div>
@@ -728,12 +728,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-facebook-f"></i>
                                         </div>
-                                        <h4>
-                                            Facebook Ads                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Facebook Ads                                                                                    </h5>
                                         <p class="margin-bottom-0">Facebook ad copies that make your ads truly stand out.</p>
                                     </div>
                                 </div>
@@ -742,12 +742,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-facebook-f"></i>
                                         </div>
-                                        <h4>
-                                            Facebook Ads Headlines                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Facebook Ads Headlines                                                                                    </h5>
                                         <p class="margin-bottom-0">Write catchy and convincing headlines to make your Facebook Ads stand out.</p>
                                     </div>
                                 </div>
@@ -756,13 +756,13 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-2">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                            <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Google Ad Titles                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Creating ads with unique and appealing titles that entice people to click on your ad and purchase from your site.</p>
                                     </div>
                                 </div>
@@ -771,13 +771,13 @@ span.blog-item-tag {
                                             <div style="margin-top:20px" class="col-md-4 col-sm-6 category-2">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                            <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Google Ad Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">The best-performing Google ad copy converts visitors into customers.</p>
                                     </div>
                                 </div>
@@ -786,12 +786,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                              <i class="fa-brands fa-linkedin"></i>
                                         </div>
-                                        <h4>
-                                            LinkedIn Ad Headlines                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            LinkedIn Ad Headlines                                                                                    </h5>
                                         <p class="margin-bottom-0">Attention-grabbing, click-inducing, and high-converting ad headlines for Linkedin.</p>
                                     </div>
                                 </div>
@@ -800,12 +800,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-linkedin"></i>
                                         </div>
-                                        <h4>
-                                            LinkedIn Ad Descriptions                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            LinkedIn Ad Descriptions                                                                                    </h5>
                                         <p class="margin-bottom-0">Professional and eye-catching ad descriptions that will make your product shine.</p>
                                     </div>
                                 </div>
@@ -814,12 +814,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-bell"></i>
                                         </div>
-                                        <h4>
-                                            App and SMS Notifications                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            App and SMS Notifications                                                                                    </h5>
                                         <p class="margin-bottom-0">Notification messages for your apps, websites, and mobile devices that keep users coming back for more.</p>
                                     </div>
                                 </div>
@@ -831,12 +831,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-text-width"></i>
                                         </div>
-                                        <h4>
-                                            Text Extender                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Text Extender                                                                                    </h5>
                                         <p class="margin-bottom-0">Extend short sentences into more descriptive and interesting ones.</p>
                                     </div>
                                 </div>
@@ -845,12 +845,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-text-width"></i>
                                         </div>
-                                        <h4>
-                                            Content Shorten                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Content Shorten                                                                                    </h5>
                                         <p class="margin-bottom-0">Short your content in a different voice and style to appeal to different readers.</p>
                                     </div>
                                 </div>
@@ -859,13 +859,13 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-quora"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Quora Answers                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Answers to Quora questions that will position you as an authority.</p>
                                     </div>
                                 </div>
@@ -874,12 +874,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-child"></i>
                                         </div>
-                                        <h4>
-                                            Summarize for a 2nd grader                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Summarize for a 2nd grader                                                                                    </h5>
                                         <p class="margin-bottom-0">Translates difficult text into simpler concepts.</p>
                                     </div>
                                 </div>
@@ -892,9 +892,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Stories                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                        </h4>
+                                        </h5>
                                         <p class="margin-bottom-0">Engaging and persuasive stories that will capture your reader's attention and interest.</p>
                                     </div>
                                 </div>
@@ -903,12 +903,12 @@ span.blog-item-tag {
                             <div  style="margin-top:20px" class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-list"></i>
                                         </div>
-                                        <h4>
-                                            Bullet Point Answers                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Bullet Point Answers                                                                                    </h5>
                                         <p class="margin-bottom-0">Precise and informative bullet points that provide quick and valuable answers to your customers' questions.</p>
                                     </div>
                                 </div>
@@ -916,13 +916,13 @@ span.blog-item-tag {
                         </div>
                               <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
-                                <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                <div style=" margin-top: 16px" class="dashboard-box ai-templates ">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-tasks"></i>
                                         </div>
-                                        <h4>
-                                            Definition</h4>
+                                        <h5 style="color:black">
+                                            Definition</h5>
                                         <p class="margin-bottom-0">A definition for a word, phrase, or acronym that's used often by your target buyers.</p>
                                     </div>
                                 </div>
@@ -931,12 +931,12 @@ span.blog-item-tag {
                              <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div style="margin-top:20px"  class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-check-circle"></i>
                                         </div>
-                                        <h4>
-                                            Answers                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Answers                                                                                    </h5>
                                         <p class="margin-bottom-0">Instant, quality answers to any questions or concerns that your audience might have.</p>
                                     </div>
                                 </div>
@@ -944,13 +944,13 @@ span.blog-item-tag {
                         </div>
                                             <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
-                                <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                <div style=" margin-top: 16px" class="dashboard-box ai-templates ">
+                                    <div style=" height: 154px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-question-circle"></i>
                                         </div>
-                                        <h4>
-                                            Questions                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Questions                                                                                    </h5>
                                         <p class="margin-bottom-0">A tool to create engaging questions and polls that increase audience participation and engagement.</p>
                                     </div>
                                 </div>
@@ -963,8 +963,8 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-sort-alpha-desc"></i>
                                         </div>
-                                        <h4>
-                                            Passive to Active Voice                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Passive to Active Voice                                                                                    </h5>
                                         <p class="margin-bottom-0">Easy and quick solution to converting your passive voice sentences into active voice sentences.</p>
                                     </div>
                                 </div>
@@ -977,9 +977,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-key"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Pros and Cons                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">List of the main benefits versus the most common problems and concerns.</p>
                                     </div>
                                 </div>
@@ -988,13 +988,13 @@ span.blog-item-tag {
                                             <div style="margin-top:20px" class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style=" height: 184px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-refresh"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Rewrite With Keywords                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Rewrite your existing content to include more keywords and boost your search engine rankings.</p>
                                     </div>
                                 </div>
@@ -1007,9 +1007,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-envelope"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Emails                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Professional-looking emails that help you engage leads and customers.</p>
                                     </div>
                                 </div>
@@ -1022,9 +1022,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-envelope"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Emails V2                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Personalized email outreach to your target prospects that get better results.</p>
                                     </div>
                                 </div>
@@ -1033,12 +1033,12 @@ span.blog-item-tag {
                                             <div style="margin-top:20px" class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                            <i class="fa-regular fa-envelope-open"></i>
                                         </div>
-                                        <h4>
-                                            Email Subject Lines                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Email Subject Lines                                                                                    </h5>
                                         <p class="margin-bottom-0">Powerful email subject lines that increase open rates.</p>
                                     </div>
                                 </div>
@@ -1047,12 +1047,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-bullhorn"></i>
                                         </div>
-                                        <h4>
-                                            Startup Name Generator                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Startup Name Generator                                                                                    </h5>
                                         <p class="margin-bottom-0">Generate cool, creative, and catchy names for your startup in seconds.</p>
                                     </div>
                                 </div>
@@ -1061,12 +1061,12 @@ span.blog-item-tag {
                                             <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div style="margin-top:20px" class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-file-text"></i>
                                         </div>
-                                        <h4>
-                                            Company Bios                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Company Bios                                                                                    </h5>
                                         <p class="margin-bottom-0">Short and sweet company bio that will help you connect with your target audience.</p>
                                     </div>
                                 </div>
@@ -1075,13 +1075,13 @@ span.blog-item-tag {
                                             <div style="margin-top:20px" class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                           <i class="fa-regular fa-file-lines"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Company Mission                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">A clear and concise statement of your company's goals and purpose.</p>
                                     </div>
                                 </div>
@@ -1089,14 +1089,14 @@ span.blog-item-tag {
                         </div>
                                             <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
-                                <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                <div style="margin-top: 16px" class="dashboard-box ai-templates ai-templates-pro">
+                                    <div style=" height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-align-left"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Company Vision                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">A vision that attracts the right people, clients, and employees.</p>
                                     </div>
                                 </div>
@@ -1108,12 +1108,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-4">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-gift"></i>
                                         </div>
-                                        <h4>
-                                            Product Name Generator                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Product Name Generator                                                                                    </h5>
                                         <p class="margin-bottom-0">Create creative product names from examples words.</p>
                                     </div>
                                 </div>
@@ -1122,12 +1122,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-4">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height: 157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-gift"></i>
                                         </div>
-                                        <h4>
-                                            Product Descriptions                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Product Descriptions                                                                                    </h5>
                                         <p class="margin-bottom-0">Authentic product descriptions that will compel, inspire, and influence.</p>
                                     </div>
                                 </div>
@@ -1140,9 +1140,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-amazon"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Amazon Product Titles                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Product titles that will make your product stand out in a sea of competition.</p>
                                     </div>
                                 </div>
@@ -1150,14 +1150,14 @@ span.blog-item-tag {
                         </div>
                                             <div class="col-md-4 col-sm-6 category-4">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
-                                <div class="dashboard-box ai-templates ai-templates-pro">
+                                <div style="margin-top: 20px" class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-amazon"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Amazon Product Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Descriptions for Amazon products that rank on the first page of the search results.</p>
                                     </div>
                                 </div>
@@ -1165,14 +1165,14 @@ span.blog-item-tag {
                         </div>
                                             <div class="col-md-4 col-sm-6 category-4">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
-                                <div class="dashboard-box ai-templates ai-templates-pro">
+                                <div style="margin-top: 20px" class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
                                            <i class="fa-brands fa-amazon"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Amazon Product Features                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Advantages and features of your products that will make them irresistible to shoppers.</p>
                                     </div>
                                 </div>
@@ -1184,12 +1184,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-5">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height: 164px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-facebook-f"></i>
                                         </div>
-                                        <h4>
-                                            Social Media Post (Personal)                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Social Media Post (Personal)                                                                                    </h5>
                                         <p class="margin-bottom-0">Write a social media post for yourself to be published on any platform.</p>
                                     </div>
                                 </div>
@@ -1202,9 +1202,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-facebook-f"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Social Media Post (Business)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Write a post for your business to be published on any social media platform.</p>
                                     </div>
                                 </div>
@@ -1213,12 +1213,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-5">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div  style=" height: 164px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-instagram"></i>
                                         </div>
-                                        <h4>
-                                            Instagram Captions                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Instagram Captions                                                                                    </h5>
                                         <p class="margin-bottom-0">Captions that turn your images into attention-grabbing Instagram posts.</p>
                                     </div>
                                 </div>
@@ -1231,9 +1231,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-instagram"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Instagram Hashtags                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Trending and highly relevant hashtags to help you get more followers and engagement.</p>
                                     </div>
                                 </div>
@@ -1242,12 +1242,12 @@ span.blog-item-tag {
                                             <div style="margin-top:20px" class="col-md-4 col-sm-6 category-5">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div  style=" height: 152px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-twitter"></i>
                                         </div>
-                                        <h4>
-                                            Twitter Tweets                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Twitter Tweets                                                                                    </h5>
                                         <p class="margin-bottom-0">Generate tweets using AI, that are relevant and on-trend.</p>
                                     </div>
                                 </div>
@@ -1256,12 +1256,12 @@ span.blog-item-tag {
                                             <div style="margin-top:20px" class="col-md-4 col-sm-6 category-5">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div  style=" height: 152px" class="content">
                                         <div class="ai-templates-icon">
                                            <i class="fa-brands fa-youtube"></i>
                                         </div>
-                                        <h4>
-                                            YouTube Titles                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            YouTube Titles                                                                                    </h5>
                                         <p class="margin-bottom-0">Catchy titles that attract more views and increase the number of shares.</p>
                                     </div>
                                 </div>
@@ -1270,13 +1270,13 @@ span.blog-item-tag {
                                             <div style="margin-top:20px" class="col-md-4 col-sm-6 category-5">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div   style=" height: 166px"class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-youtube"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             YouTube Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Catchy and persuasive YouTube descriptions that help your videos rank higher.</p>
                                     </div>
                                 </div>
@@ -1289,9 +1289,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                            <i class="fa-brands fa-youtube"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             YouTube Outlines                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Video outlines that are a breeze to create and uber-engaging.</p>
                                     </div>
                                 </div>
@@ -1300,12 +1300,12 @@ span.blog-item-tag {
                                             <div style="margin-top:20px" class="col-md-4 col-sm-6 category-5">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div  style=" height: 152px" class="content">
                                         <div class="ai-templates-icon">
                                            <i class="fa-brands fa-linkedin"></i>
                                         </div>
-                                        <h4>
-                                            LinkedIn Posts                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            LinkedIn Posts                                                                                    </h5>
                                         <p class="margin-bottom-0">Inspiring LinkedIn posts that will help you build trust and authority in your industry.</p>
                                     </div>
                                 </div>
@@ -1318,9 +1318,9 @@ span.blog-item-tag {
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-film"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             TikTok Video Scripts                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Video scripts that are ready to shoot and will make you go viral.</p>
                                     </div>
                                 </div>
@@ -1332,13 +1332,13 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height:190px" class="content">
                                         <div class="ai-templates-icon">
                                            <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             SEO Meta Tags (Blog Post)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">A set of optimized meta title and meta description tags that will boost your search rankings for your blog.</p>
                                     </div>
                                 </div>
@@ -1347,13 +1347,13 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height:190px" class="content">
                                         <div class="ai-templates-icon">
                                           <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             SEO Meta Tags (Homepage)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">A set of optimized meta title and meta description tags that will boost your search rankings for your home page.</p>
                                     </div>
                                 </div>
@@ -1362,13 +1362,13 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height:190px" class="content">
                                         <div class="ai-templates-icon">
                                            <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             SEO Meta Tags (Product Page)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">A set of optimized meta title and meta description tags that will boost your search rankings for your product page.</p>
                                     </div>
                                 </div>
@@ -1380,13 +1380,13 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-7">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-refresh"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Tone Changer                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Change the tone of your writing to match your audience and copy.</p>
                                     </div>
                                 </div>
@@ -1395,13 +1395,13 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-7">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-music"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Song Lyrics                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Unique song lyrics that will be perfect for your next hit song.</p>
                                     </div>
                                 </div>
@@ -1410,12 +1410,12 @@ span.blog-item-tag {
                                             <div style="padding-top: 15px" class="col-md-4 col-sm-6 category-7">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-language"></i>
                                         </div>
-                                        <h4>
-                                            Translate                                                                                    </h4>
+                                        <h5 style="color:black">
+                                            Translate                                                                                    </h5>
                                         <p class="margin-bottom-0">Translate your content into any language you want.</p>
                                     </div>
                                 </div>
@@ -1424,13 +1424,13 @@ span.blog-item-tag {
                                             <div style="margin-top:20px" class="col-md-4 col-sm-6 category-7">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                           <i class="fa-regular fa-circle-question"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             FAQs                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Generate frequently asked questions based on your product description.</p>
                                     </div>
                                 </div>
@@ -1439,13 +1439,13 @@ span.blog-item-tag {
                                             <div  style="margin-top:20px" class="col-md-4 col-sm-6 category-7">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                            <i class="fa-regular fa-circle-question"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             FAQ Answers                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Generate creative answers to questions (FAQs) about your business or website.</p>
                                     </div>
                                 </div>
@@ -1454,13 +1454,13 @@ span.blog-item-tag {
                                             <div style="margin-top:20px"  class="col-md-4 col-sm-6 category-7">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
-                                    <div class="content">
+                                    <div style="height:157px" class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa-solid fa-star-half-stroke"></i>
                                         </div>
-                                        <h4>
+                                        <h5 style="color:black">
                                             Testimonials / Reviews                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                                                                    </h5>
                                         <p class="margin-bottom-0">Add social proof to your website by generating user testimonials.</p>
                                     </div>
                                 </div>
@@ -1469,7 +1469,8 @@ span.blog-item-tag {
                                 </div>
         </div>
     </div>
-               <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" />
+               <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem;margin-top: 50px;
+}" />
 
             <div class="membershipplan">
             <div class="row">

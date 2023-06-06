@@ -95,7 +95,7 @@
                                                 <i class="fas fa-link"></i><asp:DropDownList ID="DropDownList3" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "Afiliate Program" />
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" Afiliate Program"  />
-                                                 <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text="Withdraws" />
+                                                 <asp:ListItem Value="http://localhost:64582/Withdraw.aspx" Text="Withdraws" />
                                              </asp:DropDownList>
                                         </li>
                                         <li><a href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>

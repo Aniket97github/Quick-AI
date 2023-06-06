@@ -4,7 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Using Fetch API to get data from API</title>
+  
+   
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link href="Fonstawesome/css/all.css" rel="stylesheet" />
     <link href="Fonstawesome/css/fontawesome.css" rel="stylesheet" />
@@ -14,9 +16,9 @@
     <link href="Css/Style.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-3.0.0.slim.min.js"></script>
-    <script src="Scripts/popper.min.js"></script>
+   <%-- <script src="Scripts/popper.min.js"></script>--%>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  
     <style>
         .chat-input {
             display: flex;
@@ -52,7 +54,7 @@
     </style>
 </head>
   <body>
-    <form id="form1" runat="server">
+  <%--  <form id="form1" runat="server">--%>
         <header>
                 <div class="container">
                     <div class="headerAccoutSetting">
@@ -89,14 +91,14 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                          <%--  <div class="col-md-2">
                                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-dark">
                                     <asp:ListItem>en</asp:ListItem>
                                     <asp:ListItem>English</asp:ListItem>
                                     <asp:ListItem>Hindi</asp:ListItem>
                                     <asp:ListItem>Marathi</asp:ListItem>
                                 </asp:DropDownList>
-                            </div>
+                            </div>--%>
                         </div>
 
                     </div>
@@ -111,11 +113,11 @@
                                     <ul>
                                         <li><a href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
                                          <li>
-                             <i class="fas fa-file"></i><asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
+                             <i class="fas fa-file"></i><%--<asp:DropDownList ID="DropDownList2" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "My Documents" />
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" All Documents"  />
                                                  <asp:ListItem Value="http://localhost:64582/All%20AI%20Images.aspx" Text="AI Images" />
-                                             </asp:DropDownList>
+                                             </asp:DropDownList>--%>
                                         </li>
                                         <h6 style="color: blue">Organize and Manage</h6>
                                         <li><a href="http://localhost:64582/Templates.aspx"><i class="fas fa-layer-group"></i>Templates</a></li>
@@ -125,11 +127,11 @@
                                         <li><a href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                                         <h6 style="color: blue">Account</h6>
                                         <li> 
-                                                <i class="fas fa-link"></i><asp:DropDownList ID="DropDownList3" runat="server" onChange="window.location.href=this.value;">
+                                                <i class="fas fa-link"></i><%--<asp:DropDownList ID="DropDownList3" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="#" Text = "Afiliate Program" />
                                                  <asp:ListItem Value="http://localhost:64582/Affiliate%20Program.aspx" Text=" Afiliate Program"  />
                                                  <asp:ListItem Value=" http://localhost:64582/Withdraw.aspx" Text="Withdraws" />
-                                             </asp:DropDownList>
+                                             </asp:DropDownList>--%>
                                         </li>
                                         <li><a href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                                         <li><a href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
@@ -164,18 +166,26 @@
            <div style="margin-left:20px;display: flex; align-items: center;"><img style="width:45px" src="Images/Profile%20UI%20Icon.png" />
                               <h6>AI Chat Bot</h6> 
     <button style="margin-left:670px;color:darkblue" <i class="fas fa-file-export" typeof="button" id="newt" onclick="downloadFile()"</button>
-    <button style="color:red" <i class="fas fa-trash-can" type="button" id="return" onclick="sendMessage()"></button>
+    <button style="color:red" <i class="fas fa-trash-can" type="button" id="return" onclick=""></button>
 </div>
         
-                
-            <hr style="width:900px"/>
-            <div style="margin-top: 340px" class="chat-input">
-    <input type="text" id="message" placeholder="Type a message..." />
-   <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-    </div>
-    <div class="chat-output" id="output"></div>	
+                  <label id="output"  />
+               <label for="message">Enter your message:</label>
+              <input style="width:90%; background:none" id="message" placeholder="Type your message here..." type="text" /><button class="btn btn-primary" onclick="sendMessage()">Send</button>
+            	
+          </div>
+         
   		
-        </div>
+         
+          <%--    
+            <--<div style="margin-top: 340px" class="chat-input">
+    <input type="text" id="message"  placeholder="Type a message..." />
+    
+                 <button type="button" id="send2" onclick="send()">Send</button>
+    </div>--%>
+            
+  
+      
          <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
             <footer>
                 <div  class="container-fluid">
@@ -203,7 +213,8 @@
                     </div>
 
                 </footer>
-          
+      
+        
         <script>
             function downloadFile() {
                 let fileData = "Your file data goes here";
@@ -221,6 +232,48 @@
                 document.body.removeChild(element);
             }
         </script>
-    </form>
+       
+         
+        <script>
+            async function sendMessage() {
+                const message = document.getElementById('message').value;
+                const url = `https://ai-chatbot.p.rapidapi.com/chat/free?message=${encodeURIComponent(message)}&uid=user1`;
+                const options = {
+                    method: 'GET',
+                    headers: {
+                        'X-RapidAPI-Key': 'c934a300cdmsh66d6a833f275562p1e6074jsn7ed97f28c4bc',
+                        'X-RapidAPI-Host': 'ai-chatbot.p.rapidapi.com'
+                    }
+                };
+
+                try {
+                    const response = await fetch(url, options);
+                    const result = await response.text();
+                    displayMessage(result);
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+
+
+
+            function displayMessage(message) {
+                const messageContainer = document.getElementById('output');
+                const messageElement = document.createElement('p');
+                const formattedMessage = message.replace(/['"]+/g, ''); // Remove the braces from the message
+
+                if (formattedMessage.includes('chatbot')) {
+                    messageElement.classList.add('chatbot-message'); // Apply a CSS class to differentiate chatbot messages
+                }
+
+                messageElement.textContent = formattedMessage;
+                messageContainer.appendChild(messageElement);
+            }
+
+           
+        </script>
+   <%-- </form>--%>
 </body>
 </html>
+
+

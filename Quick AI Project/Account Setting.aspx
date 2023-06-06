@@ -148,7 +148,7 @@
                     </div>
                 </div>
                 <div class="submitdata">
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Save Changes" CssClass="btn btn-primary btn-lg" />
+                    <asp:Button ID="Button1" runat="server" BackColor="#184698" OnClick="Button1_Click" Text="Save Changes" CssClass="btn btn-primary btn-lg" />
 
                 </div>
             </div>
@@ -489,7 +489,7 @@
                 </div>
                 <div class="newbtn">
                     <br />
-                    <asp:Button ID="Button2" OnClick="Button2_Click" runat="server" CssClass="form-control btn btn-primary btn-lg" Text="Save Changes" />
+                    <asp:Button ID="Button2" OnClick="Button2_Click" BackColor="#184698" runat="server" CssClass="form-control btn btn-primary btn-lg" Text="Save Changes" />
                 </div>
             </div>
         </div>

@@ -216,7 +216,7 @@ input[type="color"]::-moz-color-swatch {
                      <textarea id="TextArea1" cols="20" rows="2" runat="server" onchange="updateCharacterCount2()"></textarea>
                      <h9>Describe the speech from the file to help the AI. (Optional)</h9><br /><br />
                      <div style="margin-left:45px;" class="generate">
-                     <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary btn-lg" Text="Generate" /><br />
+                     <asp:Button ID="Button1" BackColor="#184698" runat="server" CssClass="btn btn-primary btn-lg" Text="Generate" /><br />
                          </div>
                         <div style="width:234px;height:70px;margin-right:27px;margin-top:5px" class="alert alert-primary d-flex align-items-center" role="alert">
                   <svg class="bi flex-shrink-0 me-2" width="22" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
@@ -401,7 +401,7 @@ input[type="color"]::-moz-color-swatch {
                 for (var i = 0; i < value.length; i++) {
                 count++;
                 }
-                lbl1.visible = true;
+              
                 lbl1.innerHTML = 'Character count: ' + count ;
             }
         </script>
@@ -414,7 +414,7 @@ input[type="color"]::-moz-color-swatch {
                   for (var i = 0; i < value.length; i++) {
                       count++;
                   }
-                  lbl2.visible = true;
+                  
                   lbl2.innerHTML = 'Character count: ' + count;
               }
           </script>

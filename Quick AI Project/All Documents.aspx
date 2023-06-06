@@ -82,7 +82,7 @@
                 <li> <i class="fas fa-link"></i><asp:DropDownList ID="DropDownList3" runat="server" onChange="window.location.href=this.value;">
                                                  <asp:ListItem Value="http://localhost:64582/Affiliate%20Program.aspx" Text = "Afiliate Program" />
                                                  <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text=" Afiliate Program"  />
-                                                 <asp:ListItem Value="http://localhost:64582/All%20Documents.aspx" Text="Withdraws" />
+                                                 <asp:ListItem Value="http://localhost:64582/Withdraw.aspx" Text="Withdraws" />
                                              </asp:DropDownList></li>
                 <li><a href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                 <li><a href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
@@ -102,13 +102,13 @@
              </ol>
             </nav>
             </div>
-            <div class="memberchart"><i class="fas fa-file"></i><h7>All Documents</h7>
+            <div class="memberchart"><i style="margin-left: 10px" class="fas fa-file"></i><h7 style="margin-left: 10px">All Documents</h7>
                  <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" /><br />
                 <div class="menumember">
                  <div class="row">
                  
                      <div class="col-sm-3">
-                         <h7>Document</h7>
+                         <h7 style="margin-left: 10px">Document</h7>
                      </div>
                      <div class="col-sm-3">
                          <h7>Content</h7>
@@ -124,10 +124,10 @@
                      
                     </div>
                  <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             <h7></h7>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             <h7></h7>
                         </div>
                         <div class="col-sm-3">

@@ -95,13 +95,13 @@
              </ol>
             </nav>
             </div>
-            <div class="memberchart"><i class="fas fa-gift"></i><h7>Current Plan</h7>
+            <div class="memberchart"><i style="margin-left: 10px" class="fas fa-gift"></i><h7 style="margin-left: 10px">Current Plan</h7>
                  <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" /><br />
                 <div class="menumember">
                  <div class="row">
                  
                      <div class="col-sm-3">
-                         <h7>Membership</h7>
+                         <h7 style="margin-left: 10px">Membership</h7>
                      </div>
                      <div class="col-sm-3">
                          <h7>Payment Mode</h7>
@@ -118,7 +118,7 @@
                     </div>
                  <div class="row">
                         <div class="col-sm-3">
-                            <h7>Free plan</h7>
+                            <h7 style="margin-left: 10px">Free plan</h7>
                         </div>
                         <div class="col-sm-3">
                             <h7>One Time</h7>
@@ -132,7 +132,7 @@
                     </div>
                 <div class="newbox">
                     <div style=" margin-left:750px;""class="changeplan">
-                    <asp:Button ID="Button1" runat="server"  CssClass="btn btn-primary" Text="Change Plan" OnClick="Button1_Click"  />
+                    <asp:Button ID="Button1" runat="server" Backcolor="#184698" CssClass="btn btn-primary" Text="Change Plan" OnClick="Button1_Click"  />
                         </div>
                 </div>
             </div>

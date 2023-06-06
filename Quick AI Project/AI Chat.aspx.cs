@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -15,23 +18,27 @@ namespace Quick_AI_Project
         {
 
         }
-          
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            //string quickai = string.Format("https://ai-chatbot.p.rapidapi.com/chat/free?");
-            //WebRequest requestobject = WebRequest.Create(quickai);
-            //requestobject.Method = "Get";
-            //HttpResponse responseObject = null;
-            ////responseObject = (HttpWebResponse)responseObject.GetResponse();
 
-            ////string strresult = null;
-            ////using (Stream stream = responseObject.GetResponseStream())
-            //{
-            //    StreamReader sr = new StreamReader(stream);
-            //    strresult = sr.ReadToEnd();
-            //    sr.Close();
-            //}
-
+        //protected async Task Button1_ClickAsync(object sender, EventArgs e)
+        //{
+        //    var client = new HttpClient();
+        //    var request = new HttpRequestMessage
+        //    {
+        //        Method = HttpMethod.Get,
+        //        RequestUri = new Uri("https://ai-chatbot.p.rapidapi.com/chat/free?message='name&uid=user_1"),
+        //        Headers =
+        //                  {
+        //                     { "X-RapidAPI-Key", "90fe0cef15msh96741b69e871f0bp17d2e7jsn7718240df0c6" },
+        //                     { "X-RapidAPI-Host", "ai-chatbot.p.rapidapi.com" },
+        //                   },
+        //    };
+        //    using (var response = await client.SendAsync(request))
+        //    {
+        //        response.EnsureSuccessStatusCode();
+        //        var body = await response.Content.ReadAsStringAsync();
+        //        Console.WriteLine(body);
+        //    }
         }
-    }
-}
+        }
+
+       

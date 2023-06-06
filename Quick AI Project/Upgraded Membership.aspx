@@ -89,10 +89,10 @@
                 <p>Membership &nbsp : Extended Plan</p>
                     </div>
                 <div class="row">
-                <p>Start Date :</p>&nbsp
+                <p>Start Date :<%= DateTime.Now.ToString("yy, MMMM dd") %></p>&nbsp
                     </div>
                 <div class="row">
-                <p>End Date :</p>&nbsp
+                <p>End Date :<%= DateTime.Now.ToString("yy, MMMM dd") %></p>&nbsp
                     </div>
                    <hr style="margin-bottom: 0rem; border-top-style: dotted; border-top-color: inherit; border-top-width: 1px;" class="auto-style4" />
                 <p>Total Cost:&nbsp 5 <i class="fas fa-indian-rupee"></i></p>
