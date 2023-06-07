@@ -38,7 +38,7 @@
                             <div class="col-md-2">
                                 <div class="dropdown">
                                     <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
+                                        <img style="height: 50px; width: 50px;border:solid;color:black" src="Images/profile%20new%20image.png"  />
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
@@ -124,7 +124,7 @@
                       <div class="aicodecontainer">
                      <h6> <i class="fas fa-arrow-right-arrow-left"></i>&nbsp AI CODE</h6>  
                           <hr />
-                           <div style="width:150px;height:140px;" class="alert alert-danger d-flex align-items-center" role="alert">
+                           <div style="width:242px;height:140px;" class="alert alert-primary d-flex align-items-center" role="alert">
                   <svg class="bi flex-shrink-0 me-2" width="22" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
                   <div>
                      Use this code generator to create code in any programming language.
@@ -142,7 +142,7 @@
                               <textarea> </textarea>
                           </div>
                           <div style="margin-left:30px;width:50px" class="generatebtn">
-                              <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary " Text="Generate" />
+                              <asp:Button ID="Button1" runat="server" BackColor="#184698" CssClass="btn btn-primary " Text="Generate" />
                           </div>
                       </div>
                        <div class="aicodecontainer2">
@@ -150,10 +150,10 @@
                                <h6><i class="fas fa-align-left"></i>&nbsp Generate Result</h6>
                            </div>
                            <hr />
-                            <div style="width:609px;height:60px" class="alert alert-danger d-flex align-items-center" role="alert">
+                            <div style="width:609px;height:60px" class="alert alert-primary d-flex align-items-center" role="alert">
                   <svg class="bi flex-shrink-0 me-2" width="22" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
                   <div>
-                     Use this code generator to create code in any programming language.
+                     Generated code will appear here.
                   </div>
                   </div>
                </div>

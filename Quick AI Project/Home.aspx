@@ -466,7 +466,7 @@ span.blog-item-tag {
              <div style="margin-left:210px" class="col-md-2">
                <div class="dropdown">
                <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               <img style="border-left:1px solid #e0e0e0 ; height:50px;width:50px;" src="Images/Profile%20UI%20Icon.png" />
+               <img style=" border-color:black; height:50px;width:50px;border:solid;color:black" src="Images/profile%20new%20image.png"  />
                </a>
               <ul class="dropdown-menu">
              <li><a class="dropdown-item" href="#"><i  class="fas fa-qrcode"></i>Dashboard</a></li>
@@ -1474,7 +1474,7 @@ span.blog-item-tag {
 
             <div class="membershipplan">
             <div class="row">
-                <h2>Membership Plan</h2>
+                <h3>Membership Plan</h3>
            <%-- <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Login.aspx">Home</a></li>

@@ -72,7 +72,7 @@
                             <div class="col-md-2">
                                 <div class="dropdown">
                                     <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
+                                        <img style="height: 50px; width: 50px;border:solid;color:black" src="Images/profile%20new%20image.png"  />
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
@@ -169,9 +169,9 @@
     <button style="color:red" <i class="fas fa-trash-can" type="button" id="return" onclick=""></button>
 </div>
         
-                  <label id="output"  />
+                  <label style="margin-top: 30px;margin-left: 116px;"     id="output"  />
                <label for="message">Enter your message:</label>
-              <input style="width:90%; background:none" id="message" placeholder="Type your message here..." type="text" /><button class="btn btn-primary" onclick="sendMessage()">Send</button>
+              <input style="width:390px; background:none" id="message" placeholder="Type your message here..." type="text" /><button class="btn btn-primary" onclick="sendMessage()">Send</button>
             	
           </div>
          

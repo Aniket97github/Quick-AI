@@ -38,20 +38,18 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <header>
+         <header>
                 <div class="container">
                     <div class="headerAccoutSetting">
                         <div class="row navbar navbar-expand-sm bg-white fixed-top" style="display: inline-flex; box-shadow: 2px 2px 5px grey;">
                             <div class="col-md-2">
                                 <img src="Images/hype%20logo.png" />
                             </div>
-
-                           
-                            <div class="col-md-6"></div>
-                            <div class="col-md-2">
+                            <div class="col-md-4"></div>
+                            <div style="margin-left:210px" class="col-md-2">
                                 <div class="dropdown">
                                     <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
+                                        <img style="height: 50px; width: 50px;border:solid;color:black" src="Images/profile%20new%20image.png" />
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
@@ -62,7 +60,6 @@
                                         <li><a class="dropdown-item" href="http://localhost:64582/Speech%20To%20Text%20page.aspx"><i class="fas fa-headphones"></i>Speech to Text</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/AI%20Code.aspx"><i class="fas fa-arrow-right-arrow-left"></i>AI Code</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Affiliate%20Program.aspx"><i class="fas fa-link"></i>Affiliate Program</a></li>
-
                                         <li><a class="dropdown-item" href="http://localhost:64582/Membership%20page.aspx"><i class="fas fa-gift"></i>Membership</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Transaction%20Page.aspx"><i class="fas fa-note-sticky"></i>Transactions</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:64582/Account%20Setting.aspx"><i class="fas fa-door-open"></i>Account Settings</a></li>
@@ -83,10 +80,10 @@
                     </div>
                 </div>
                  </header>
-         <div class="membershipplan">
-            <div class="row">
-                <h2 style="margin-left:90px;">Contact Us
-                        </h2>
+         <div style="margin-bottom:23px;background-color:#f8f8f8"  class="membershipplan">
+            <div style="width:100%;" class="row">
+                <h4>Contact Us</h4>
+               
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
@@ -95,33 +92,61 @@
             </nav>
             </div>
             </div>
-        <div style="height:609px;width:800px" class="container" >
-            <div class="responsive-map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
+        <div class="container-md">
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=2880 Broadway, New York&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed code google maps</a></div><style>.mapouter{position:relative;text-align:right;width:584px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:584px;height:400px;}.gmap_iframe {width:584px!important;height:400px!important;}</style></div>
         </div>
-        <div style="width:726px;height:482px;margin-left:20px" class="ContactUs">
-            <div class="heading">
-                <h4 style="margin-left: 30px">Contact Us</h4>
-            </div>
-            <div <%--style="border-style:solid;"--%> class="row">
-                <div class="col-md-8">
-                <div style="margin:20px 2px 16px;padding:0px 20px;"    class="col-sm-4">
-                    <input type="text" placeholder="Your Name" />
-                </div>
-                <div style="margin:20px 0px 16px;padding:0px 20px;" class="col-sm-3">
-                    <input type="email" placeholder="Your Email" />
-                </div>
-                <div style="margin:0px 1px 16px;padding:0px 20px;" class="col-sm-12">
-                    <input type="text" placeholder="Subject" />
-                </div>
-                <div  style="margin:0px 0px 16px;padding:0px 20px;" class="col-sm-12">
-                    <textarea placeholder="Message">
-                        
-                    </textarea>
-                </div>
-                </div>
-                <div class="col-md-4">
+        <div style="margin-top:30px" class ="container-flex">
+           
+                            <div class="row">
+                                <div style="margin-left:55px" class="col-5">
+                                    <h4>Contact Us</h4>
+                                     <div class="input-group">
+  
+        <!-- declaration for first field -->
+        <input type="text" class="form-control 
+                input-sm" value="Your Name  " />
+  
+        <!-- reducong the gap between them to zero -->
+        <span class="input-group-btn" 
+            style="width:35px;"></span>
+  
+        <!-- declaration for second field -->
+        <input type="text" class="form-control 
+                input-sm" value="Your Email" />
+    </div>
+                               <%-- <div class="input1">
+                                    <div  class="form-group">
+                                        <input style="width:200px" type="text" class="with-border" required="required" placeholder="Your Name" name="name">
+                                    </div>
+                                </div>
+                                <div class="input2">
+                                    <div  class="form-group">
+                                        <input style="width:200px" type="email" class="with-border" required="required" placeholder="Your E-Mail" name="email">
+                                    </div>
+                                </div>--%>
+                                        
+                                <div class="input3">
+                                    <div  class="form-group">
+                                        <input style="width: 546px; margin-top: 10px";type="text" class="with-border" required="required" placeholder="Subject" name="subject"/>
+                                    </div>
+                                </div>
+                                <div class="input4">
+                                    <div  class="form-group">
+                                        <textarea style="width: 546px"; name="message" id="message" required="required" class="with-border" rows="7" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                    
+
+                                <div class="input5">
+                           
+                            <div class="form-group">
+                                  <asp:Button ID="Button1" runat="server" BackColor="#184698" Text="Send Message" CssClass="btn btn-primary btn-lg" />
+                            </div>
+                        </div>
+                           </div>
+
+          
+              <div class="col-4">
                     <div style="box-shadow:2px 2px 3px grey;width:333px;height:141px;margin-left:273px" class="get in">
                         <h6 style="padding:10px 0px 0px 10px">Get In Touch</h6>
                         <hr />
@@ -138,13 +163,10 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <br />
-            <div style="margin-left:24px" class="submit">
-            <asp:Button ID="Button1" runat="server"  CssClass="btn btn-primary" BackColor="#174698"  Text="Send Message" />
                 </div>
-        </div>
-        <footer>
+        
+            </div>
+         <footer>
            <div class="foot" style="background-color: #303030;color:silver";>
                 <div  style="padding-top: 45px;padding-bottom: 45px">
                     <div class="container-fluid">
@@ -215,6 +237,7 @@
                 </div>
            
         </footer>
+               
     </form>
 </body>
 </html>
