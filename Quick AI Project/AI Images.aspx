@@ -111,11 +111,11 @@
                     
                        <div class="membershipplan">
             <div class="row">
-                <h2 style="margin-left:90px;">AI Images
+                <h4 style="margin-left:90px;">AI Images
                            <i style="text-size-adjust:initial;color:darkblue "; class="fa-solid fa-chart-simple"></i>
                             <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0 / 100 </i>
-                            <strong> Images Used</strong>
-                        </h2>
+                            <strong style="color:darkblue "> Images Used</strong>
+                        </h4>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>

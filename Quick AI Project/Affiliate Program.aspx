@@ -107,9 +107,9 @@
                             </div>
            <div class="membershipplan">
             <div class="row">
-                <h2 style="margin-left:90px;margin-top:15px">Affiliate Program
+                <h4 style="margin-left:90px;margin-top:15px">Affiliate Program
                          
-                        </h2>
+                        </h4>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>

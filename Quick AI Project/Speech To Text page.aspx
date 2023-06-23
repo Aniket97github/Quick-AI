@@ -178,10 +178,10 @@ input[type="color"]::-moz-color-swatch {
                         </div>
                         <div class="membershipplan">
             
-                <h2 style="margin-left:90px;">Speech to Text
+                <h4 style="margin-left:90px;">Speech to Text
                           &nbsp <i style="text-size-adjust:initial;color:darkblue "; class="fa-solid fa-chart-simple"></i>
                             <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0/0 Used </i>
-                        </h2>
+                        </h4>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
@@ -201,7 +201,7 @@ input[type="color"]::-moz-color-swatch {
                   </div>
                   </div>
                  <div class="row">
-                 <h6>Title</h6>      <asp:Label ID="charCountLabel" runat="server" Text="Label1"></asp:Label>  
+                 <h6>Title</h6>      <asp:Label ID="charCountLabel" runat="server" Text="Label1" Visible="False"></asp:Label>  
                      </div>
                  <asp:TextBox ID="TextBox1" runat="server"  onchange="updateCharacterCount()"></asp:TextBox>
                  <br />
@@ -211,7 +211,7 @@ input[type="color"]::-moz-color-swatch {
                  </div>
                  <h9>.mp3, .mp4, .mpeg, .mpga, .m4a, .wav, .webm allowed. Max file size: 0 MB</h9><br /><br />
                  <div class="audioset">
-                     <asp:Label ID="charCountLabel2" runat="server" Text="Label2"></asp:Label>
+                     <asp:Label ID="charCountLabel2" runat="server" Text="Label2" Visible="False"></asp:Label>
                      <h6>Audio Description</h6>*
                      <textarea id="TextArea1" cols="20" rows="2" runat="server" onchange="updateCharacterCount2()"></textarea>
                      <h9>Describe the speech from the file to help the AI. (Optional)</h9><br /><br />
@@ -398,6 +398,7 @@ input[type="color"]::-moz-color-swatch {
             var lbl1 = document.getElementById('<%=charCountLabel.ClientID%>');
             var value = tb.value;
                 var count = 0;
+                lbl1.visible = true;
                 for (var i = 0; i < value.length; i++) {
                 count++;
                 }
@@ -411,6 +412,7 @@ input[type="color"]::-moz-color-swatch {
             var lbl2 = document.getElementById('<%=charCountLabel2.ClientID%>');
                   var value = ta.value;
                   var count = 0;
+                  lbl2.visible = true;
                   for (var i = 0; i < value.length; i++) {
                       count++;
                   }

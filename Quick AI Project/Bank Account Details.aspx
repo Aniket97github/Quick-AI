@@ -31,7 +31,7 @@
                             <div class="col-md-2">
                                 <div class="dropdown">
                                     <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img style="height: 50px; width: 50px;" src="Images/Profile%20UI%20Icon.png" />
+                                        <img style="height: 50px; width: 50px;border:solid;color:black" src="Images/profile%20new%20image.png" />
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="http://localhost:64582/Dashboard.aspx"><i class="fas fa-qrcode"></i>Dashboard</a></li>
@@ -82,7 +82,7 @@
         </div>
             </div>
         <div style="margin-top:20px;margin-left:200px;" class="transacbtn">
-            <asp:Button ID="Button1" runat="server" Text="Transaction" CssClass="btn btn-primary btn-lg" OnClick="Button1_Click1" />
+            <asp:Button ID="Button1" runat="server" BackColor="#184698" Text="Transaction" CssClass="btn btn-primary btn-lg" OnClick="Button1_Click1" />
             
         </div><br />
          <footer>

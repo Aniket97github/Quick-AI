@@ -58,10 +58,10 @@ namespace Quick_AI_Project
     
 
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Register2.aspx");
-        }
+        //protected void Button2_Click(object sender, EventArgs e)
+        //{
+        //    Response.Redirect("Register2.aspx");
+        //}
 
         protected void Button3_Click(object sender, EventArgs e)
         {
@@ -75,7 +75,7 @@ namespace Quick_AI_Project
 
         protected void Button2_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("Login.aspx");
+            Response.Redirect("Register2.aspx");
         }
     }
 }

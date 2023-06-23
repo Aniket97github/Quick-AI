@@ -66,7 +66,7 @@
             </div>
         <div class="membershipplan">
             <div class="row">
-                <h2>Membership Plan</h2>
+                <h4>Membership Plan</h4>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
@@ -84,6 +84,9 @@
                 </div>
               </div>
         </div>
+                 <div style="box-shadow:2px 2px 3px grey;width:100px;height:30px; background-color:#1D52AE;margin-left: 691px ;width: 299px""; class="boxex">
+                   <h7 style="color:white"> Recommended</h7>
+                </div>
                 </div>
             </div>
             

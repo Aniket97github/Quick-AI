@@ -213,15 +213,20 @@ span i{
                             </div>
                         </div>
 
-                         <div style="margin-left:250px" class="membershipplan">
+                        <div class="membershipplan">
             <div class="row">
-                <h2>Templates</h2>
+                <h4 style="margin-left:90px;">Templates
+                           <i style="text-size-adjust:initial;color:darkblue "; class="fa-solid fa-chart-simple"></i>
+                            <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0 / 1000 </i>
+                            <strong style="color:darkblue "> Words Used</strong>
+                        </h4>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
-             <li class="breadcrumb-item active btn btn-dark" aria-current="page">Templates</li>
+             <li class="breadcrumb-item active btn btn-dark" aria-current="page">AI Images</li>
              </ol>
             </nav>
+            </div>
             </div>
             <%--<div  style="margin-left:40px"" class="row">
                <div class="section">

@@ -1469,8 +1469,7 @@ span.blog-item-tag {
                                 </div>
         </div>
     </div>
-               <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem;margin-top: 50px;
-}" />
+               <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem;margin-top: 50px;" />
 
             <div class="membershipplan">
             <div class="row">

@@ -108,10 +108,10 @@
                             </div>
                            <div class="membershipplan">
             <div class="row">
-                <h2 style="margin-left:90px;">AI Code
+                <h4 style="margin-left:90px;">AI Code
                           &nbsp <i style="text-size-adjust:initial;color:darkblue "; class="fa-solid fa-chart-simple"></i>
                             <i style="text-size-adjust:initial;color:darkblue "; id="quick-words-left">0 / 10,000 Words Used </i>
-                        </h2>
+                        </h4>
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb">
               <li class="breadcrumb-item btn btn-dark"><a href="http://localhost:64582/Home.aspx">Home</a></li>
